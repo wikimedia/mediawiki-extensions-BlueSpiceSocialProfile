@@ -8,4 +8,3 @@ interface IFieldList {
 	 */
 	public function getOptions();
 }
-

@@ -2,23 +2,39 @@
 
 namespace BlueSpice\Social\Profile\Privacy;
 
-use BlueSpice\Privacy\IPrivacyHandler;
-use BlueSpice\Privacy\Module\Transparency;
-use BlueSpice\Social\Profile\Entity\Profile;
-use MediaWiki\MediaWikiServices;
 use Status;
+use Message;
 use User;
-use BlueSpice\Social\ExtendedSearch\Job\Entity as SearchJob;
+use Config;
 use JobQueueGroup;
 use Title;
 use WikiPage;
+use BlueSpice\Services;
+use BlueSpice\Social\ExtendedSearch\Job\Entity as SearchJob;
+use BlueSpice\Privacy\IPrivacyHandler;
+use BlueSpice\Privacy\Module\Transparency;
+use BlueSpice\Social\Profile\Entity\Profile;
 
 class Handler implements IPrivacyHandler {
+	/**
+	 *
+	 * @var User
+	 */
 	protected $user;
 
-	public function __construct( \Database $db ) {}
+	/**
+	 *
+	 * @param \Database $db
+	 */
+	public function __construct( \Database $db ) {
+	}
 
-
+	/**
+	 *
+	 * @param string $oldUsername
+	 * @param string $newUsername
+	 * @return Status
+	 */
 	public function anonymize( $oldUsername, $newUsername ) {
 		$this->user = User::newFromName( $oldUsername );
 
@@ -31,7 +47,7 @@ class Handler implements IPrivacyHandler {
 		$profileFields = array_keys( $this->getProfileFields(
 			$profile->getConfig()
 		) );
-		foreach( $profileFields as $key ) {
+		foreach ( $profileFields as $key ) {
 			$profile->set( $key, '' );
 		}
 
@@ -49,11 +65,17 @@ class Handler implements IPrivacyHandler {
 		return Status::newGood();
 	}
 
+	/**
+	 *
+	 * @param User $userToDelete
+	 * @param User $deletedUser
+	 * @return Status
+	 */
 	public function delete( User $userToDelete, User $deletedUser ) {
 		$this->user = $userToDelete;
 		$status = $this->deleteEntityPage();
 
-		// Deleting a page will return non-fatal \Status if deletion fails,
+		// Deleting a page will return non-fatal Status if deletion fails,
 		// but we need to return a fatal to stop the deletion process
 		if ( $status->isGood() ) {
 			return $status;
@@ -62,6 +84,13 @@ class Handler implements IPrivacyHandler {
 		return Status::newFatal( $status->getMessage() );
 	}
 
+	/**
+	 *
+	 * @param array $types
+	 * @param string $format
+	 * @param User $user
+	 * @return Status
+	 */
 	public function exportData( array $types, $format, User $user ) {
 		$this->user = $user;
 		$profile = $this->getProfile();
@@ -72,12 +101,12 @@ class Handler implements IPrivacyHandler {
 		$profileFields = $this->getProfileFields( $profile->getConfig() );
 
 		$data = [];
-		foreach( $profileFields as $key => $config ) {
+		foreach ( $profileFields as $key => $config ) {
 			$value = $profile->get( $key );
 			if ( !$value ) {
 				continue;
 			}
-			$keyMessage = wfMessage( $config['i18n'] )->plain();
+			$keyMessage = Message::newFromKey( $config['i18n'] )->plain();
 			$data[] = "$keyMessage: {$profile->get( $key )}";
 		}
 		return Status::newGood( [
@@ -86,23 +115,23 @@ class Handler implements IPrivacyHandler {
 	}
 
 	/**
-	 * @return Profile
+	 * @return Profile|null
 	 */
 	protected function getProfile() {
-		$entityFactory = MediaWikiServices::getInstance()->getService(
+		$entityFactory = Services::getInstance()->getService(
 			'BSSocialProfileEntityFactory'
 		);
 		return $entityFactory->newFromUser( $this->user );
 	}
 
 	/**
-	 * @param \Config $config
+	 * @param Config $config
 	 * @return array
 	 */
 	protected function getProfileFields( $config ) {
 		$profileFields = $config->get( 'BSSocialProfileFields' );
 		$customProfileFields = $config->get( 'BSSocialProfileCustomFields' );
-		
+
 		return array_merge( $profileFields, $customProfileFields );
 	}
 
@@ -110,7 +139,7 @@ class Handler implements IPrivacyHandler {
 	 * Deletes entity page for given user profile
 	 * and removes the entity from search index
 	 *
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function deleteEntityPage() {
 		$profile = $this->getProfile();

@@ -2,30 +2,42 @@
 
 namespace BlueSpice\Social\Profile\EntityListContext;
 
+use IContextSource;
+use Config;
+use User;
 use BlueSpice\Data\Filter\Numeric;
+use BlueSpice\Social\EntityListContext;
 use BlueSpice\Social\Profile\Entity\Profile;
 
-class UserProfile extends \BlueSpice\Social\EntityListContext {
+class UserProfile extends EntityListContext {
 
 	/**
 	 * Owner of the user page
-	 * @var \User
+	 * @var User
 	 */
 	protected $owner = null;
 
 	/**
 	 *
-	 * @param \IContextSource $context
-	 * @param \Config $config
+	 * @param IContextSource $context
+	 * @param Config $config
+	 * @param User|null $user
+	 * @param Profile|null $entiy
+	 * @param User|null $owner
 	 */
-	public function __construct( \IContextSource $context, \Config $config, \User $user = null, Profile $entiy = null, \User $owner = null ) {
+	public function __construct( IContextSource $context, Config $config, User $user = null,
+		Profile $entiy = null, User $owner = null ) {
 		parent::__construct( $context, $config, $user, $entiy );
 		$this->owner = $owner;
-		if( !$this->owner ) {
+		if ( !$this->owner ) {
 			$this->owner = $this->context->getUser();
 		}
 	}
 
+	/**
+	 *
+	 * @return \stdClass
+	 */
 	protected function getOwnerFilter() {
 		return (object)[
 			Numeric::KEY_PROPERTY => Profile::ATTR_OWNER_ID,
@@ -35,17 +47,28 @@ class UserProfile extends \BlueSpice\Social\EntityListContext {
 		];
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getFilters() {
-		return array_merge( 
-			parent::getFilters(),
+		return array_merge( parent::getFilters(),
 			[ $this->getOwnerFilter() ]
 		);
 	}
 
+	/**
+	 *
+	 * @return int
+	 */
 	public function getLimit() {
 		return 10;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getLockedFilterNames() {
 		return array_merge(
 			parent::getLockedFilterNames(),

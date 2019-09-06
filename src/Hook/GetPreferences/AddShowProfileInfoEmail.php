@@ -9,7 +9,7 @@ class AddShowProfileInfoEmail extends \BlueSpice\Hook\GetPreferences {
 			'BSSocialProfileFieldsFactory'
 		);
 		$email = $factory->factory( 'social-profile-email', $this->user );
-		if( !$email ) {
+		if ( !$email ) {
 			return true;
 		}
 		return false;

@@ -32,27 +32,36 @@ use BlueSpice\Social\Profile\Content\Profile as ProfileContent;
 
 class Extension extends \BlueSpice\Extension {
 
+	/**
+	 *
+	 */
 	public static function onRegistration() {
 		global $wgContentHandlers;
 
-		if( !defined('CONTENT_MODEL_BSSOCIALPROFILE') ) {
+		if ( !defined( 'CONTENT_MODEL_BSSOCIALPROFILE' ) ) {
 			define( 'CONTENT_MODEL_BSSOCIALPROFILE', 'BSSocialProfile' );
 			$wgContentHandlers[CONTENT_MODEL_BSSOCIALPROFILE]
 				= "\\BlueSpice\\Social\\Profile\\Content\\ProfileHandler";
 		}
 	}
 
+	/**
+	 *
+	 * @param \Title $oTitle
+	 * @param string $sAction
+	 * @return bool
+	 */
 	public static function isProfilePage( \Title $oTitle, $sAction = 'view' ) {
-		if( $oTitle->getNamespace() !== NS_USER || $oTitle->isSubpage() ) {
+		if ( $oTitle->getNamespace() !== NS_USER || $oTitle->isSubpage() ) {
 			return false;
 		}
-		if( $oTitle->isTalkPage() ) {
+		if ( $oTitle->isTalkPage() ) {
 			return false;
 		}
-		if( \RequestContext::getMain()->getRequest()->getVal( 'classicprofile', false ) ) {
+		if ( \RequestContext::getMain()->getRequest()->getVal( 'classicprofile', false ) ) {
 			return false;
 		}
-		if( \RequestContext::getMain()->getRequest()->getVal('action', 'view') != $sAction ) {
+		if ( \RequestContext::getMain()->getRequest()->getVal( 'action', 'view' ) != $sAction ) {
 			return false;
 		}
 		return true;
@@ -60,17 +69,19 @@ class Extension extends \BlueSpice\Extension {
 
 	/**
 	 * This is so hacky i cant breathe ^^
-	 * @param \Article $oArticle
-	 * @param boolean $outputDone
-	 * @param boolen $useParserCache
+	 * @param \Article &$oArticle
+	 * @param bool &$outputDone
+	 * @param bool &$useParserCache
+	 * @return bool
 	 */
 	public static function onArticleViewHeader( &$oArticle, &$outputDone, &$useParserCache ) {
 		$oTitle = $oArticle->getTitle();
-		if( !static::isProfilePage( $oTitle ) ) {
+		if ( !static::isProfilePage( $oTitle ) ) {
 			return true;
 		}
 		$useParserCache = false;
-		if( !$oUser = \User::newFromName( $oTitle->getText() ) ) {
+		$oUser = \User::newFromName( $oTitle->getText() );
+		if ( !$oUser ) {
 			return true;
 		}
 
@@ -78,7 +89,7 @@ class Extension extends \BlueSpice\Extension {
 			'BSSocialProfileEntityFactory'
 		);
 		$entity = $entityFactory->newFromUser( $oUser );
-		if( !$entity ) {
+		if ( !$entity ) {
 			return true;
 		}
 		$oContentModel = new ProfileContent(
@@ -88,7 +99,7 @@ class Extension extends \BlueSpice\Extension {
 		$outputDone = $oContentModel->getParserOutput(
 			$oArticle->getTitle()
 		);
-		$oArticle->getContext()->getOutput()->addParserOutput($outputDone);
+		$oArticle->getContext()->getOutput()->addParserOutput( $outputDone );
 		return false;
 	}
 

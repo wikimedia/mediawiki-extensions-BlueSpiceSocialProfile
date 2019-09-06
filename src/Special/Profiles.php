@@ -9,10 +9,17 @@ use BlueSpice\Social\Profile\EntityListContext\SpecialProfiles;
 
 class Profiles extends \BlueSpice\SpecialPage {
 
+	/**
+	 *
+	 */
 	public function __construct() {
 		parent::__construct( 'SocialProfiles', 'socialprofile-viewspecialpage' );
 	}
 
+	/**
+	 *
+	 * @param string $par
+	 */
 	public function execute( $par ) {
 		$this->checkPermissions();
 

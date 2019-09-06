@@ -1,12 +1,12 @@
 <?php
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'SocialProfiles' => array( 'SocialProfiles', 'Profiles' ),
-);
+$specialPageAliases['en'] = [
+	'SocialProfiles' => [ 'SocialProfiles', 'Profiles' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'SocialProfiles' => array( 'SocialProfiles', 'Profiles', 'Profile' ),
-);
+$specialPageAliases['de'] = [
+	'SocialProfiles' => [ 'SocialProfiles', 'Profiles', 'Profile' ],
+];

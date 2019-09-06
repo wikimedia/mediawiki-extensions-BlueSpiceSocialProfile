@@ -7,13 +7,13 @@ use BlueSpice\Social\Profile\Entity\Profile;
 class InvalidateProfileEntity extends PageContentSaveComplete {
 
 	protected function skipProcessing() {
-		if( $this->wikipage->getTitle()->getNamespace() !== NS_USER ) {
+		if ( $this->wikipage->getTitle()->getNamespace() !== NS_USER ) {
 			return true;
 		}
-		if( $this->wikipage->getTitle()->isTalkPage() ) {
+		if ( $this->wikipage->getTitle()->isTalkPage() ) {
 			return true;
 		}
-		if( $this->wikipage->getTitle()->isSubpage() ) {
+		if ( $this->wikipage->getTitle()->isSubpage() ) {
 			return true;
 		}
 		return false;
@@ -26,11 +26,11 @@ class InvalidateProfileEntity extends PageContentSaveComplete {
 		$entity = $entityFactory->newFromUser(
 			\User::newFromName( $this->wikipage->getTitle()->getText() )
 		);
-		if( !$entity instanceof Profile ) {
-			//do not fatal - here is something wrong very bad!
+		if ( !$entity instanceof Profile ) {
+			// do not fatal - here is something wrong very bad!
 			return true;
 		}
-		if( !$entity->exists() ) {
+		if ( !$entity->exists() ) {
 			return true;
 		}
 		$entity->invalidateCache();

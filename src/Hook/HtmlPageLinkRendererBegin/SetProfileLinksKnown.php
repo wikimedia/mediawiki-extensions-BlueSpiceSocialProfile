@@ -2,39 +2,53 @@
 
 namespace BlueSpice\Social\Profile\Hook\HtmlPageLinkRendererBegin;
 
-class SetProfileLinksKnown extends \BlueSpice\Hook\HtmlPageLinkRendererBegin {
+use Title;
+use User;
+use BlueSpice\Hook\HtmlPageLinkRendererBegin;
+
+class SetProfileLinksKnown extends HtmlPageLinkRendererBegin {
 
 	const ATTR_PROCCESSED = 'knownProfileProccessed';
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function skipProcessing() {
-		if( isset( $this->extraAttribs[static::ATTR_PROCCESSED] ) ) {
+		if ( isset( $this->extraAttribs[static::ATTR_PROCCESSED] ) ) {
 			return true;
 		}
 
-		if( !$title = \Title::newFromLinkTarget( $this->target ) ) {
+		$title = Title::newFromLinkTarget( $this->target );
+		if ( !$title ) {
 			return true;
 		}
-		if( $title->getNamespace() !== NS_USER ) {
+		if ( $title->getNamespace() !== NS_USER ) {
 			return true;
 		}
-		if( $title->isKnown() ) {
+		if ( $title->isKnown() ) {
 			return true;
 		}
-		if( $title->exists() || $title->isSubpage() ) {
+		if ( $title->exists() || $title->isSubpage() ) {
 			return true;
 		}
-		if( !$user = \User::newFromName( $title->getText() ) ) {
+		$user = User::newFromName( $title->getText() );
+		if ( !$user ) {
 			return true;
 		}
-		if( $user->isAnon() ) {
+		if ( $user->isAnon() ) {
 			return true;
 		}
 
 		return false;
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function doProcess() {
-		//kinda hacky, but the known parameter can not be changed anymore :/
+		// kinda hacky, but the known parameter can not be changed anymore :/
 		$this->ret = $this->linkRenderer->makeKnownLink(
 			$this->target,
 			$this->text,

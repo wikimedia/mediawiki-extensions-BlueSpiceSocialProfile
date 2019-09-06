@@ -31,6 +31,8 @@
  */
 
 namespace BlueSpice\Social\Profile\EntityConfig;
+
+use MWException;
 use BlueSpice\Social\EntityConfig\Page;
 use BlueSpice\Social\Data\Entity\Schema;
 use MediaWiki\MediaWikiServices;
@@ -41,91 +43,183 @@ use BlueSpice\Social\Profile\Field;
  * @package BlueSpiceSocial
  * @subpackage BSSocial
  */
-class Profile extends Page{
+class Profile extends Page {
+	/**
+	 *
+	 * @return array
+	 */
 	public function addGetterDefaults() {
-		return array();
+		return [];
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
 	protected function get_EntityClass() {
 		return "\\BlueSpice\\Social\\Profile\\Entity\\Profile";
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
 	protected function get_EntityTemplateDefault() {
 		return 'BlueSpiceSocialProfile.Entity.Profile.Default';
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
 	protected function get_EntityTemplatePage() {
 		return 'BlueSpiceSocialProfile.Entity.Profile.Page';
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function get_Renderer() {
 		return 'socialentityprofile';
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function get_ModuleStyles() {
 		return array_merge( parent::get_ModuleStyles(), [
 			'ext.bluespice.socialprofile.styles'
-		]);
+		] );
 	}
+
+	/**
+	 *
+	 * @return array
+	 */
 	protected function get_ModuleScripts() {
 		return array_merge( parent::get_ModuleScripts(), [
 			'ext.bluespice.social.entity.profile',
-		]);
+		] );
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
 	protected function get_TypeMessageKey() {
 		return 'bs-socialprofile-type';
 	}
+
+	/**
+	 *
+	 * @return array
+	 */
 	protected function get_VarMessageKeys() {
 		$messageKeys = parent::get_VarMessageKeys();
 		$fields = array_merge(
 			$this->get_ProfileCustomFieldsDefinitions(),
 			$this->get_ProfileFieldsDefinitions()
 		);
-		foreach( $fields as $name => $definition ) {
-			if( isset( $messageKeys[$name] ) ) {
-				throw new \MWException( "fieldname $name already in use!" );
+		foreach ( $fields as $name => $definition ) {
+			if ( isset( $messageKeys[$name] ) ) {
+				throw new MWException( "fieldname $name already in use!" );
 			}
-			if( !isset( $definition[Field::KEY_I18N] ) ) {
+			if ( !isset( $definition[Field::KEY_I18N] ) ) {
 				continue;
 			}
 			$messageKeys[$name] = $definition[Field::KEY_I18N];
 		}
 		return $messageKeys;
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
 	protected function get_HeaderMessageKey() {
 		return 'bs-socialprofile-entityprofile-header';
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
 	protected function get_HeaderMessageKeyCreateNew() {
 		return 'bs-socialprofile-entityprofile-header';
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function get_isDeleteable() {
 		return false;
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function get_isCreatable() {
 		return false;
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function get_CanHaveChildren() {
 		return false;
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function get_IsTagable() {
 		return false;
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function get_IsGroupable() {
 		return false;
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function get_IsRateable() {
 		return false;
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
 	protected function get_EditothersPermission() {
 		return 'social-editothersprofile';
 	}
 
+	/**
+	 *
+	 * @return array
+	 * @throws MWException
+	 */
 	protected function get_AttributeDefinitions() {
 		$definitions = parent::get_AttributeDefinitions();
 		$fields = array_merge(
 			$this->get_ProfileCustomFieldsDefinitions(),
 			$this->get_ProfileFieldsDefinitions()
 		);
-		foreach( $fields as $name => $definition ) {
-			if( isset( $definitions[$name] ) ) {
-				throw new \MWException( "fieldname $name already in use!" );
+		foreach ( $fields as $name => $definition ) {
+			if ( isset( $definitions[$name] ) ) {
+				throw new MWException( "fieldname $name already in use!" );
 			}
 			$definitions[$name] = [
 				Schema::FILTERABLE => $definition[Schema::FILTERABLE],
@@ -138,6 +232,10 @@ class Profile extends Page{
 		return $definitions;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function get_ProfileFieldsDefinitions() {
 		$factory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileFieldsFactory'
@@ -145,6 +243,10 @@ class Profile extends Page{
 		return $factory->getFieldDefinitions();
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function get_ProfileCustomFieldsDefinitions() {
 		$factory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileCustomFieldsFactory'
@@ -152,6 +254,10 @@ class Profile extends Page{
 		return $factory->getFieldDefinitions();
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function get_EntityListPrivacyHandlerTypeAllowed() {
 		return false;
 	}

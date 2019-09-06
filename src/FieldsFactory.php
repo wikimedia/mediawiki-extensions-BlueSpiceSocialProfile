@@ -25,22 +25,31 @@
  * @filesource
  */
 namespace BlueSpice\Social\Profile;
+
+use MWException;
+use Config;
+use User;
+use RequestContext;
 use BlueSpice\Social\Data\Entity\Schema;
 
 class FieldsFactory {
 	const KEY_CALLBACK = 'callback';
 
+	/**
+	 *
+	 * @var array
+	 */
 	protected $defintions = null;
 	protected $fields = null;
 
 	/**
 	 *
-	 * @var \Config
+	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 * @param \Config $config
+	 * @param Config $config
 	 */
 	public function __construct( $config ) {
 		$this->config = $config;
@@ -49,22 +58,25 @@ class FieldsFactory {
 	/**
 	 *
 	 * @param string $name
+	 * @param User|null $user
 	 * @return FieldDefinition | false
 	 */
-	public function factory( $name, \User $user = null ) {
-		if( empty( $name ) ) {
+	public function factory( $name, User $user = null ) {
+		if ( empty( $name ) ) {
 			return false;
 		}
-		if( !$user instanceof \User ) {
-			$user = \RequestContext::getMain();
+		if ( !$user instanceof User ) {
+			$user = RequestContext::getMain();
 		}
-		if( $user->isAnon() ) {
+		if ( $user->isAnon() ) {
 			return false;
 		}
-		if( !$definition = $this->getFieldDefinition( $name ) ) {
+		$definition = $this->getFieldDefinition( $name );
+		if ( !$definition ) {
 			return false;
 		}
-		if( !isset( $definition[static::KEY_CALLBACK] ) || !is_callable( $definition[static::KEY_CALLBACK] ) ) {
+		if ( !isset( $definition[static::KEY_CALLBACK] )
+			|| !is_callable( $definition[static::KEY_CALLBACK] ) ) {
 			return false;
 		}
 		$field = call_user_func_array( $definition[static::KEY_CALLBACK], [
@@ -72,8 +84,8 @@ class FieldsFactory {
 			$name,
 			$definition,
 			$user
-		]);
-		if( !$field instanceof IField ) {
+		] );
+		if ( !$field instanceof IField ) {
 			return false;
 		}
 		return $field;
@@ -88,17 +100,18 @@ class FieldsFactory {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return array
 	 */
 	public function getFieldDefinitions() {
-		if( $this->defintions ) {
+		if ( $this->defintions ) {
 			return $this->defintions;
 		}
 		$this->defintions = [];
 		$cnfgDefs = $this->config->get( 'BSSocialProfileFields' );
-		foreach( $cnfgDefs as $name => $cnfgDef ) {
-			if( !$definition = $this->makeFieldDefinition( $name, $cnfgDef ) ) {
+		foreach ( $cnfgDefs as $name => $cnfgDef ) {
+			$definition = $this->makeFieldDefinition( $name, $cnfgDef );
+			if ( !$definition ) {
 				continue;
 			}
 			$this->defintions[$name] = $definition;
@@ -107,12 +120,12 @@ class FieldsFactory {
 	}
 
 	/**
-	 *
+	 * @param string $name
 	 * @return array
 	 */
 	protected function getFieldDefinition( $name ) {
 		$definitions = $this->getFieldDefinitions();
-		if( !isset( $definitions[$name] ) ) {
+		if ( !isset( $definitions[$name] ) ) {
 			return false;
 		}
 		return $definitions[$name];
@@ -120,20 +133,21 @@ class FieldsFactory {
 
 	/**
 	 * @param string $name
+	 * @param array $definition
 	 * @return array
 	 */
 	protected function makeFieldDefinition( $name, $definition ) {
-		if( !isset( $definition[static::KEY_CALLBACK] ) ) {
-			throw new \MWException(
-				"Missing ".static::KEY_CALLBACK." for $name"
+		if ( !isset( $definition[static::KEY_CALLBACK] ) ) {
+			throw new MWException(
+				"Missing " . static::KEY_CALLBACK . " for $name"
 			);
 		}
 		list( $classname, $callback ) = explode(
 			'::',
 			$definition[static::KEY_CALLBACK]
 		);
-		if( !class_exists( $classname ) ) {
-			throw new \MWException( "Class '$classname' does not exist!" );
+		if ( !class_exists( $classname ) ) {
+			throw new MWException( "Class '$classname' does not exist!" );
 		}
 		$definition = array_merge(
 			$this->getSchemaDefintion( $classname ),

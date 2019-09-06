@@ -5,21 +5,30 @@ use BlueSpice\UserInfo\Hook\BSUserInfoMetaDataFactoryCallback;
 
 class AddCustomProfileFieldCallbacks extends BSUserInfoMetaDataFactoryCallback {
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function skipProcessing() {
-		if( $this->callback ) {
+		if ( $this->callback ) {
 			return true;
 		}
 		return false;
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function doProcess() {
 		$factory = $this->getServices()->getService(
 			'BSSocialProfileCustomFieldsFactory'
 		);
-		if( !$field = $factory->factory( $this->name, $this->user ) ) {
+		$field = $factory->factory( $this->name, $this->user );
+		if ( !$field ) {
 			return true;
 		}
-		if( $field->isHidden() ) {
+		if ( $field->isHidden() ) {
 			return true;
 		}
 

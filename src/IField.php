@@ -7,10 +7,12 @@ interface IField {
 	 * @return mixed
 	 */
 	public function getValue();
+
 	/**
 	 * @return string
 	 */
 	public function getName();
+
 	/**
 	 * @return string
 	 */
@@ -21,4 +23,3 @@ interface IField {
 	 */
 	public function isHidden();
 }
-

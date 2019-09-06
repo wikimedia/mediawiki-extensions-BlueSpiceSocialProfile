@@ -25,6 +25,8 @@
  * @filesource
  */
 namespace BlueSpice\Social\Profile;
+
+use Config;
 use BlueSpice\IRegistry;
 
 class CustomFieldsFactory extends FieldsFactory {
@@ -37,8 +39,8 @@ class CustomFieldsFactory extends FieldsFactory {
 	protected $registry = null;
 
 	/**
-	 * 
-	 * @param \Config $config
+	 *
+	 * @param Config $config
 	 * @param IRegistry $registry
 	 */
 	public function __construct( $config, $registry ) {
@@ -56,18 +58,19 @@ class CustomFieldsFactory extends FieldsFactory {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return array
 	 */
 	public function getFieldDefinitions() {
-		if( $this->defintions ) {
+		if ( $this->defintions ) {
 			return $this->defintions;
 		}
 		$this->defintions = [];
-		
+
 		$cnfgDefs = $this->config->get( 'BSSocialProfileCustomFields' );
-		foreach( $cnfgDefs as $name => $cnfgDef ) {
-			if( !$definition = $this->makeFieldDefinition( $name, $cnfgDef ) ) {
+		foreach ( $cnfgDefs as $name => $cnfgDef ) {
+			$definition = $this->makeFieldDefinition( $name, $cnfgDef );
+			if ( !$definition ) {
 				continue;
 			}
 			$this->defintions[$name] = $definition;
@@ -76,17 +79,19 @@ class CustomFieldsFactory extends FieldsFactory {
 	}
 
 	/**
+	 *
 	 * @param string $name
+	 * @param array $definition
 	 * @return array
 	 */
 	protected function makeFieldDefinition( $name, $definition ) {
-		if( !empty( $definition[static::KEY_CALLBACK] ) ) {
+		if ( !empty( $definition[static::KEY_CALLBACK] ) ) {
 			return parent::makeFieldDefinition( $name, $definition );
 		}
 		$definition[static::KEY_CALLBACK] = $this->getCallback(
 			$definition[static::KEY_TYPE]
 		);
-		if( !$definition[static::KEY_CALLBACK] ) {
+		if ( !$definition[static::KEY_CALLBACK] ) {
 			return false;
 		}
 		return parent::makeFieldDefinition( $name, $definition );
