@@ -1,5 +1,6 @@
 <?php
 namespace BlueSpice\Social\Profile;
+
 use MediaWiki\MediaWikiServices;
 
 abstract class CustomField extends Field implements ICustomField {
@@ -27,10 +28,10 @@ abstract class CustomField extends Field implements ICustomField {
 	 */
 	protected function __construct( $config, $name, $definition, $user ) {
 		parent::__construct( $config, $name, $definition, $user );
-		if( isset( $definition[static::KEY_DEFAULT] ) ) {
+		if ( isset( $definition[static::KEY_DEFAULT] ) ) {
 			$this->default = $definition[static::KEY_DEFAULT];
 		}
-		if( isset( $definition[static::KEY_REQUIRED] ) && $definition[static::KEY_REQUIRED] === true ) {
+		if ( isset( $definition[static::KEY_REQUIRED] ) && $definition[static::KEY_REQUIRED] === true ) {
 			$this->required = true;
 		}
 	}
@@ -69,11 +70,11 @@ abstract class CustomField extends Field implements ICustomField {
 	 */
 	public function validate( $value ) {
 		$status = \Status::newGood( $value );
-		if( $this->required === true && empty( $value ) ) {
+		if ( $this->required === true && empty( $value ) ) {
 			$status->fatal( \Message::newFromKey(
 				'bs-social-entity-fatalstatus-save-emptyfield',
 				$this->getLabel()
-			));
+			) );
 		}
 		return $status;
 	}

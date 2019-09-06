@@ -33,11 +33,11 @@ use BlueSpice\Data\Filter\Numeric;
 use BlueSpice\Social\Profile\EntityListContext\SpecialProfiles;
 use BlueSpice\Social\Profile\Entity\Profile;
 
-class ProfileFactory extends EntityFactory{
+class ProfileFactory extends EntityFactory {
 
 	/**
 	 *
-	 * @var Profile[] 
+	 * @var Profile[]
 	 */
 	protected $profileInstances = [];
 
@@ -46,10 +46,10 @@ class ProfileFactory extends EntityFactory{
 	 * @return Profile | null
 	 */
 	public function newFromUser( \User $user ) {
-		if( $user->isAnon() ) {
+		if ( $user->isAnon() ) {
 			return null;
 		}
-		if( isset( $this->profileInstances[$user->getId()] ) ) {
+		if ( isset( $this->profileInstances[$user->getId()] ) ) {
 			return $this->profileInstances[$user->getId()];
 		}
 
@@ -75,21 +75,21 @@ class ProfileFactory extends EntityFactory{
 		];
 
 		$instance = null;
-		$params = new ReaderParams([
+		$params = new ReaderParams( [
 			'filter' => $filters,
 			'sort' => $listContext->getSort(),
 			'limit' => 1,
 			'start' => 0,
-		]);
+		] );
 		$res = $this->getStore()->getReader( $listContext )->read( $params );
-		foreach( $res->getRecords() as $row ) {
+		foreach ( $res->getRecords() as $row ) {
 			$instance = $this->newFromObject( $row->getData() );
 		}
-		if( !$instance ) {
-			$instance = $this->newFromObject( (object) [
+		if ( !$instance ) {
+			$instance = $this->newFromObject( (object)[
 				Profile::ATTR_OWNER_ID => $user->getId(),
 				Profile::ATTR_TYPE => Profile::TYPE
-			]);
+			] );
 		}
 		$this->profileInstances[$user->getId()] = $instance;
 		return $instance;
@@ -103,7 +103,7 @@ class ProfileFactory extends EntityFactory{
 	protected function getStore() {
 		$config = $this->configFactory->newFromType( Profile::TYPE );
 		$storeClass = $config->get( 'StoreClass' );
-		if( !class_exists( $storeClass ) ) {
+		if ( !class_exists( $storeClass ) ) {
 			throw new \MWException( "Store class '$storeClass' not found" );
 		}
 		return new $storeClass();

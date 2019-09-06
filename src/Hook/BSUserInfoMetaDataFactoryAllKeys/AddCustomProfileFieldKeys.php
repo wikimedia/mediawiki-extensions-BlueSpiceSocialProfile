@@ -11,8 +11,8 @@ class AddCustomProfileFieldKeys extends BSUserInfoMetaDataFactoryAllKeys {
 			'BSSocialProfileCustomFieldsFactory'
 		);
 
-		foreach( $factory->getFieldDefinitions() as $field => $definition ) {
-			if( isset($definition[Field::KEY_HIDDEN]) && $definition[Field::KEY_HIDDEN] === true ) {
+		foreach ( $factory->getFieldDefinitions() as $field => $definition ) {
+			if ( isset( $definition[Field::KEY_HIDDEN] ) && $definition[Field::KEY_HIDDEN] === true ) {
 				continue;
 			}
 			$this->keys[] = $field;

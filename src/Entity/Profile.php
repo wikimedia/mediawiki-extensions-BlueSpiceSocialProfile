@@ -30,6 +30,14 @@
  */
 namespace BlueSpice\Social\Profile\Entity;
 
+use Exception;
+use Status;
+use Message;
+use User;
+use Title;
+use RequestContext;
+use ParserOptions;
+use WikiPage;
 use MediaWiki\MediaWikiServices;
 use BlueSpice\Social\Entity\Page;
 use BlueSpice\Social\Profile\ICustomField;
@@ -42,24 +50,30 @@ use BlueSpice\Social\Profile\IField;
  */
 class Profile extends Page {
 	const TYPE = 'profile';
-	protected $sBaseTitleContent = null;
+
+	/**
+	 *
+	 * @var string
+	 */
+	protected $baseTitleContent = null;
 
 	/**
 	 * @deprecated since version 3.0.0 - Use Service
 	 * (BlueSpiceSocialProfileEntityFactory)->newFromUser instead
-	 * @param \User $oUser
-	 * @return type
+	 * @param User $user
+	 * @return Profile|null
 	 */
-	public static function newFromUser( \User $oUser ) {
+	public static function newFromUser( User $user ) {
 		wfDeprecated( __METHOD__, '3.0.0' );
 		$entityFactory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileEntityFactory'
 		);
-		return $entityFactory->newFromUser( $oUser );
+		return $entityFactory->newFromUser( $user );
 	}
 
 	/**
 	 * @param \stdClass $data
+	 * @return Profile
 	 */
 	public function setValuesByObject( \stdClass $data ) {
 		$fieldDefinitions = $this->getConfig()->get(
@@ -68,8 +82,8 @@ class Profile extends Page {
 		$factory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileCustomFieldsFactory'
 		);
-		foreach( $fieldDefinitions as $name => $definition ) {
-			if( isset( $data->{$name} ) ) {
+		foreach ( $fieldDefinitions as $name => $definition ) {
+			if ( isset( $data->{$name} ) ) {
 				$this->set( $name, $data->{$name} );
 			}
 		}
@@ -79,62 +93,67 @@ class Profile extends Page {
 		$factory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileFieldsFactory'
 		);
-		foreach( $fieldDefinitions as $name => $definition ) {
-			if( isset( $data->{$name} ) ) {
+		foreach ( $fieldDefinitions as $name => $definition ) {
+			if ( isset( $data->{$name} ) ) {
 				$this->set( $name, $data->{$name} );
 			}
 		}
 		return parent::setValuesByObject( $data );
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getBaseTitleContent() {
-		if( $this->sBaseTitleContent ) {
-			return $this->sBaseTitleContent;
+		if ( $this->baseTitleContent ) {
+			return $this->baseTitleContent;
 		}
-		$this->sBaseTitleContent = '';
+		$this->baseTitleContent = '';
 
-		if( !$this->getRelatedTitle()->exists() ) {
-			return $this->sBaseTitleContent;
+		if ( !$this->getRelatedTitle()->exists() ) {
+			return $this->baseTitleContent;
 		}
-		$oWikiPage = \WikiPage::factory( $this->getRelatedTitle() );
+		$wikiPage = WikiPage::factory( $this->getRelatedTitle() );
 		try {
-			$oOutput = $oWikiPage->getContent()->getParserOutput(
+			$output = $wikiPage->getContent()->getParserOutput(
 				$this->getRelatedTitle(),
 				null,
-				\ParserOptions::newFromContext( \RequestContext::getMain() ),
+				ParserOptions::newFromContext( RequestContext::getMain() ),
 				true,
 				true
 			);
-		} catch( \Exception $e ) {
-			//sometimes parser recursion - unfortunately this can not be solved
-			//due to the randomnes of the content model -.-
-			$oOutput = null;
+		} catch ( Exception $e ) {
+			// sometimes parser recursion - unfortunately this can not be solved
+			// due to the randomnes of the content model -.-
+			$output = null;
 		}
 
-		if( !$oOutput ) {
-			return $this->sBaseTitleContent;
+		if ( !$output ) {
+			return $this->baseTitleContent;
 		}
-		$this->sBaseTitleContent = $oOutput->getText();
-		return $this->sBaseTitleContent;
+		$this->baseTitleContent = $output->getText();
+		return $this->baseTitleContent;
 	}
 
 	/**
 	 * Returns the Message object for the entity header
-	 * @param Message $oMsg
+	 * @param Message|null $msg
 	 * @return Message
 	 */
-	public function getHeader( $oMsg = null ) {
-		$oMsg = parent::getHeader( $oMsg );
-		return $oMsg->params([
+	public function getHeader( $msg = null ) {
+		$msg = parent::getHeader( $msg );
+		return $msg->params( [
 			$this->getRelatedTitle()->getFullText()
-		]);
+		] );
 	}
 
 	/**
 	 * Gets the BSSociaEntityPage attributes formated for the api
-	 * @return object
+	 * @param array $a
+	 * @return \stdClass
 	 */
-	public function getFullData( $a = array() ) {
+	public function getFullData( $a = [] ) {
 		$fields = [];
 		$fieldDefinitions = $this->getConfig()->get(
 			'ProfileFieldsDefinitions'
@@ -142,9 +161,9 @@ class Profile extends Page {
 		$factory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileFieldsFactory'
 		);
-		foreach( $fieldDefinitions as $name => $definition ) {
+		foreach ( $fieldDefinitions as $name => $definition ) {
 			$field = $factory->factory( $name, $this->getOwner() );
-			if( !$field instanceof IField ) {
+			if ( !$field instanceof IField ) {
 				continue;
 			}
 			$fields[$name] = $this->get( $name );
@@ -155,9 +174,9 @@ class Profile extends Page {
 		$factory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileCustomFieldsFactory'
 		);
-		foreach( $fieldDefinitions as $name => $definition ) {
+		foreach ( $fieldDefinitions as $name => $definition ) {
 			$field = $factory->factory( $name, $this->getOwner() );
-			if( !$field instanceof ICustomField ) {
+			if ( !$field instanceof ICustomField ) {
 				continue;
 			}
 			$fields[$name] = $this->get( $name, $field->getDefault() );
@@ -165,49 +184,67 @@ class Profile extends Page {
 		return parent::getFullData( array_merge( $a, $fields ) );
 	}
 
+	/**
+	 *
+	 * @return Title
+	 */
 	public function getRelatedTitle() {
-		if( $this->relatedTitle ) {
+		if ( $this->relatedTitle ) {
 			return $this->relatedTitle;
 		}
 		$this->relatedTitle = $this->getOwner()->getUserPage();
-		return $this->relatedTitle instanceof \Title
+		return $this->relatedTitle instanceof Title
 			? $this->relatedTitle
 			: parent::getRelatedTitle();
 	}
 
-	public function getActions( array $aActions = array(), \User $oUser = null ) {
-		if( !$oUser ) {
-			$oUser = \RequestContext::getMain()->getUser();
+	/**
+	 *
+	 * @param array $actions
+	 * @param User|null $user
+	 * @return string
+	 */
+	public function getActions( array $actions = [], User $user = null ) {
+		if ( !$user ) {
+			$user = RequestContext::getMain()->getUser();
 		}
-		$aActions = parent::getActions( $aActions, $oUser );
+		$actions = parent::getActions( $actions, $user );
 
-		$oStatus = $this->userCan( 'editothers', $oUser );
-		if( $this->userIsOwner( $oUser ) || $oStatus->isOK() ) {
-			$aActions[] = 'changeimage';
-			$aActions[] = 'editprofilefields';
+		$status = $this->userCan( 'editothers', $user );
+		if ( $this->userIsOwner( $user ) || $status->isOK() ) {
+			$actions[] = 'changeimage';
+			$actions[] = 'editprofilefields';
 		}
-		if( $oStatus->isOK() ) {
-			$aActions[] = 'edithiddenfields';
+		if ( $status->isOK() ) {
+			$actions[] = 'edithiddenfields';
 		}
-		return $aActions;
-	}
-
-	public function render( $sType = 'Default', $bNoCache = false ) {
-		if( $sType == 'Page' && !$bNoCache ) {
-			$bNoCache = true;
-		}
-		return parent::render( $sType, $bNoCache );
+		return $actions;
 	}
 
 	/**
-	 * Saves the current BSSocialEntity
+	 *
+	 * @param string $type
+	 * @param bool $noCache
+	 * @return string
+	 */
+	public function render( $type = 'Default', $noCache = false ) {
+		if ( $type == 'Page' && !$noCache ) {
+			$noCache = true;
+		}
+		return parent::render( $type, $noCache );
+	}
+
+	/**
+	 *
+	 * @param User|null $user
+	 * @param array $options
 	 * @return Status
 	 */
-	public function save( \User $oUser = null, $aOptions = array() ) {
-		if( !$this->getOwner() || $this->getOwner()->isAnon() ) {
-			return \Status::newFatal( wfMessage(
+	public function save( User $user = null, $options = [] ) {
+		if ( !$this->getOwner() || $this->getOwner()->isAnon() ) {
+			return Status::newFatal( wfMessage(
 				'bs-socialprofile-entity-fatalstatus-save-invaliduser'
-			));
+			) );
 		}
 		$fieldDefinitions = $this->getConfig()->get(
 			'ProfileCustomFieldsDefinitions'
@@ -215,19 +252,19 @@ class Profile extends Page {
 		$factory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileCustomFieldsFactory'
 		);
-		foreach( $fieldDefinitions as $name => $definition ) {
+		foreach ( $fieldDefinitions as $name => $definition ) {
 			$field = $factory->factory( $name, $this->getOwner() );
-			if( !$field instanceof ICustomField ) {
+			if ( !$field instanceof ICustomField ) {
 				continue;
 			}
 			$status = $field->validate(
 				$this->get( $name, $field->getDefault() )
 			);
-			if( !$status->isOK() ) {
+			if ( !$status->isOK() ) {
 				return $status;
 			}
 			$this->set( $name, $status->getValue() );
 		}
-		return parent::save( $this->getOwner(), $aOptions );
+		return parent::save( $this->getOwner(), $options );
 	}
 }

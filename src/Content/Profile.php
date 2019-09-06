@@ -6,11 +6,25 @@ use BlueSpice\Social\Profile\Entity\Profile as SocialProfile;
 
 class Profile extends \WikiTextContent {
 
+	/**
+	 *
+	 * @var string
+	 */
 	public $mModelID = CONTENT_MODEL_WIKITEXT;
+
+	/**
+	 *
+	 * @return string
+	 */
 	public function getModel() {
 		return CONTENT_MODEL_WIKITEXT;
 	}
 
+	/**
+	 *
+	 * @param string $text
+	 * @param string $modelId
+	 */
 	public function __construct( $text, $modelId = CONTENT_MODEL_BSSOCIALPROFILE ) {
 		parent::__construct( $text, CONTENT_MODEL_WIKITEXT );
 	}
@@ -32,10 +46,12 @@ class Profile extends \WikiTextContent {
 	 * @param int|null $revId Revision ID (for {{REVISIONID}})
 	 * @param \ParserOptions|null $options Parser options
 	 * @param bool $generateHtml Whether or not to generate HTML
+	 * @param bool $bForceOrigin
 	 *
 	 * @return ParserOutput Containing information derived from this content.
 	 */
-	public function getParserOutput( \Title $title, $revId = null, \ParserOptions $options = null, $generateHtml = true, $bForceOrigin = false ) {
+	public function getParserOutput( \Title $title, $revId = null, \ParserOptions $options = null,
+		$generateHtml = true, $bForceOrigin = false ) {
 		if ( $options === null ) {
 			$options = $this->getContentHandler()->makeParserOptions( 'canonical' );
 		}
@@ -66,9 +82,12 @@ class Profile extends \WikiTextContent {
 	 * @param int $revId
 	 * @param \ParserOptions $options
 	 * @param bool $generateHtml
-	 * @param \ParserOutput $output
+	 * @param \ParserOutput &$output
+	 * @param bool $bForceOrigin
+	 * @return \ParserOutput $output
 	 */
-	protected function fillParserOutput( \Title $title, $revId, \ParserOptions $options, $generateHtml, \ParserOutput &$output, $bForceOrigin = false ) {
+	protected function fillParserOutput( \Title $title, $revId, \ParserOptions $options,
+		$generateHtml, \ParserOutput &$output, $bForceOrigin = false ) {
 		parent::fillParserOutput(
 			$title,
 			$revId,
@@ -76,11 +95,12 @@ class Profile extends \WikiTextContent {
 			$generateHtml,
 			$output
 		);
-		if( $bForceOrigin ) {
+		if ( $bForceOrigin ) {
 			return $output;
 		}
-		if( !$oUser = \User::newFromName( $title->getText() ) ) {
-			//something is very wrong here!
+		$oUser = \User::newFromName( $title->getText() );
+		if ( !$oUser ) {
+			// something is very wrong here!
 			return $output;
 		}
 		$entityFactory = MediaWikiServices::getInstance()->getService(
@@ -88,15 +108,15 @@ class Profile extends \WikiTextContent {
 		);
 		$entity = $entityFactory->newFromUser( $oUser );
 
-		if( !$entity instanceof SocialProfile ) {
+		if ( !$entity instanceof SocialProfile ) {
 			return $output;
 		}
-		//HACKY!
-		//this got removed.. for now
-		if( false && !$entity->exists() && PHP_SAPI !== 'cli' ) {
+		// HACKY!
+		// this got removed.. for now
+		if ( false && !$entity->exists() && PHP_SAPI !== 'cli' ) {
 			$oStatus = $entity->save();
-			if( !$oStatus->isOK() ) {
-				$output->setText($oStatus->getHTML());
+			if ( !$oStatus->isOK() ) {
+				$output->setText( $oStatus->getHTML() );
 				return $output;
 			}
 		}

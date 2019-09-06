@@ -1,6 +1,9 @@
 <?php
 namespace BlueSpice\Social\Profile;
-use BlueSpice\Data\FieldType;
+
+use Config;
+use User;
+use Message;
 
 abstract class Field implements IField {
 	const KEY_I18N = 'i18n';
@@ -14,7 +17,7 @@ abstract class Field implements IField {
 
 	/**
 	 *
-	 * @var \Config
+	 * @var Config
 	 */
 	protected $config = null;
 
@@ -24,10 +27,9 @@ abstract class Field implements IField {
 	 */
 	protected $name = '';
 
-
 	/**
 	 *
-	 * @var \User
+	 * @var User
 	 */
 	protected $user = null;
 
@@ -44,24 +46,29 @@ abstract class Field implements IField {
 	protected $hidden = false;
 
 	/**
-	 * 
-	 * @param \Config $config
+	 *
+	 * @param Config $config
 	 * @param string $name
 	 * @param array $definition
-	 * @param \User $user
+	 * @param User $user
 	 */
 	protected function __construct( $config, $name, $definition, $user ) {
 		$this->config = $config;
 		$this->name = $name;
 		$this->user = $user;
-		if( isset( $definition[static::KEY_I18N] ) ) {
+		if ( isset( $definition[static::KEY_I18N] ) ) {
 			$this->i18n = $definition[static::KEY_I18N];
 		}
-		if( isset( $definition[static::KEY_HIDDEN] ) && $definition[static::KEY_HIDDEN] === true ) {
+		if ( isset( $definition[static::KEY_HIDDEN] )
+			&& $definition[static::KEY_HIDDEN] === true ) {
 			$this->hidden = true;
 		}
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public static function getFieldSchemeDefaults() {
 		return [
 			Schema::FILTERABLE => static::DEF_FILTERABLE,
@@ -74,9 +81,10 @@ abstract class Field implements IField {
 
 	/**
 	 *
-	 * @param \Config $config
+	 * @param Config $config
 	 * @param string $name
 	 * @param array $definition
+	 * @param User $user
 	 * @return ConfigDefinition
 	 */
 	public static function getInstance( $config, $name, $definition, $user ) {
@@ -103,15 +111,15 @@ abstract class Field implements IField {
 	 * @return string
 	 */
 	public function getLabel() {
-		if( empty( $this->i18n ) ) {
+		if ( empty( $this->i18n ) ) {
 			return $this->getName();
 		}
-		return \Message::newFromKey( $this->i18n )->plain();
+		return Message::newFromKey( $this->i18n )->plain();
 	}
 
 	/**
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function isHidden() {
 		return $this->hidden;

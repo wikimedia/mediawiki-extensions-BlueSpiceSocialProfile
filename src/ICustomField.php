@@ -20,4 +20,3 @@ interface ICustomField {
 	 */
 	public function getDefault();
 }
-

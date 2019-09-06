@@ -2,6 +2,10 @@
 
 namespace BlueSpice\Social\Profile\Tag;
 
+use MWException;
+use Parser;
+use PPFrame;
+use User;
 use BlueSpice\Services;
 use BlueSpice\Tag\Handler;
 use BlueSpice\Social\Profile\Entity\Profile as Entity;
@@ -14,28 +18,39 @@ class SocialEntityProfileHandler extends Handler {
 	 */
 	protected $entity = null;
 
-	public function __construct( $processedInput, array $processedArgs, \Parser $parser, \PPFrame $frame ) {
+	/**
+	 *
+	 * @param string $processedInput
+	 * @param array $processedArgs
+	 * @param Parser $parser
+	 * @param PPFrame $frame
+	 */
+	public function __construct( $processedInput, array $processedArgs, Parser $parser,
+		PPFrame $frame ) {
 		parent::__construct( $processedInput, $processedArgs, $parser, $frame );
 		$factory = Services::getInstance()->getService(
 			'BSSocialProfileEntityFactory'
 		);
-		$user = \User::newFromName( $processedArgs['username'] );
-		if( !$user ) {
-			new \MWException(
+		$user = User::newFromName( $processedArgs['username'] );
+		if ( !$user ) {
+			new MWException(
 				"Invalid user for with username '{$processedArgs['username']}'"
 			);
 		}
 		$this->entity = $factory->newFromUser( $user );
-		if( !$this->entity instanceof Entity ) {
-			new \MWException(
+		if ( !$this->entity instanceof Entity ) {
+			new MWException(
 				"Non existent or invalid profile for '{$processedArgs['username']}'"
 			);
 		}
-
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function handle() {
-		if( !$this->entity->userCan( 'read', $this->parser->getUser() ) ) {
+		if ( !$this->entity->userCan( 'read', $this->parser->getUser() ) ) {
 			return "";
 		}
 		return $this->entity->getRenderer()->render(

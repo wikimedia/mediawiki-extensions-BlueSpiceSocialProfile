@@ -2,9 +2,7 @@
 
 namespace BlueSpice\Social\Profile;
 
-use BlueSpice\Social\Profile\CustomFieldsFactory;
 use BlueSpice\SMWConnector\PropertyValueProvider;
-use BlueSpice\Social\Profile\Field;
 use BlueSpice\Social\Profile\Field\Title;
 use BlueSpice\Services;
 use SMWDataItem;
@@ -20,9 +18,9 @@ class SocialProfilePropertyValueProvider extends PropertyValueProvider {
 	public static function factory() {
 		$factory = Services::getInstance()->getService( 'BSSocialProfileCustomFieldsFactory' );
 		$propertyValueProviders = [];
-		foreach( $factory->getFieldDefinitions() as $name => $definition ) {
+		foreach ( $factory->getFieldDefinitions() as $name => $definition ) {
 			$smwName = preg_replace( '/\PL/u', '', strtoupper( $name ) );
-			if( empty( $smwName ) ) {
+			if ( empty( $smwName ) ) {
 				continue;
 			}
 			$alias = $definition[Field::KEY_I18N];
@@ -85,12 +83,12 @@ class SocialProfilePropertyValueProvider extends PropertyValueProvider {
 	 */
 	public function addAnnotation( $appFactory, $property, $semanticData ) {
 		$maybeUserPage = $semanticData->getSubject()->getTitle();
-		if( !$this->initUser( $maybeUserPage ) ) {
+		if ( !$this->initUser( $maybeUserPage ) ) {
 			return null;
 		}
 
 		$field = $this->factory->factory( $this->name, $this->user );
-		if( $field->isHidden() ) {
+		if ( $field->isHidden() ) {
 			return null;
 		}
 
@@ -103,20 +101,20 @@ class SocialProfilePropertyValueProvider extends PropertyValueProvider {
 	 * @return boolean
 	 */
 	private function initUser( $title ) {
-		if( $title === null ) {
+		if ( $title === null ) {
 			return false;
 		}
 
-		if( $title->getNamespace() !== NS_USER || $title->isSubpage() ) {
+		if ( $title->getNamespace() !== NS_USER || $title->isSubpage() ) {
 			return false;
 		}
 
 		$this->user = User::newFromName( $title->getText() );
-		if( !$this->user ) {
+		if ( !$this->user ) {
 			return false;
 		}
 
-		if( $this->user->isAnon() ) {
+		if ( $this->user->isAnon() ) {
 			return false;
 		}
 

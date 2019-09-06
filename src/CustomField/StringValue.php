@@ -28,4 +28,3 @@ class StringValue extends \BlueSpice\Social\Profile\CustomField {
 		return $status;
 	}
 }
-

@@ -1,7 +1,12 @@
 <?php
 
 namespace BlueSpice\Social\Profile\CustomField;
+
 use BlueSpice\Social\Profile\IFieldList;
+
+use Status;
+use Message;
+use User;
 
 class SelectValue extends StringValue implements IFieldList {
 	const DFLT_TYPE = 'string';
@@ -13,9 +18,16 @@ class SelectValue extends StringValue implements IFieldList {
 	 */
 	protected $options = [];
 
-	protected function __construct($config, $name, $definition, $user) {
+	/**
+	 *
+	 * @param Config $config
+	 * @param string $name
+	 * @param array $definition
+	 * @param User $user
+	 */
+	protected function __construct( $config, $name, $definition, $user ) {
 		parent::__construct( $config, $name, $definition, $user );
-		if( isset( $definition[static::KEY_OPTIONS] ) ) {
+		if ( isset( $definition[static::KEY_OPTIONS] ) ) {
 			$this->options = $definition[static::KEY_OPTIONS];
 		}
 	}
@@ -31,20 +43,19 @@ class SelectValue extends StringValue implements IFieldList {
 	/**
 	 * Validates a user input value
 	 * @param mixed $value
-	 * @return \Status
+	 * @return Status
 	 */
 	public function validate( $value ) {
 		$status = parent::validate( $value );
-		if( !$status->isOK() ) {
+		if ( !$status->isOK() ) {
 			return $status;
 		}
-		if( !empty( $value ) && !in_array( $value, $this->getOptions() ) ) {
-			$status->fatal( \Message::newFromKey(
+		if ( !empty( $value ) && !in_array( $value, $this->getOptions() ) ) {
+			$status->fatal( Message::newFromKey(
 				'bs-social-entity-fatalstatus-save-invalidfieldvalue',
 				$this->getLabel()
-			));
+			) );
 		}
 		return $status;
 	}
 }
-
