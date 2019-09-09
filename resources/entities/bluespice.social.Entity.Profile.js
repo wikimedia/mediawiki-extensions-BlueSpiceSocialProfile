@@ -15,14 +15,23 @@ bs.social.EntityProfile = function( $el, type, data ) {
 OO.initClass( bs.social.EntityProfile );
 OO.inheritClass( bs.social.EntityProfile, bs.social.Entity );
 
+bs.social.EntityProfile.prototype.init = function() {
+	this.ActionMenu = this.makeActionMenu();
+	$(document).trigger('BSSocialEntityInit', [
+		this,
+		this.$el,
+		this.type,
+		this.data
+	]);
+};
+
 bs.social.EntityProfile.prototype.makeActionMenu = function() {
 	//TODO!
 	var me = this;
 	if( !me.exists() ) {
-		return null;
+		//return null;
 	}
 	var actions = me.data.get('actions', []);
-
 	if( !actions || actions.length < 1 ) {
 		return null;
 	}
@@ -124,8 +133,6 @@ bs.social.EntityProfile.prototype.makeActionMenu = function() {
 	});
 	return null;
 };
-
-
 
 bs.social.EntityProfile.prototype.makeEditor = function() {
 	return new bs.social.EntityEditorProfile( this.getEditorConfig(), this );
