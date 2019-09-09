@@ -6,7 +6,6 @@
 	},
 	"bs-socialprofile-desc": "Profil-Erweiterung für BlueSpiceSocial",
 	"bs-socialprofile-type": "Profil",
-	"bs-socialprofile-entityprofile-header": "[[$6|$2]]",
 	"bs-socialprofile-entityaction-changeimage": "Benutzerbild",
 	"bs-social-entityaction-editprofilefields": "Profildaten",
 	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Ungültiger 'User' übergeben",
