@@ -157,7 +157,7 @@ bs.social.EntityProfile.prototype.save = function( newdata ) {
 
 	me.showLoadMask();
 	bs.api.tasks.execSilent( 'social', 'editEntity', taskData )
-	.done( function(response) {
+	.done( function( response ) {
 		if( !response.success ) {
 			if( response.message && response.message !== '' ) {
 				OO.ui.alert( response.message );
@@ -166,20 +166,20 @@ bs.social.EntityProfile.prototype.save = function( newdata ) {
 			me.hideLoadMask();
 			return;
 		}
-		if( me.getData().outputtype === 'Page' ) {
-			window.location = mw.util.getUrl(
-				mw.config.get( 'wgPageName' )
-			);
-		} else {
+		if( me.getData().outputtype !== 'Page' ) {
 			me.replaceEL( response.payload.view );
 		}
-		dfd.resolve( me );
+		dfd.resolve( me, response );
 	})
-	.then(function(){
+	.then( function() {
 		bs.social.init();
 		$( ".bs-social-entityspawner-new" ).removeClass( "bs-social-entityspawner-new" );
 		if( me.getData().outputtype !== 'Page' ) {
 			me.hideLoadMask();
+		} else {
+			window.location = mw.util.getUrl(
+				mw.config.get( 'wgPageName' )
+			);
 		}
 	});
 
