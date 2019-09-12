@@ -12,6 +12,7 @@
 	"bs-social-profile-field-name": "Nome",
 	"bs-social-profile-field-email": "E-mail",
 	"bs-social-profile-field-title": "Título",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|Sr.|Sra.|}}",
 	"bs-social-profile-field-department": "Departamento",
 	"bs-social-profile-field-function": "Função",
 	"bs-social-profile-field-location": "Localização",
@@ -25,6 +26,7 @@
 	"bs-socialprofile-switch-classicprofile-tooltip": "Mudar para o perfil clássico",
 	"bs-socialprofile-switch-modernprofile-tooltip": "Mudar para o perfil moderno",
 	"action-social-editothersprofile": "editar o perfil de outros usuários",
+	"right-social-editothersprofile": "Editar perfil de outros usuários",
 	"action-socialprofile-viewspecialpage": "veja a página especial \"{{int:socialprofiles}}\"",
 	"right-socialprofile-viewspecialpage": "Ver a página especial \"{{int:socialprofiles}}\""
 }
