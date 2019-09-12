@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patric Wirth <wirth@hallowelt.com>"
+			"Patric Wirth <wirth@hallowelt.com>",
+			"Fitoschido"
 		]
 	},
 	"bs-socialprofile-desc": "{{desc|name=BlueSpiceSocialProfile}}",
@@ -20,7 +21,7 @@
 	"bs-social-profile-field-phone": "Label for field \"phone\" in the users profile.\n{{Identical|Telephone}}",
 	"bs-social-profile-field-validate-no-integer": "Error message, that the given value was not numeric\n* $1 - Label for the given value",
 	"bs-socialprofile-special-profiles-heading": "Special page header for [[Special:Socialprofiles]] special page.\n{{Identical|Profiles}}",
-	"bs-social-profile-infoshowemail": "Label for the the option checkbox in [[Special:Preferences]] that lets the user activate or deactivate that the users email adress is showen on the users profile",
+	"bs-social-profile-infoshowemail": "Label for the the option checkbox in [[Special:Preferences]] that lets users toggle the display of their email address in their profile",
 	"socialprofiles": "Special page name for [[Special:Socialprofiles]] special page.\n{{Identical|Profiles}}",
 	"bs-socialprofile-switch-classicprofile-label": "Short label for button that switches to the classic profile.\n{{Identical|Classic profile}}",
 	"bs-socialprofile-switch-modernprofile-label": "Short label for button that switches to the modern profile.\n{{Identical|Modern profile}}",

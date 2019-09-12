@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"bs-socialprofile-type": "Профил",
+	"bs-social-entityaction-editprofilefields": "Податоци на профилот",
+	"bs-social-profile-field-name": "Име",
+	"bs-social-profile-field-email": "Е-пошта",
+	"bs-social-profile-field-title": "Наслов",
+	"bs-social-profile-field-department": "Оддел",
+	"bs-social-profile-field-function": "Функција",
+	"bs-social-profile-field-location": "Местоположба",
+	"bs-social-profile-field-phone": "Телефон",
+	"bs-socialprofile-special-profiles-heading": "Профили",
+	"socialprofiles": "Профили"
+}
