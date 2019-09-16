@@ -10,7 +10,11 @@
 	"bs-social-profile-field-name": "Numm",
 	"bs-social-profile-field-email": "E-Mail",
 	"bs-social-profile-field-title": "Titel",
+	"bs-social-profile-field-department": "Departement",
+	"bs-social-profile-field-function": "Funktioun",
 	"bs-social-profile-field-location": "Plaz",
 	"bs-social-profile-field-phone": "Telefon",
+	"bs-social-profile-field-validate-no-integer": "$1 muss eng Zuel sinn",
+	"bs-socialprofile-special-profiles-heading": "Profiller",
 	"socialprofiles": "Profiller"
 }
