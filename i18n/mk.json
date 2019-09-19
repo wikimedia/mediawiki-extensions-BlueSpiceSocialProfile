@@ -8,6 +8,7 @@
 	"bs-socialprofile-type": "Профил",
 	"bs-socialprofile-entityaction-changeimage": "Корисничка слика",
 	"bs-social-entityaction-editprofilefields": "Податоци на профилот",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Даден е неважечки 'User'",
 	"bs-social-profile-field-name": "Име",
 	"bs-social-profile-field-email": "Е-пошта",
 	"bs-social-profile-field-title": "Наслов",

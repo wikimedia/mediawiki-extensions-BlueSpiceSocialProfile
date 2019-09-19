@@ -1,8 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"Mansil alfalb"
 		]
 	},
-	"bs-social-profile-field-phone": "Telefone"
+	"bs-socialprofile-entityaction-changeimage": "Imagem do utilizador",
+	"bs-social-entityaction-editprofilefields": "Dados de perfil",
+	"bs-social-profile-field-name": "Nome",
+	"bs-social-profile-field-title": "Título",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|Sr.|Sra.|}}",
+	"bs-social-profile-field-department": "Departamento",
+	"bs-social-profile-field-function": "Função",
+	"bs-social-profile-field-phone": "Telefone",
+	"bs-socialprofile-special-profiles-heading": "Perfis",
+	"socialprofiles": "Perfis",
+	"bs-socialprofile-switch-modernprofile-label": "Perfil moderno",
+	"action-social-editothersprofile": "editar o perfil dos outros utilizadores",
+	"action-socialprofile-viewspecialpage": "ver a página especial \"{{int:socialprofiles}}\""
 }
