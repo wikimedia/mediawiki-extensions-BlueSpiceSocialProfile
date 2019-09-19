@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patric Wirth <wirth@hallowelt.com>"
+			"Patric Wirth <wirth@hallowelt.com>",
+			"Mglaser"
 		]
 	},
 	"bs-socialprofile-desc": "Profil-Erweiterung für BlueSpiceSocial",
@@ -25,5 +26,9 @@
 	"bs-socialprofile-switch-classicprofile-label": "Klassisches Profil",
 	"bs-socialprofile-switch-modernprofile-label": "Modernes Profil",
 	"bs-socialprofile-switch-classicprofile-tooltip": "Zur klassischen Profilansicht wechseln",
-	"bs-socialprofile-switch-modernprofile-tooltip": "Zur modernen Profilansicht wechseln"
+	"bs-socialprofile-switch-modernprofile-tooltip": "Zur modernen Profilansicht wechseln",
+	"action-social-editothersprofile": "die Profile anderer Nutzer zu bearbeiten",
+	"right-social-editothersprofile": "Profile anderer Nutzer bearbeiten",
+	"action-socialprofile-viewspecialpage": "die Spezialseite \"{{int:socialprofiles}}\" anzusehen",
+	"right-socialprofile-viewspecialpage": "Die Spezialseite \"{{int:socialprofiles}}\" ansehen"
 }
