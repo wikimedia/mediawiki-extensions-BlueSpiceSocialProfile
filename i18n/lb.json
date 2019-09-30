@@ -16,5 +16,8 @@
 	"bs-social-profile-field-phone": "Telefon",
 	"bs-social-profile-field-validate-no-integer": "$1 muss eng Zuel sinn",
 	"bs-socialprofile-special-profiles-heading": "Profiller",
-	"socialprofiles": "Profiller"
+	"socialprofiles": "Profiller",
+	"bs-socialprofile-switch-classicprofile-label": "Klassesche Profil",
+	"bs-socialprofile-switch-modernprofile-label": "Moderne Profil",
+	"right-social-editothersprofile": "Anere Benotzer hire Profil änneren"
 }
