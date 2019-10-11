@@ -1,16 +1,16 @@
 {
 	"name": "BlueSpiceSocialProfile",
-	"version": "3.2.0-alpha",
+	"version": "3.3.0-alpha",
 	"license-name": "GPL-3.0-only",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:SocialProfile",
 	"author": "Patric Wirth",
 	"descriptionmsg": "bs-socialprofile-desc",
 	"requires": {
-		"MediaWiki": ">= 1.34.0",
+		"MediaWiki": ">= 1.35.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 3.2",
-			"BlueSpiceSocial": ">= 3.2",
-			"BlueSpiceAvatars": ">= 3.2"
+			"BlueSpiceFoundation": ">= 3.3",
+			"BlueSpiceSocial": ">= 3.3",
+			"BlueSpiceAvatars": ">= 3.3"
 		}
 	},
 	"type": "bluespice",
