@@ -36,7 +36,7 @@ class Handler implements IPrivacyHandler {
 	 * @return Status
 	 */
 	public function anonymize( $oldUsername, $newUsername ) {
-		$this->user = User::newFromName( $oldUsername );
+		$this->user = User::newFromName( $newUsername );
 
 		$profile = $this->getProfile();
 		if ( !$profile ) {
