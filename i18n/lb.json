@@ -16,5 +16,8 @@
 	"bs-social-profile-field-department": "Departement",
 	"bs-social-profile-field-function": "Funktioun",
 	"bs-social-profile-field-validate-no-integer": "$1 muss eng Zuel sinn",
-	"bs-socialprofile-special-profiles-heading": "Profiller"
+	"bs-socialprofile-special-profiles-heading": "Profiller",
+	"bs-socialprofile-switch-classicprofile-label": "Klassesche Profil",
+	"bs-socialprofile-switch-modernprofile-label": "Moderne Profil",
+	"right-social-editothersprofile": "Anere Benotzer hire Profil änneren"
 }
