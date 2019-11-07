@@ -52,6 +52,7 @@ class Handler implements IPrivacyHandler {
 		}
 
 		$profile->save( $this->user );
+		$profile->invalidateCache();
 
 		// Add job to update search index after the process has completed
 		$job = new SearchJob(
@@ -97,7 +98,7 @@ class Handler implements IPrivacyHandler {
 		if ( $profile instanceof Profile === false ) {
 			return Status::newGood( [] );
 		}
-
+		$profile->invalidateCache();
 		$profileFields = $this->getProfileFields( $profile->getConfig() );
 
 		$data = [];
