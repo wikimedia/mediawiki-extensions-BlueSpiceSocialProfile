@@ -38,7 +38,7 @@ use Title;
 use RequestContext;
 use ParserOptions;
 use WikiPage;
-use MediaWiki\MediaWikiServices;
+use BlueSpice\Services;
 use BlueSpice\Social\Entity\Page;
 use BlueSpice\Social\Profile\ICustomField;
 use BlueSpice\Social\Profile\IField;
@@ -65,7 +65,7 @@ class Profile extends Page {
 	 */
 	public static function newFromUser( User $user ) {
 		wfDeprecated( __METHOD__, '3.0.0' );
-		$entityFactory = MediaWikiServices::getInstance()->getService(
+		$entityFactory = Services::getInstance()->getService(
 			'BSSocialProfileEntityFactory'
 		);
 		return $entityFactory->newFromUser( $user );
@@ -79,7 +79,7 @@ class Profile extends Page {
 		$fieldDefinitions = $this->getConfig()->get(
 			'ProfileCustomFieldsDefinitions'
 		);
-		$factory = MediaWikiServices::getInstance()->getService(
+		$factory = Services::getInstance()->getService(
 			'BSSocialProfileCustomFieldsFactory'
 		);
 		foreach ( $fieldDefinitions as $name => $definition ) {
@@ -90,7 +90,7 @@ class Profile extends Page {
 		$fieldDefinitions = $this->getConfig()->get(
 			'ProfileFieldsDefinitions'
 		);
-		$factory = MediaWikiServices::getInstance()->getService(
+		$factory = Services::getInstance()->getService(
 			'BSSocialProfileFieldsFactory'
 		);
 		foreach ( $fieldDefinitions as $name => $definition ) {
@@ -158,7 +158,7 @@ class Profile extends Page {
 		$fieldDefinitions = $this->getConfig()->get(
 			'ProfileFieldsDefinitions'
 		);
-		$factory = MediaWikiServices::getInstance()->getService(
+		$factory = Services::getInstance()->getService(
 			'BSSocialProfileFieldsFactory'
 		);
 		foreach ( $fieldDefinitions as $name => $definition ) {
@@ -171,7 +171,7 @@ class Profile extends Page {
 		$fieldDefinitions = $this->getConfig()->get(
 			'ProfileCustomFieldsDefinitions'
 		);
-		$factory = MediaWikiServices::getInstance()->getService(
+		$factory = Services::getInstance()->getService(
 			'BSSocialProfileCustomFieldsFactory'
 		);
 		foreach ( $fieldDefinitions as $name => $definition ) {
@@ -249,7 +249,7 @@ class Profile extends Page {
 		$fieldDefinitions = $this->getConfig()->get(
 			'ProfileCustomFieldsDefinitions'
 		);
-		$factory = MediaWikiServices::getInstance()->getService(
+		$factory = Services::getInstance()->getService(
 			'BSSocialProfileCustomFieldsFactory'
 		);
 		foreach ( $fieldDefinitions as $name => $definition ) {
