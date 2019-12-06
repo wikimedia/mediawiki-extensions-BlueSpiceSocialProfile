@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Mansil alfalb"
+			"Mansil alfalb",
+			"Hamilton Abreu"
 		]
 	},
 	"bs-social-profile-field-phone": "Telefone",
@@ -17,5 +18,17 @@
 	"socialprofiles": "Perfis",
 	"bs-socialprofile-switch-modernprofile-label": "Perfil moderno",
 	"action-social-editothersprofile": "editar o perfil dos outros utilizadores",
-	"action-socialprofile-viewspecialpage": "ver a página especial \"{{int:socialprofiles}}\""
+	"action-socialprofile-viewspecialpage": "ver a página especial \"{{int:socialprofiles}}\"",
+	"bs-socialprofile-desc": "Entidade de perfil para BlueSpiceSocial",
+	"bs-socialprofile-type": "Perfil",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Foi fornecido um 'Utilizador' inválido",
+	"bs-social-profile-field-email": "Correio eletrónico",
+	"bs-social-profile-field-location": "Localização",
+	"bs-social-profile-field-validate-no-integer": "$1 tem de ser um número",
+	"bs-social-profile-infoshowemail": "Mostrar correio eletrónico no perfil",
+	"bs-socialprofile-switch-classicprofile-label": "Perfil clássico",
+	"bs-socialprofile-switch-classicprofile-tooltip": "Mudar para o perfil clássico",
+	"bs-socialprofile-switch-modernprofile-tooltip": "Mudar para o perfil moderno",
+	"right-social-editothersprofile": "Editar o perfil de outros utilizadores",
+	"right-socialprofile-viewspecialpage": "Ver a página especial \"{{int:socialprofiles}}\""
 }

@@ -11,7 +11,7 @@
 	"bs-social-entityaction-editprofilefields": "Profile data",
 	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Invalid 'User' given",
 	"bs-social-profile-field-name": "Name",
-	"bs-social-profile-field-email": "E-Mail",
+	"bs-social-profile-field-email": "Email",
 	"bs-social-profile-field-title": "Title",
 	"bs-social-profile-field-title-value": "{{GENDER:$1|Mr.|Mrs.|}}",
 	"bs-social-profile-field-department": "Department",
