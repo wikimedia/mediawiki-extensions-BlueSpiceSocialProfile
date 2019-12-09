@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Elroy",
-			"Robin van der Linde"
+			"Robin van der Linde",
+			"Mainframe98"
 		]
 	},
 	"bs-socialprofile-type": "Profiel",
@@ -25,5 +26,7 @@
 	"bs-socialprofile-switch-classicprofile-tooltip": "Naar klassiek profiel overschakelen",
 	"bs-socialprofile-switch-modernprofile-tooltip": "Naar modern profiel overschakelen",
 	"action-social-editothersprofile": "andermans profiel bewerken",
-	"right-social-editothersprofile": "Andermans profiel bewerken"
+	"right-social-editothersprofile": "Andermans profiel bewerken",
+	"action-socialprofile-viewspecialpage": "de speciale pagina \"{{int:socialprofiles}}\" te bekijken",
+	"right-socialprofile-viewspecialpage": "De speciale pagina \"{{int:socialprofiles}}\" bekijken"
 }
