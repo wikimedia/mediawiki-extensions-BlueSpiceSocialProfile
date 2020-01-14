@@ -32,11 +32,11 @@
 
 namespace BlueSpice\Social\Profile\EntityConfig;
 
-use MWException;
-use BlueSpice\Social\EntityConfig\Page;
-use BlueSpice\Social\Data\Entity\Schema;
 use BlueSpice\Services;
+use BlueSpice\Social\Data\Entity\Schema;
+use BlueSpice\Social\EntityConfig\Page;
 use BlueSpice\Social\Profile\Field;
+use MWException;
 
 /**
  * SocialEntityProfileConfig class for BSSocial extension

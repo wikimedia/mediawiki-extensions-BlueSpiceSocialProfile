@@ -26,11 +26,11 @@
  */
 namespace BlueSpice\Social\Profile;
 
-use MWException;
-use Config;
-use User;
-use RequestContext;
 use BlueSpice\Social\Data\Entity\Schema;
+use Config;
+use MWException;
+use RequestContext;
+use User;
 
 class FieldsFactory {
 	const KEY_CALLBACK = 'callback';

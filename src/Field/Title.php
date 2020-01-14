@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Social\Profile\Field;
 
-use Message;
 use BlueSpice\Social\Profile\Field;
+use Message;
 
 class Title extends Field {
 

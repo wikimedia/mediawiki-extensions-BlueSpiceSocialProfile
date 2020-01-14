@@ -3,9 +3,8 @@
 namespace BlueSpice\Social\Profile\CustomField;
 
 use BlueSpice\Social\Profile\IFieldList;
-
-use Status;
 use Message;
+use Status;
 use User;
 
 class SelectValue extends StringValue implements IFieldList {

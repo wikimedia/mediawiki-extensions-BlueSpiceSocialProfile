@@ -26,8 +26,8 @@
  */
 namespace BlueSpice\Social\Profile;
 
-use Config;
 use BlueSpice\IRegistry;
+use Config;
 
 class CustomFieldsFactory extends FieldsFactory {
 	const KEY_TYPE = 'type';

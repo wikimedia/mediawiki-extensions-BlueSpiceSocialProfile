@@ -11,16 +11,16 @@
  */
 namespace BlueSpice\Social\Profile\Renderer\Entity;
 
-use Config;
-use IContextSource;
-use Html;
-use MediaWiki\Linker\LinkRenderer;
 use BlueSpice\Context;
-use BlueSpice\Utility\CacheHelper;
 use BlueSpice\Renderer\Params;
 use BlueSpice\Renderer\UserImage;
-use BlueSpice\Social\Profile\IField;
 use BlueSpice\Social\Profile\EntityListContext\UserProfile;
+use BlueSpice\Social\Profile\IField;
+use BlueSpice\Utility\CacheHelper;
+use Config;
+use Html;
+use IContextSource;
+use MediaWiki\Linker\LinkRenderer;
 
 class Profile extends \BlueSpice\Social\Renderer\Entity\Page {
 

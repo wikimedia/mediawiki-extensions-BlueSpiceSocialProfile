@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Social\Profile\CustomField;
 
-use Status;
 use BlueSpice\Social\Parser\Input;
+use Status;
 
 class StringValue extends \BlueSpice\Social\Profile\CustomField {
 

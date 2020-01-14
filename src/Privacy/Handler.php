@@ -2,18 +2,18 @@
 
 namespace BlueSpice\Social\Profile\Privacy;
 
-use Status;
-use Message;
-use User;
-use Config;
-use JobQueueGroup;
-use Title;
-use WikiPage;
-use BlueSpice\Services;
-use BlueSpice\Social\ExtendedSearch\Job\Entity as SearchJob;
 use BlueSpice\Privacy\IPrivacyHandler;
 use BlueSpice\Privacy\Module\Transparency;
+use BlueSpice\Services;
+use BlueSpice\Social\ExtendedSearch\Job\Entity as SearchJob;
 use BlueSpice\Social\Profile\Entity\Profile;
+use Config;
+use JobQueueGroup;
+use Message;
+use Status;
+use Title;
+use User;
+use WikiPage;
 
 class Handler implements IPrivacyHandler {
 	/**

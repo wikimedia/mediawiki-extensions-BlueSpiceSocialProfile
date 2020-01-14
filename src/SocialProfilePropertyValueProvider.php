@@ -2,9 +2,9 @@
 
 namespace BlueSpice\Social\Profile;
 
+use BlueSpice\Services;
 use BlueSpice\SMWConnector\PropertyValueProvider;
 use BlueSpice\Social\Profile\Field\Title;
-use BlueSpice\Services;
 use SMWDataItem;
 use SMWDIBlob;
 use User;
@@ -98,7 +98,7 @@ class SocialProfilePropertyValueProvider extends PropertyValueProvider {
 	/**
 	 *
 	 * @param Title|null $title
-	 * @return boolean
+	 * @return bool
 	 */
 	private function initUser( $title ) {
 		if ( $title === null ) {

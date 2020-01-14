@@ -3,8 +3,8 @@
 namespace BlueSpice\Social\Profile\Special;
 
 use BlueSpice\Context;
-use BlueSpice\Services;
 use BlueSpice\Renderer\Params;
+use BlueSpice\Services;
 use BlueSpice\Social\Profile\EntityListContext\SpecialProfiles;
 
 class Profiles extends \BlueSpice\SpecialPage {

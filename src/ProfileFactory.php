@@ -26,12 +26,12 @@
  */
 namespace BlueSpice\Social\Profile;
 
-use BlueSpice\Services;
-use BlueSpice\EntityFactory;
-use BlueSpice\Data\ReaderParams;
 use BlueSpice\Data\Filter\Numeric;
-use BlueSpice\Social\Profile\EntityListContext\SpecialProfiles;
+use BlueSpice\Data\ReaderParams;
+use BlueSpice\EntityFactory;
+use BlueSpice\Services;
 use BlueSpice\Social\Profile\Entity\Profile;
+use BlueSpice\Social\Profile\EntityListContext\SpecialProfiles;
 
 class ProfileFactory extends EntityFactory {
 

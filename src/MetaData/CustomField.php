@@ -2,8 +2,8 @@
 namespace BlueSpice\Social\Profile\MetaData;
 
 use BlueSpice\Services;
-use BlueSpice\UserInfo\MetaData;
 use BlueSpice\Social\Profile\ICustomField;
+use BlueSpice\UserInfo\MetaData;
 
 class CustomField extends MetaData {
 

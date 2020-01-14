@@ -30,18 +30,18 @@
  */
 namespace BlueSpice\Social\Profile\Entity;
 
-use Exception;
-use Status;
-use Message;
-use User;
-use Title;
-use RequestContext;
-use ParserOptions;
-use WikiPage;
 use BlueSpice\Services;
 use BlueSpice\Social\Entity\Page;
 use BlueSpice\Social\Profile\ICustomField;
 use BlueSpice\Social\Profile\IField;
+use Exception;
+use Message;
+use ParserOptions;
+use RequestContext;
+use Status;
+use Title;
+use User;
+use WikiPage;
 
 /**
  * BSSociaEntityProfile class for BSSocial extension

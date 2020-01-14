@@ -2,10 +2,10 @@
 
 namespace BlueSpice\Social\Profile\AssocLinksProvider\Profile;
 
+use BlueSpice\Html\Descriptor\TitleLink;
+use Config;
 use IContextSource;
 use Message;
-use Config;
-use BlueSpice\Html\Descriptor\TitleLink;
 
 class Modern extends TitleLink {
 

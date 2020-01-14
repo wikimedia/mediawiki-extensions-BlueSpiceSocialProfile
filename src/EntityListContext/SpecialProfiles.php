@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Social\Profile\EntityListContext;
 
-use BlueSpice\Data\Filter\ListValue;
 use BlueSpice\Data\FieldType;
+use BlueSpice\Data\Filter\ListValue;
 use BlueSpice\Social\EntityListContext;
 use BlueSpice\Social\Profile\Entity\Profile;
 

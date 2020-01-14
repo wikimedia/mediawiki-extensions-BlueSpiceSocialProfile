@@ -2,14 +2,14 @@
 
 namespace BlueSpice\Social\Profile\Tag;
 
+use BlueSpice\Services;
+use BlueSpice\Social\Profile\Entity\Profile as Entity;
+use BlueSpice\Social\Profile\Renderer\Entity\Profile as EntityRenderer;
+use BlueSpice\Tag\Handler;
 use MWException;
 use Parser;
 use PPFrame;
 use User;
-use BlueSpice\Services;
-use BlueSpice\Tag\Handler;
-use BlueSpice\Social\Profile\Entity\Profile as Entity;
-use BlueSpice\Social\Profile\Renderer\Entity\Profile as EntityRenderer;
 
 class SocialEntityProfileHandler extends Handler {
 	/**

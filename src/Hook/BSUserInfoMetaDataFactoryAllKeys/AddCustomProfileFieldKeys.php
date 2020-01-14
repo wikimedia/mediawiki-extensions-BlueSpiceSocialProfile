@@ -1,8 +1,8 @@
 <?php
 namespace BlueSpice\Social\Profile\Hook\BSUserInfoMetaDataFactoryAllKeys;
 
-use BlueSpice\UserInfo\Hook\BSUserInfoMetaDataFactoryAllKeys;
 use BlueSpice\Social\Profile\Field;
+use BlueSpice\UserInfo\Hook\BSUserInfoMetaDataFactoryAllKeys;
 
 class AddCustomProfileFieldKeys extends BSUserInfoMetaDataFactoryAllKeys {
 

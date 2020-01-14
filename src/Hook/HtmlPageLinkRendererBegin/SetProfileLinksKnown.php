@@ -2,9 +2,9 @@
 
 namespace BlueSpice\Social\Profile\Hook\HtmlPageLinkRendererBegin;
 
+use BlueSpice\Hook\HtmlPageLinkRendererBegin;
 use Title;
 use User;
-use BlueSpice\Hook\HtmlPageLinkRendererBegin;
 
 class SetProfileLinksKnown extends HtmlPageLinkRendererBegin {
 

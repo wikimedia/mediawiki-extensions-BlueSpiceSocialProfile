@@ -2,12 +2,12 @@
 
 namespace BlueSpice\Social\Profile\EntityListContext;
 
-use IContextSource;
-use Config;
-use User;
 use BlueSpice\Data\Filter\Numeric;
 use BlueSpice\Social\EntityListContext;
 use BlueSpice\Social\Profile\Entity\Profile;
+use Config;
+use IContextSource;
+use User;
 
 class UserProfile extends EntityListContext {
 

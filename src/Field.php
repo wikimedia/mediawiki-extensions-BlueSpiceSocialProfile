@@ -2,8 +2,8 @@
 namespace BlueSpice\Social\Profile;
 
 use Config;
-use User;
 use Message;
+use User;
 
 abstract class Field implements IField {
 	const KEY_I18N = 'i18n';
