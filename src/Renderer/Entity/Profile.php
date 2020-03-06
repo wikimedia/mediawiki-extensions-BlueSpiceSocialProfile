@@ -73,7 +73,7 @@ class Profile extends \BlueSpice\Social\Renderer\Entity\Page {
 			$this->getEntity(),
 			$this->getEntity()->getOwner()
 		);
-		$renderer = $this->getServices()->getBSRendererFactory()->get(
+		$renderer = $this->getServices()->getService( 'BSRendererFactory' )->get(
 			'entitylist',
 			new Params( [ 'context' => $context ] )
 		);
@@ -91,7 +91,7 @@ class Profile extends \BlueSpice\Social\Renderer\Entity\Page {
 			return parent::render_userimage( $val );
 		}
 
-		$factory = $this->getServices()->getBSRendererFactory();
+		$factory = $this->getServices()->getService( 'BSRendererFactory' );
 		$image = $factory->get( 'userimage', new Params( [
 			UserImage::PARAM_USER => $this->getEntity()->getOwner(),
 			UserImage::PARAM_WIDTH => 200,
