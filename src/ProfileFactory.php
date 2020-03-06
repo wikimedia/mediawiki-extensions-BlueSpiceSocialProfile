@@ -57,7 +57,7 @@ class ProfileFactory extends EntityFactory {
 			\RequestContext::getMain(),
 			Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' )
 		);
-		$serviceUser = Services::getInstance()->getBSUtilityFactory()
+		$serviceUser = Services::getInstance()->getService( 'BSUtilityFactory' )
 			->getMaintenanceUser()->getUser();
 
 		$listContext = new SpecialProfiles(
