@@ -74,7 +74,7 @@ class Handler implements IPrivacyHandler {
 	 */
 	public function delete( User $userToDelete, User $deletedUser ) {
 		$this->user = $userToDelete;
-		$status = $this->deleteEntityPage();
+		$status = $this->deleteEntityPage( $deletedUser );
 
 		// Deleting a page will return non-fatal Status if deletion fails,
 		// but we need to return a fatal to stop the deletion process
@@ -140,15 +140,16 @@ class Handler implements IPrivacyHandler {
 	 * Deletes entity page for given user profile
 	 * and removes the entity from search index
 	 *
+	 * @param User $user Aggregate 'deleted' user that also performs the deletion
 	 * @return Status
 	 */
-	protected function deleteEntityPage() {
+	protected function deleteEntityPage( User $user ) {
 		$profile = $this->getProfile();
 
 		$profilePage = $profile->getTitle();
 		if ( $profilePage instanceof Title && $profilePage->exists() ) {
 			$wikipage = WikiPage::newFromID( $profilePage->getArticleID() );
-			$status = $wikipage->doDeleteArticleReal( '', true );
+			$status = $wikipage->doDeleteArticleReal( '', $user, true );
 		}
 
 		if ( $status->isGood() ) {
