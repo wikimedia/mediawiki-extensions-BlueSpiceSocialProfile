@@ -67,7 +67,7 @@ bs.social.EntityProfile.prototype.makeActionMenu = function() {
 	);
 	$actions.find('.bs-social-entity-changeimage').first().on('click', function(e) {
 		e.preventDefault();
-		mw.loader.using( ['mediawiki.notify','ext.bluespice.extjs'] ).done( function() {
+		mw.loader.using( ['ext.bluespice.extjs'] ).done( function() {
 			Ext.onReady( function() {
 				Ext.require( 'BS.Avatars.SettingsWindow', function() {
 					BS.Avatars.SettingsWindow.show();
