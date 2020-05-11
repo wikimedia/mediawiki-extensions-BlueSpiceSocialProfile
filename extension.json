@@ -210,8 +210,7 @@
 		"BSUserInfoMetaDataFactoryAllKeys":"\\BlueSpice\\Social\\Profile\\Hook\\BSUserInfoMetaDataFactoryAllKeys\\AddCustomProfileFieldKeys::callback",
 		"BSUserInfoMetaDataFactoryCallback":"\\BlueSpice\\Social\\Profile\\Hook\\BSUserInfoMetaDataFactoryCallback\\AddCustomProfileFieldCallbacks::callback",
 		"GetPreferences": "\\BlueSpice\\Social\\Profile\\Hook\\GetPreferences\\AddShowProfileInfoEmail::callback",
-		"BSPageTemplatesModifyTargetUrl": "\\BlueSpice\\Social\\Profile\\Hook\\BSPageTemplatesModifyTargetUrl\\AddClassicProfileLink::callback",
-		"UserLoadAfterLoadFromSession": "\\BlueSpice\\Social\\Profile\\Hook\\UserLoadAfterLoadFromSession\\AddLDAPProfileDataSync::callback"
+		"BSPageTemplatesModifyTargetUrl": "\\BlueSpice\\Social\\Profile\\Hook\\BSPageTemplatesModifyTargetUrl\\AddClassicProfileLink::callback"
 	},
 	"manifest_version": 2
 }
