@@ -11,8 +11,9 @@ class AddLDAPProfileDataSync extends UserLoadAfterLoadFromSession {
 	 * @return bool
 	 */
 	protected function skipProcessing() {
+		$uInfo = "\MediaWiki\Extension\LDAPUserInfo";
 		return !class_exists(
-			'\MediaWiki\Extension\LDAPProvider\Hook\UserLoadAfterLoadFromSession'
+			"$uInfo\Hook\UserLoadAfterLoadFromSession\SyncUserInfoAfterLoadSession"
 		);
 	}
 
