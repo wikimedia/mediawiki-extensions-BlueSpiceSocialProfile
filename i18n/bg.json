@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"StanProg"
+			"StanProg",
+			"Ted Masters"
 		]
 	},
 	"bs-socialprofile-desc": "Профил за BlueSpiceSocial",
 	"bs-socialprofile-type": "Профил",
-	"bs-socialprofile-entityaction-changeimage": "Потркартинка",
+	"bs-socialprofile-entityaction-changeimage": "Потребителска картинка",
 	"bs-social-entityaction-editprofilefields": "Профилни данни",
 	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Върнат е невалиден User",
 	"bs-social-profile-field-name": "Име",
