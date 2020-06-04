@@ -251,7 +251,13 @@ class Profile extends Page {
 		$factory = Services::getInstance()->getService(
 			'BSSocialProfileCustomFieldsFactory'
 		);
-		return $factory->getFieldDefinitions();
+		$defs = $factory->getFieldDefinitions();
+		foreach ( $defs as &$def ) {
+			if ( isset( $def['ldap'] ) ) {
+				unset( $def['ldap'] );
+			}
+		}
+		return $defs;
 	}
 
 	/**
