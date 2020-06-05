@@ -10,7 +10,7 @@
 	"bs-socialprofile-entityaction-changeimage": "Kullanıcı resmi",
 	"bs-social-entityaction-editprofilefields": "Profil verisi",
 	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Geçersiz 'Kullanıcı' verildi",
-	"bs-social-profile-field-name": "İsim",
+	"bs-social-profile-field-name": "Ad",
 	"bs-social-profile-field-title": "Başlık",
 	"bs-social-profile-field-title-value": "{{GENDER:$1|Bay|Bayan|}}",
 	"bs-social-profile-field-department": "Bölüm",
