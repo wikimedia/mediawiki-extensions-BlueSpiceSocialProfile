@@ -4,7 +4,7 @@ namespace BlueSpice\Social\Profile\Content;
 use BlueSpice\Services;
 use BlueSpice\Social\Profile\Entity\Profile as SocialProfile;
 
-class Profile extends \WikiTextContent {
+class Profile extends \WikitextContent {
 
 	/**
 	 *
