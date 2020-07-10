@@ -1,19 +1,19 @@
 <?php
-namespace BlueSpice\Social\Profile\Hook\PageContentSaveComplete;
+namespace BlueSpice\Social\Profile\Hook\PageSaveComplete;
 
-use BlueSpice\Hook\PageContentSaveComplete;
+use BlueSpice\Hook\PageSaveComplete;
 use BlueSpice\Social\Profile\Entity\Profile;
 
-class InvalidateProfileEntity extends PageContentSaveComplete {
+class InvalidateProfileEntity extends PageSaveComplete {
 
 	protected function skipProcessing() {
-		if ( $this->wikipage->getTitle()->getNamespace() !== NS_USER ) {
+		if ( $this->wikiPage->getTitle()->getNamespace() !== NS_USER ) {
 			return true;
 		}
-		if ( $this->wikipage->getTitle()->isTalkPage() ) {
+		if ( $this->wikiPage->getTitle()->isTalkPage() ) {
 			return true;
 		}
-		if ( $this->wikipage->getTitle()->isSubpage() ) {
+		if ( $this->wikiPage->getTitle()->isSubpage() ) {
 			return true;
 		}
 		return false;
@@ -24,7 +24,7 @@ class InvalidateProfileEntity extends PageContentSaveComplete {
 			'BSSocialProfileEntityFactory'
 		);
 		$entity = $entityFactory->newFromUser(
-			\User::newFromName( $this->wikipage->getTitle()->getText() )
+			\User::newFromName( $this->wikiPage->getTitle()->getText() )
 		);
 		if ( !$entity instanceof Profile ) {
 			// do not fatal - here is something wrong very bad!

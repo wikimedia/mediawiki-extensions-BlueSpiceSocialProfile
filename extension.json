@@ -203,7 +203,7 @@
 		}
 	},
 	"Hooks": {
-		"PageContentSaveComplete": "\\BlueSpice\\Social\\Profile\\Hook\\PageContentSaveComplete\\InvalidateProfileEntity::callback",
+		"PageSaveComplete": "\\BlueSpice\\Social\\Profile\\Hook\\PageSaveComplete\\InvalidateProfileEntity::callback",
 		"ArticleViewHeader": "\\BlueSpice\\Social\\Profile\\Extension::onArticleViewHeader",
 		"HtmlPageLinkRendererBegin": "\\BlueSpice\\Social\\Profile\\Hook\\HtmlPageLinkRendererBegin\\SetProfileLinksKnown::callback",
 		"UserSaveSettings": "\\BlueSpice\\Social\\Profile\\Hook\\UserSaveSettings\\CreateAndInvalidateUserProfile::callback",
