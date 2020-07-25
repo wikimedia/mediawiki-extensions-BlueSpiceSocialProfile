@@ -23,7 +23,10 @@ class SocialProfilePropertyValueProvider extends PropertyValueProvider {
 			if ( empty( $smwName ) ) {
 				continue;
 			}
-			$alias = $definition[Field::KEY_I18N];
+			$alias = empty( $definition[Field::KEY_I18N] )
+				? $name
+				: $definition[Field::KEY_I18N];
+
 			$propertyValueProviders[] = new self( $name, $smwName, $alias, $factory );
 		}
 
