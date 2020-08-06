@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"BaRaN6161 TURK",
 			"Fitoschido",
 			"Patric Wirth"
 		]
@@ -23,7 +24,7 @@
 	"bs-socialprofile-special-profiles-heading": "Special page header for [[Special:Socialprofiles]] special page.\n{{Identical|Profiles}}",
 	"bs-social-profile-infoshowemail": "Label for the the option checkbox in [[Special:Preferences]] that lets users toggle the display of their email address in their profile",
 	"socialprofiles": "Special page name for [[Special:Socialprofiles]] special page.\n{{Identical|Profiles}}",
-	"bs-socialprofile-switch-classicprofile-label": "Short label for button that switches to the classic profile.\n{{Identical|Classic profile}}",
+	"bs-socialprofile-switch-classicprofile-label": "Short label for button that switches to the classic profile.",
 	"bs-socialprofile-switch-modernprofile-label": "Short label for button that switches to the modern profile.\n{{Identical|Modern profile}}",
 	"bs-socialprofile-switch-classicprofile-tooltip": "Tooltip text for button that switches to the ´classic profile.\n{{Identical|Switch to classic profile}}",
 	"bs-socialprofile-switch-modernprofile-tooltip": "Tooltip text for button that switches to the modern profile.\n{{Identical|Switch to modern profile}}",
