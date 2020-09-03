@@ -4,11 +4,11 @@ namespace BlueSpice\Social\Profile\Privacy;
 
 use BlueSpice\Privacy\IPrivacyHandler;
 use BlueSpice\Privacy\Module\Transparency;
-use BlueSpice\Services;
 use BlueSpice\Social\ExtendedSearch\Job\Entity as SearchJob;
 use BlueSpice\Social\Profile\Entity\Profile;
 use Config;
 use JobQueueGroup;
+use MediaWiki\MediaWikiServices;
 use Message;
 use Status;
 use Title;
@@ -119,7 +119,7 @@ class Handler implements IPrivacyHandler {
 	 * @return Profile|null
 	 */
 	protected function getProfile() {
-		$entityFactory = Services::getInstance()->getService(
+		$entityFactory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileEntityFactory'
 		);
 		return $entityFactory->newFromUser( $this->user );

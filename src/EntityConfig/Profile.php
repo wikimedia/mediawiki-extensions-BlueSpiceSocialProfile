@@ -32,10 +32,10 @@
 
 namespace BlueSpice\Social\Profile\EntityConfig;
 
-use BlueSpice\Services;
 use BlueSpice\Social\Data\Entity\Schema;
 use BlueSpice\Social\EntityConfig\Page;
 use BlueSpice\Social\Profile\Field;
+use MediaWiki\MediaWikiServices;
 use MWException;
 
 /**
@@ -237,7 +237,7 @@ class Profile extends Page {
 	 * @return array
 	 */
 	public function get_ProfileFieldsDefinitions() {
-		$factory = Services::getInstance()->getService(
+		$factory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileFieldsFactory'
 		);
 		return $factory->getFieldDefinitions();
@@ -248,7 +248,7 @@ class Profile extends Page {
 	 * @return array
 	 */
 	public function get_ProfileCustomFieldsDefinitions() {
-		$factory = Services::getInstance()->getService(
+		$factory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileCustomFieldsFactory'
 		);
 		$defs = $factory->getFieldDefinitions();

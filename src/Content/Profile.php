@@ -1,8 +1,8 @@
 <?php
 namespace BlueSpice\Social\Profile\Content;
 
-use BlueSpice\Services;
 use BlueSpice\Social\Profile\Entity\Profile as SocialProfile;
+use MediaWiki\MediaWikiServices;
 
 class Profile extends \WikitextContent {
 
@@ -103,7 +103,7 @@ class Profile extends \WikitextContent {
 			// something is very wrong here!
 			return $output;
 		}
-		$entityFactory = Services::getInstance()->getService(
+		$entityFactory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileEntityFactory'
 		);
 		$entity = $entityFactory->newFromUser( $oUser );
