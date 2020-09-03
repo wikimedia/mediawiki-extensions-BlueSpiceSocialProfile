@@ -4,8 +4,8 @@ namespace BlueSpice\Social\Profile\Special;
 
 use BlueSpice\Context;
 use BlueSpice\Renderer\Params;
-use BlueSpice\Services;
 use BlueSpice\Social\Profile\EntityListContext\SpecialProfiles;
+use MediaWiki\MediaWikiServices;
 
 class Profiles extends \BlueSpice\SpecialPage {
 
@@ -35,7 +35,7 @@ class Profiles extends \BlueSpice\SpecialPage {
 			$this->getConfig(),
 			$this->getContext()->getUser()
 		);
-		$renderer = Services::getInstance()->getService( 'BSRendererFactory' )->get(
+		$renderer = MediaWikiServices::getInstance()->getService( 'BSRendererFactory' )->get(
 			'entitylist',
 			new Params( [ 'context' => $context ] )
 		);

@@ -29,9 +29,9 @@ namespace BlueSpice\Social\Profile;
 use BlueSpice\Data\Filter\Numeric;
 use BlueSpice\Data\ReaderParams;
 use BlueSpice\EntityFactory;
-use BlueSpice\Services;
 use BlueSpice\Social\Profile\Entity\Profile;
 use BlueSpice\Social\Profile\EntityListContext\SpecialProfiles;
+use MediaWiki\MediaWikiServices;
 
 class ProfileFactory extends EntityFactory {
 
@@ -55,9 +55,9 @@ class ProfileFactory extends EntityFactory {
 
 		$context = new \BlueSpice\Context(
 			\RequestContext::getMain(),
-			Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' )
+			MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' )
 		);
-		$serviceUser = Services::getInstance()->getService( 'BSUtilityFactory' )
+		$serviceUser = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' )
 			->getMaintenanceUser()->getUser();
 
 		$listContext = new SpecialProfiles(

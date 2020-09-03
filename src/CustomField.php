@@ -1,7 +1,7 @@
 <?php
 namespace BlueSpice\Social\Profile;
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 abstract class CustomField extends Field implements ICustomField {
 	const KEY_DEFAULT = 'default';
@@ -41,7 +41,7 @@ abstract class CustomField extends Field implements ICustomField {
 	 * @return Entity\Profile
 	 */
 	public function getUserProfile() {
-		$entityFactory = Services::getInstance()->getService(
+		$entityFactory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileEntityFactory'
 		);
 		return $entityFactory->newFromUser( $this->user );

@@ -2,9 +2,9 @@
 
 namespace BlueSpice\Social\Profile;
 
-use BlueSpice\Services;
 use BlueSpice\SMWConnector\PropertyValueProvider;
 use BlueSpice\Social\Profile\Field\Title;
+use MediaWiki\MediaWikiServices;
 use SMWDataItem;
 use SMWDIBlob;
 use User;
@@ -16,7 +16,9 @@ class SocialProfilePropertyValueProvider extends PropertyValueProvider {
 	 * @return \BlueSpice\SMWConnector\IPropertyValueProvider[]
 	 */
 	public static function factory() {
-		$factory = Services::getInstance()->getService( 'BSSocialProfileCustomFieldsFactory' );
+		$factory = MediaWikiServices::getInstance()->getService(
+			'BSSocialProfileCustomFieldsFactory'
+		);
 		$propertyValueProviders = [];
 		foreach ( $factory->getFieldDefinitions() as $name => $definition ) {
 			$smwName = preg_replace( '/\PL/u', '', strtoupper( $name ) );
