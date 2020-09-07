@@ -3,12 +3,13 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Fitoschido",
-			"Patric Wirth"
+			"Patric Wirth",
+			"Umherirrender"
 		]
 	},
 	"bs-socialprofile-desc": "{{desc|name=BlueSpiceSocialProfile}}",
 	"bs-socialprofile-type": "Label for entry field \"topictitle\".\n{{Identical|Profile}}",
-	"bs-socialprofile-entityprofile-header": "Headline for a \"profile\" entry. Must link to owners user page [[$6|$6]]\n* $1 - Username of the owner of this entry\n* $2 - Real name of the owner of this entry\n* $3 - Main part of title of the source page, this entry is saved in as json data\n* $4 - Namespace number of the page, this entry is saved in as json data\n* $5 - Namespace name of the page, this entry is saved in as json data\n* $6 - Full title text of the owners user page",
+	"bs-socialprofile-entityprofile-header": "{{notranslate}}\nHeadline for a \"profile\" entry. Must link to owners user page [[$6|$6]]\n* $1 - Username of the owner of this entry\n* $2 - Real name of the owner of this entry\n* $3 - Main part of title of the source page, this entry is saved in as json data\n* $4 - Namespace number of the page, this entry is saved in as json data\n* $5 - Namespace name of the page, this entry is saved in as json data\n* $6 - Full title text of the owners user page",
 	"bs-socialprofile-entityaction-changeimage": "Short label for a button, that lets the user open a dialog to change the users profile image",
 	"bs-social-entityaction-editprofilefields": "Short label for a button, that lets the user change the users profile data",
 	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Internal error message when an invalid 'User' object was given when saving",
