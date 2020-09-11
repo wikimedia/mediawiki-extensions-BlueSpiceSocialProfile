@@ -27,8 +27,8 @@
  */
 namespace BlueSpice\Social\Profile;
 
-use BlueSpice\Services;
 use BlueSpice\Social\Profile\Content\Profile as ProfileContent;
+use MediaWiki\MediaWikiServices;
 
 class Extension extends \BlueSpice\Extension {
 
@@ -85,7 +85,7 @@ class Extension extends \BlueSpice\Extension {
 			return true;
 		}
 
-		$entityFactory = Services::getInstance()->getService(
+		$entityFactory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileEntityFactory'
 		);
 		$entity = $entityFactory->newFromUser( $oUser );

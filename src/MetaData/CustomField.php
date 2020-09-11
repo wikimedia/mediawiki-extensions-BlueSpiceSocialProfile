@@ -1,9 +1,9 @@
 <?php
 namespace BlueSpice\Social\Profile\MetaData;
 
-use BlueSpice\Services;
 use BlueSpice\Social\Profile\ICustomField;
 use BlueSpice\UserInfo\MetaData;
+use MediaWiki\MediaWikiServices;
 
 class CustomField extends MetaData {
 
@@ -28,7 +28,7 @@ class CustomField extends MetaData {
 	 * @return ICustomField
 	 */
 	protected function getProfileCustomField() {
-		$factory = Services::getInstance()->getService(
+		$factory = MediaWikiServices::getInstance()->getService(
 			'BSSocialProfileCustomFieldsFactory'
 		);
 		return $factory->factory( $this->name, $this->user );
