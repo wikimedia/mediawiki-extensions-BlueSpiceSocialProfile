@@ -212,11 +212,11 @@ class Profile extends Page {
 
 		$status = $this->userCan( 'editothers', $user );
 		if ( $this->userIsOwner( $user ) || $status->isOK() ) {
-			$actions[] = 'changeimage';
-			$actions[] = 'editprofilefields';
+			$actions['changeimage'] = [];
+			$actions['editprofilefields'] = [];
 		}
 		if ( $status->isOK() ) {
-			$actions[] = 'edithiddenfields';
+			$actions['edithiddenfields'] = [];
 		}
 		return $actions;
 	}
