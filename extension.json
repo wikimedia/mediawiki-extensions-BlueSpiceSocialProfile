@@ -125,6 +125,10 @@
 				"ext.bluespice.social.entity"
 			],
 			"scripts": [
+				"EntityActionMenu/ChangeImage.js",
+				"EntityActionMenu/EditProfileFields.js",
+				"EntityActionMenu/EditUserPage.js",
+				"bluespice.social.profile.js",
 				"entities/bluespice.social.Entity.Profile.js",
 				"ui/EntityEditorProfile.js"
 			],

@@ -210,10 +210,24 @@ class Profile extends Page {
 		}
 		$actions = parent::getActions( $actions, $user );
 
+		if ( isset( $actions['edit'] ) ) {
+			// replace with editprofilefields and edituserpage
+			unset( $actions['edit'] );
+		}
 		$status = $this->userCan( 'editothers', $user );
 		if ( $this->userIsOwner( $user ) || $status->isOK() ) {
 			$actions['changeimage'] = [];
 			$actions['editprofilefields'] = [];
+		}
+		if ( $this->getRelatedTitle() ) {
+			$editUsrPg = MediaWikiServices::getInstance()->getPermissionManager()->userCan(
+				'edit',
+				$user,
+				$this->getRelatedTitle()
+			);
+			if ( $editUsrPg ) {
+				$actions['edituserpage'] = [];
+			}
 		}
 		if ( $status->isOK() ) {
 			$actions['edithiddenfields'] = [];
