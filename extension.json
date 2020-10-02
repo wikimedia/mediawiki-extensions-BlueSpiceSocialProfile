@@ -129,8 +129,7 @@
 				"EntityActionMenu/EditProfileFields.js",
 				"EntityActionMenu/EditUserPage.js",
 				"bluespice.social.profile.js",
-				"entities/bluespice.social.Entity.Profile.js",
-				"ui/EntityEditorProfile.js"
+				"entities/bluespice.social.Entity.Profile.js"
 			],
 			"messages": [
 				"bs-socialprofile-entityaction-changeimage",
@@ -139,6 +138,14 @@
 				"bs-social-profile-field-email",
 				"bs-social-profile-field-title",
 				"mypreferences"
+			]
+		},
+		"ext.bluespice.social.entity.editor.profile": {
+			"dependencies": [
+				"ext.bluespice.social.entity.editor"
+			],
+			"scripts": [
+				"ui/EntityEditorProfile.js"
 			]
 		}
 	},

@@ -106,6 +106,16 @@ class Profile extends Page {
 
 	/**
 	 *
+	 * @return string[]
+	 */
+	protected function get_ModuleEditScripts() {
+		return array_merge( parent::get_ModuleEditScripts(), [
+			'ext.bluespice.social.entity.editor.profile'
+		] );
+	}
+
+	/**
+	 *
 	 * @return string
 	 */
 	protected function get_TypeMessageKey() {
