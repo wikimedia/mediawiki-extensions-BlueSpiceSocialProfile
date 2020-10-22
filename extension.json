@@ -57,9 +57,6 @@
 			"TagRegistry": {
 				"socialentityprofile": "\\BlueSpice\\Social\\Profile\\Tag\\SocialEntityProfile"
 			},
-			"LessVarsRegistry": {
-				"bs-color-lighten-information": "#BABABA"
-			},
 			"AssocLinksProviderRegistry": {
 				"profile-classic": "\\BlueSpice\\Social\\Profile\\AssocLinksProvider\\Profile\\Classic::factory",
 				"profile-modern": "\\BlueSpice\\Social\\Profile\\AssocLinksProvider\\Profile\\Modern::factory"
@@ -118,7 +115,7 @@
 					"media": "all and ( min-width: 1024px )"
 				}
 			},
-			"class": "\\BlueSpice\\ResourceModule\\LessVars"
+			"class": "\\MWStake\\MediaWiki\\Component\\CommonUserInterface\\ResourceLoader\\LessVars"
 		},
 		"ext.bluespice.social.entity.profile": {
 			"dependencies": [
