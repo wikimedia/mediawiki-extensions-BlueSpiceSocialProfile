@@ -58,20 +58,6 @@ class Profile extends Page {
 	protected $baseTitleContent = null;
 
 	/**
-	 * @deprecated since version 3.0.0 - Use Service
-	 * (BlueSpiceSocialProfileEntityFactory)->newFromUser instead
-	 * @param User $user
-	 * @return Profile|null
-	 */
-	public static function newFromUser( User $user ) {
-		wfDeprecated( __METHOD__, '3.0.0' );
-		$entityFactory = MediaWikiServices::getInstance()->getService(
-			'BSSocialProfileEntityFactory'
-		);
-		return $entityFactory->newFromUser( $user );
-	}
-
-	/**
 	 * @param \stdClass $data
 	 * @return Profile
 	 */
