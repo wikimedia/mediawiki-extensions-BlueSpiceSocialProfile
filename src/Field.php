@@ -41,7 +41,7 @@ abstract class Field implements IField {
 
 	/**
 	 *
-	 * @var boolean
+	 * @var bool
 	 */
 	protected $hidden = false;
 

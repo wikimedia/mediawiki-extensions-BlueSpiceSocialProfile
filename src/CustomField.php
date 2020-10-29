@@ -15,7 +15,7 @@ abstract class CustomField extends Field implements ICustomField {
 
 	/**
 	 *
-	 * @var boolean
+	 * @var bool
 	 */
 	protected $required = false;
 
