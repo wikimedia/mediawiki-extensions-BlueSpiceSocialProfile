@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"MarcoAurelio"
 		]
 	},
 	"bs-socialprofile-type": "Perfil",
@@ -10,6 +11,7 @@
 	"bs-social-profile-field-name": "Nombre",
 	"bs-social-profile-field-email": "Dirección de correo electrónico",
 	"bs-social-profile-field-title": "Título",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|Señor|Señora|Señor/a}}",
 	"bs-social-profile-field-department": "Departamento",
 	"bs-social-profile-field-function": "Función",
 	"bs-social-profile-field-location": "Ubicación",
