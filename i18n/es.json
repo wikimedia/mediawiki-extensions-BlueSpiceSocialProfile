@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"MarcoAurelio"
 		]
 	},
 	"bs-socialprofile-type": "Perfil",
@@ -20,5 +21,6 @@
 	"bs-socialprofile-switch-classicprofile-label": "Perfil clásico",
 	"bs-socialprofile-switch-modernprofile-label": "Perfil moderno",
 	"action-socialprofile-viewspecialpage": "ver la página especial «{{int:socialprofiles}}»",
-	"right-socialprofile-viewspecialpage": "Ver la página especial «{{int:socialprofiles}}»"
+	"right-socialprofile-viewspecialpage": "Ver la página especial «{{int:socialprofiles}}»",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|Señor|Señora|Señor/a}}"
 }
