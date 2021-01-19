@@ -43,7 +43,7 @@ class ProfileFactory extends EntityFactory {
 
 	/**
 	 * @param \User $user
-	 * @return Profile | null
+	 * @return Profile|null
 	 */
 	public function newFromUser( \User $user ) {
 		if ( $user->isAnon() ) {

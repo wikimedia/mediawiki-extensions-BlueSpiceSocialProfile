@@ -51,7 +51,7 @@ class CustomFieldsFactory extends FieldsFactory {
 	/**
 	 *
 	 * @param string $type
-	 * @return string | false
+	 * @return string|false
 	 */
 	protected function getCallback( $type ) {
 		return $this->registry->getValue( $type, false );
