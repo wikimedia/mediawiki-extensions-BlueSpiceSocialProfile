@@ -36,10 +36,10 @@ class FieldsFactory {
 	const KEY_CALLBACK = 'callback';
 
 	/**
-	 *
-	 * @var array
+	 * @var array|null
 	 */
 	protected $defintions = null;
+	/** @var array|null */
 	protected $fields = null;
 
 	/**
@@ -59,7 +59,7 @@ class FieldsFactory {
 	 *
 	 * @param string $name
 	 * @param User|null $user
-	 * @return FieldDefinition | false
+	 * @return FieldDefinition|false
 	 */
 	public function factory( $name, User $user = null ) {
 		if ( empty( $name ) ) {

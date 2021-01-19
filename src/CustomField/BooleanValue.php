@@ -8,6 +8,7 @@ class BooleanValue extends \BlueSpice\Social\Profile\CustomField {
 
 	const DFLT_TYPE = 'boolean';
 
+	/** @inheritDoc */
 	protected $default = false;
 
 	/**
