@@ -120,6 +120,15 @@ class Profile extends \WikitextContent {
 				return $output;
 			}
 		}
+		if ( $entity->getRelatedTitle() && $entity->getRelatedTitle()->exists() ) {
+			$categories = \WikiPage::factory( $entity->getRelatedTitle() )
+				->getContent()->getParserOutput( $entity->getRelatedTitle() )
+				->getCategories();
+
+			foreach ( $categories as $category => $key ) {
+				$output->addCategory( $category, $key );
+			}
+		}
 
 		$sText = $entity->getRenderer()->render( 'Page' );
 		$sTitle = strip_tags( $entity->getHeader() );
