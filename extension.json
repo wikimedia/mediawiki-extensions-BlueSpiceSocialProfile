@@ -99,6 +99,9 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\Social\\Profile\\": "src/"
 	},
+	"JobClasses": {
+		"socialprofilecreate": "\\BlueSpice\\Social\\Profile\\Job\\CreateProfile"
+	},
 	"ResourceModules": {
 		"ext.bluespice.socialprofile.styles": {
 			"styles": {
@@ -219,7 +222,8 @@
 		"BSUserInfoMetaDataFactoryCallback": "\\BlueSpice\\Social\\Profile\\Hook\\BSUserInfoMetaDataFactoryCallback\\AddCustomProfileFieldCallbacks::callback",
 		"GetPreferences": "\\BlueSpice\\Social\\Profile\\Hook\\GetPreferences\\AddShowProfileInfoEmail::callback",
 		"BSPageTemplatesModifyTargetUrl": "\\BlueSpice\\Social\\Profile\\Hook\\BSPageTemplatesModifyTargetUrl\\AddClassicProfileLink::callback",
-		"UserLoadAfterLoadFromSession": "\\BlueSpice\\Social\\Profile\\Hook\\UserLoadAfterLoadFromSession\\AddLDAPProfileDataSync::callback"
+		"UserLoadAfterLoadFromSession": "\\BlueSpice\\Social\\Profile\\Hook\\UserLoadAfterLoadFromSession\\AddLDAPProfileDataSync::callback",
+		"LocalUserCreated": "\\BlueSpice\\Social\\Profile\\Hook\\LocalUserCreated\\CreateUserProfile::callback"
 	},
 	"manifest_version": 2
 }
