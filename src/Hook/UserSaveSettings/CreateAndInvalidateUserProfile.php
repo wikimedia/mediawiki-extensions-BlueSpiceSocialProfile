@@ -19,7 +19,7 @@ class CreateAndInvalidateUserProfile extends UserSaveSettings {
 			return true;
 		}
 
-		if ( !$entity->exists() && PHP_SAPI !== 'cli' ) {
+		if ( $entity->exists() && PHP_SAPI !== 'cli' ) {
 			$status = $entity->save();
 			return true;
 		}
