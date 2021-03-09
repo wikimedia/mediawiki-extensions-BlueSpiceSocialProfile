@@ -97,9 +97,31 @@ bs.social.EntityEditorProfile.prototype.makeFields = function() {
 					reqired: definition.required
 				});
 				break;
+			case 'text':
+				this[field] = new OO.ui.MultilineTextInputWidget( {
+					placeholder: this.getVarLabel( field ),
+					value: this.getEntity().data.get(
+						field,
+						definition.default || ''
+					),
+					autosize: true,
+					reqired: definition.required
+				});
+				break;
 			case 'string':
 			case 'select':
 			default:
+				var customField = null;
+				$( document ).trigger( 'BSSocialProfileCustomField', [
+					this,
+					this.getEntity(),
+					definition,
+					customField
+				] );
+				if ( customField ) {
+					this[field] = customField;
+					break;
+				}
 				if( definition.options ) {
 					var items = [];
 					var value = this.getEntity().data.get(
