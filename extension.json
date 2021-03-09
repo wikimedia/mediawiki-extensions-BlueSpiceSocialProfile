@@ -70,7 +70,8 @@
 				"string": "\\BlueSpice\\Social\\Profile\\CustomField\\StringValue::getInstance",
 				"select": "\\BlueSpice\\Social\\Profile\\CustomField\\SelectValue::getInstance",
 				"integer": "\\BlueSpice\\Social\\Profile\\CustomField\\IntegerValue::getInstance",
-				"boolean": "\\BlueSpice\\Social\\Profile\\CustomField\\BooleanValue::getInstance"
+				"boolean": "\\BlueSpice\\Social\\Profile\\CustomField\\BooleanValue::getInstance",
+				"text": "\\BlueSpice\\Social\\Profile\\CustomField\\TextValue::getInstance"
 			}
 		},
 		"BlueSpicePrivacy": {
