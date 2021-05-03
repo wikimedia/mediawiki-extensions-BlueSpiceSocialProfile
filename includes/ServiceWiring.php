@@ -5,7 +5,7 @@ use MediaWiki\MediaWikiServices;
 
 return [
 
-	'BSSocialProfileEntityFactory' => function ( MediaWikiServices $services ) {
+	'BSSocialProfileEntityFactory' => static function ( MediaWikiServices $services ) {
 		$registry = new ExtensionAttributeBasedRegistry(
 			'BlueSpiceFoundationEntityRegistry'
 		);
@@ -16,13 +16,13 @@ return [
 		);
 	},
 
-	'BSSocialProfileFieldsFactory' => function ( MediaWikiServices $services ) {
+	'BSSocialProfileFieldsFactory' => static function ( MediaWikiServices $services ) {
 		return new \BlueSpice\Social\Profile\FieldsFactory(
 			$services->getConfigFactory()->makeConfig( 'bsg' )
 		);
 	},
 
-	'BSSocialProfileCustomFieldsFactory' => function ( MediaWikiServices $services ) {
+	'BSSocialProfileCustomFieldsFactory' => static function ( MediaWikiServices $services ) {
 		$registry = new ExtensionAttributeBasedRegistry(
 			'BlueSpiceSocialProfileCustomFieldTypesRegistry'
 		);

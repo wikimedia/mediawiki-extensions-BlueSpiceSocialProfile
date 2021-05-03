@@ -142,7 +142,7 @@ class UserInfoSyncProcess {
 	private function getSyncFieldDefinitions() {
 		return array_filter(
 			$this->fieldFactory->getFieldDefinitions(),
-			function ( $e ) {
+			static function ( $e ) {
 				return !empty( $e['ldap'] );
 			}
 		);
