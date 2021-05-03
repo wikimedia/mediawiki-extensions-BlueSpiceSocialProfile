@@ -107,8 +107,12 @@ class Handler implements IPrivacyHandler {
 			if ( !$value ) {
 				continue;
 			}
-			$keyMessage = Message::newFromKey( $config['i18n'] )->plain();
-			$data[] = "$keyMessage: {$profile->get( $key )}";
+			if ( isset( $config['i18n'] ) && is_string( $config['i18n'] ) ) {
+				$keyMessage = Message::newFromKey( $config['i18n'] )->plain();
+			} else {
+				$keyMessage = $key;
+			}
+			$data[] = "$keyMessage: $value";
 		}
 		return Status::newGood( [
 			Transparency::DATA_TYPE_PERSONAL => $data
