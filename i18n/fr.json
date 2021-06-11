@@ -9,7 +9,7 @@
 	"bs-socialprofile-type": "Profil",
 	"bs-socialprofile-entityaction-changeimage": "ImageUtilisateur",
 	"bs-social-entityaction-editprofilefields": "Données de profil",
-	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "« Utilisateur » donné non valide",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "« Utilisateur » donné non valide",
 	"bs-social-profile-field-name": "Nom",
 	"bs-social-profile-field-email": "Courriel",
 	"bs-social-profile-field-title": "Titre",
@@ -28,6 +28,6 @@
 	"bs-socialprofile-switch-modernprofile-tooltip": "Basculer au profil moderne",
 	"action-social-editothersprofile": "modifier le profil d’autres utilisateurs",
 	"right-social-editothersprofile": "modifier le profil d’autres utilisateurs",
-	"action-socialprofile-viewspecialpage": "visualiser la page spéciale « {{int:socialprofiles}} »",
-	"right-socialprofile-viewspecialpage": "visualiser la page spéciale « {{int:socialprofiles}} »"
+	"action-socialprofile-viewspecialpage": "visualiser la page spéciale « {{int:socialprofiles}} »",
+	"right-socialprofile-viewspecialpage": "visualiser la page spéciale « {{int:socialprofiles}} »"
 }
