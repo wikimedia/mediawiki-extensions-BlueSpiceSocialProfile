@@ -3,9 +3,11 @@
 		"authors": [
 			"Elroy",
 			"Mainframe98",
-			"Robin van der Linde"
+			"Robin van der Linde",
+			"Romaine"
 		]
 	},
+	"bs-socialprofile-desc": "Profielentiteit voor BlueSpiceSocial",
 	"bs-socialprofile-type": "Profiel",
 	"bs-socialprofile-entityaction-changeimage": "Gebruikersafbeelding",
 	"bs-social-entityaction-editprofilefields": "Profielgegevens",
