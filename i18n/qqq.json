@@ -24,7 +24,7 @@
 	"bs-social-profile-field-phone": "Label for field \"phone\" in the users profile.\n{{Identical|Telephone}}",
 	"bs-social-profile-field-validate-no-integer": "Error message, that the given value was not numeric\n* $1 - Label for the given value",
 	"bs-socialprofile-special-profiles-heading": "Special page header for [[Special:Socialprofiles]] special page.\n{{Identical|Profile}}",
-	"bs-social-profile-infoshowemail": "Label for the the option checkbox in [[Special:Preferences]] that lets users toggle the display of their email address in their profile",
+	"bs-social-profile-infoshowemail": "Label for the option checkbox in [[Special:Preferences]] that lets users toggle the display of their email address in their profile",
 	"socialprofiles": "Special page name for [[Special:Socialprofiles]] special page.\n{{Identical|Profile}}",
 	"bs-socialprofile-switch-classicprofile-label": "Short label for button that switches to the classic profile.",
 	"bs-socialprofile-switch-modernprofile-label": "Short label for button that switches to the modern profile.\n{{Identical|Modern profile}}",

@@ -3,7 +3,8 @@
 		"authors": [
 			"Elroy",
 			"Mainframe98",
-			"Robin van der Linde"
+			"Robin van der Linde",
+			"Romaine"
 		]
 	},
 	"bs-socialprofile-type": "Profiel",
@@ -28,5 +29,6 @@
 	"action-social-editothersprofile": "andermans profiel bewerken",
 	"right-social-editothersprofile": "Andermans profiel bewerken",
 	"action-socialprofile-viewspecialpage": "de speciale pagina \"{{int:socialprofiles}}\" te bekijken",
-	"right-socialprofile-viewspecialpage": "De speciale pagina \"{{int:socialprofiles}}\" bekijken"
+	"right-socialprofile-viewspecialpage": "De speciale pagina \"{{int:socialprofiles}}\" bekijken",
+	"bs-socialprofile-desc": "Profielentiteit voor BlueSpiceSocial"
 }
