@@ -14,6 +14,7 @@
 	"bs-social-profile-field-function": "Funktion",
 	"bs-social-profile-field-location": "Sted",
 	"bs-social-profile-field-phone": "Telefon",
+	"bs-social-profile-field-validate-no-integer": "$1 skal være et tal",
 	"bs-socialprofile-special-profiles-heading": "Profiler",
 	"socialprofiles": "Profiler",
 	"bs-socialprofile-switch-classicprofile-label": "Klassisk profil",
