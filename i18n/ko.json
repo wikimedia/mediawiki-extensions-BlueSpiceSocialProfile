@@ -16,7 +16,12 @@
 	"bs-socialprofile-special-profiles-heading": "프로파일",
 	"bs-social-profile-infoshowemail": "프로파일에 이메일 주소를 표시합니다",
 	"socialprofiles": "프로파일",
+	"bs-socialprofile-switch-classicprofile-label": "고전 프로파일",
+	"bs-socialprofile-switch-modernprofile-label": "현대 프로파일",
+	"bs-socialprofile-switch-classicprofile-tooltip": "고전 프로파일로 전환",
+	"bs-socialprofile-switch-modernprofile-tooltip": "현대 프로파일로 전환",
 	"action-social-editothersprofile": "다른 사용자의 프로파일 편집",
+	"right-social-editothersprofile": "다른 사용자의 프로파일 편집",
 	"action-socialprofile-viewspecialpage": "특수 문서 \"{{int:socialprofiles}}\"을 볼",
 	"right-socialprofile-viewspecialpage": "특수 문서 \"{{int:socialprofiles}}\" 보기"
 }
