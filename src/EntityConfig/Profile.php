@@ -210,6 +210,14 @@ class Profile extends Page {
 
 	/**
 	 *
+	 * @return bool
+	 */
+	protected function get_IsOwnerChangable() {
+		return false;
+	}
+
+	/**
+	 *
 	 * @return string
 	 */
 	protected function get_EditothersPermission() {
