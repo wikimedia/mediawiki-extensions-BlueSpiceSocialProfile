@@ -212,7 +212,8 @@
 		"BSUserInfoMetaDataFactoryCallback": "\\BlueSpice\\Social\\Profile\\Hook\\BSUserInfoMetaDataFactoryCallback\\AddCustomProfileFieldCallbacks::callback",
 		"GetPreferences": "\\BlueSpice\\Social\\Profile\\Hook\\GetPreferences\\AddShowProfileInfoEmail::callback",
 		"BSPageTemplatesModifyTargetUrl": "\\BlueSpice\\Social\\Profile\\Hook\\BSPageTemplatesModifyTargetUrl\\AddClassicProfileLink::callback",
-		"UserLoadAfterLoadFromSession": "\\BlueSpice\\Social\\Profile\\Hook\\UserLoadAfterLoadFromSession\\AddLDAPProfileDataSync::callback"
+		"UserLoadAfterLoadFromSession": "\\BlueSpice\\Social\\Profile\\Hook\\UserLoadAfterLoadFromSession\\AddLDAPProfileDataSync::callback",
+		"DeleteAccount": "\\BlueSpice\\Social\\Profile\\Hook\\DeleteAccount\\DeleteUserProfile::callback"
 	},
 	"manifest_version": 2
 }
