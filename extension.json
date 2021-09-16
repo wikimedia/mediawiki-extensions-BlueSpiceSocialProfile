@@ -224,7 +224,8 @@
 		"GetPreferences": "\\BlueSpice\\Social\\Profile\\Hook\\GetPreferences\\AddShowProfileInfoEmail::callback",
 		"BSPageTemplatesModifyTargetUrl": "\\BlueSpice\\Social\\Profile\\Hook\\BSPageTemplatesModifyTargetUrl\\AddClassicProfileLink::callback",
 		"UserLoadAfterLoadFromSession": "\\BlueSpice\\Social\\Profile\\Hook\\UserLoadAfterLoadFromSession\\AddLDAPProfileDataSync::callback",
-		"LocalUserCreated": "\\BlueSpice\\Social\\Profile\\Hook\\LocalUserCreated\\CreateUserProfile::callback"
+		"LocalUserCreated": "\\BlueSpice\\Social\\Profile\\Hook\\LocalUserCreated\\CreateUserProfile::callback",
+		"DeleteAccount": "\\BlueSpice\\Social\\Profile\\Hook\\DeleteAccount\\DeleteUserProfile::callback"
 	},
 	"manifest_version": 2
 }
