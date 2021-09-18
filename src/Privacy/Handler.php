@@ -13,6 +13,7 @@ use Message;
 use Status;
 use Title;
 use User;
+use Wikimedia\Rdbms\IDatabase;
 use WikiPage;
 
 class Handler implements IPrivacyHandler {
@@ -24,9 +25,9 @@ class Handler implements IPrivacyHandler {
 
 	/**
 	 *
-	 * @param \IDatabase $db
+	 * @param IDatabase $db
 	 */
-	public function __construct( \IDatabase $db ) {
+	public function __construct( IDatabase $db ) {
 	}
 
 	/**
