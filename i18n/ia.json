@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-socialprofile-desc": "Entitate de profilo pro BlueSpiceSocial",
+	"bs-socialprofile-type": "Profilo",
+	"bs-socialprofile-entityaction-changeimage": "Imagine de usator",
+	"bs-social-entityaction-editprofilefields": "Datos de profilo",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Objecto 'User' invalide",
+	"bs-social-profile-field-name": "Nomine",
+	"bs-social-profile-field-email": "E-mail",
+	"bs-social-profile-field-title": "Titulo",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|Sr.|Sra.|}}",
+	"bs-social-profile-field-department": "Departimento",
+	"bs-social-profile-field-function": "Function",
+	"bs-social-profile-field-location": "Loco",
+	"bs-social-profile-field-phone": "Telephono",
+	"bs-social-profile-field-validate-no-integer": "$1 debe esser un numero",
+	"bs-socialprofile-special-profiles-heading": "Profilos",
+	"bs-social-profile-infoshowemail": "Monstrar adresse de e-mail in profilo",
+	"socialprofiles": "Profilos",
+	"bs-socialprofile-switch-classicprofile-label": "Profilo classic",
+	"bs-socialprofile-switch-modernprofile-label": "Profilo moderne",
+	"bs-socialprofile-switch-classicprofile-tooltip": "Commutar al profilo classic",
+	"bs-socialprofile-switch-modernprofile-tooltip": "Commutar al profilo moderne",
+	"action-social-editothersprofile": "modificar le profilo de altere usatores",
+	"right-social-editothersprofile": "Modificar le profilo de altere usatores",
+	"action-socialprofile-viewspecialpage": "vider le pagina special \"{{int:socialprofiles}}\"",
+	"right-socialprofile-viewspecialpage": "Vider le pagina special \"{{int:socialprofiles}}\""
+}
