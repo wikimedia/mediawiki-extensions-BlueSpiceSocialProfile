@@ -2,18 +2,17 @@
 
 namespace BlueSpice\Social\Profile\Privacy;
 
-use Status;
-use Message;
-use User;
-use Config;
-use JobQueueGroup;
-use Title;
-use WikiPage;
-use BlueSpice\Services;
-use BlueSpice\Social\ExtendedSearch\Job\Entity as SearchJob;
 use BlueSpice\Privacy\IPrivacyHandler;
 use BlueSpice\Privacy\Module\Transparency;
+use BlueSpice\Social\ExtendedSearch\Job\Entity as SearchJob;
 use BlueSpice\Social\Profile\Entity\Profile;
+use Config;
+use JobQueueGroup;
+use MediaWiki\MediaWikiServices;
+use Message;
+use Status;
+use User;
+use WikiPage;
 
 class Handler implements IPrivacyHandler {
 	/**
@@ -147,17 +146,18 @@ class Handler implements IPrivacyHandler {
 	 * @return Status
 	 */
 	protected function deleteEntityPage() {
-		$profile = $this->getProfile();
-
-		$profilePage = $profile->getTitle();
-		if ( $profilePage instanceof Title && $profilePage->exists() ) {
-			$wikipage = WikiPage::newFromID( $profilePage->getArticleID() );
-			$status = $wikipage->doDeleteArticleReal( '', true );
+		$status = Status::newGood();
+		if ( !$this->getProfile() || !$this->getProfile()->exists() ) {
+			return $status;
 		}
+		$wikipage = WikiPage::factory( $this->getProfile()->getTitle() );
+		$status->merge(
+			$wikipage->doDeleteArticleReal( '', $this->getMaintenanceUser(), true )
+		);
 
 		if ( $status->isGood() ) {
 			$job = new SearchJob(
-				$profile->getTitle()
+				$this->getProfile()->getTitle()
 			);
 
 			JobQueueGroup::singleton()->push(
@@ -166,5 +166,14 @@ class Handler implements IPrivacyHandler {
 		}
 
 		return $status;
+	}
+
+	/**
+	 *
+	 * @return User
+	 */
+	private function getMaintenanceUser() {
+		return MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' )
+			->getMaintenanceUser()->getUser();
 	}
 }
