@@ -11,7 +11,6 @@ use JobQueueGroup;
 use MediaWiki\MediaWikiServices;
 use Message;
 use Status;
-use Title;
 use User;
 use WikiPage;
 
@@ -148,17 +147,18 @@ class Handler implements IPrivacyHandler {
 	 * @return Status
 	 */
 	protected function deleteEntityPage( User $user ) {
-		$profile = $this->getProfile();
-
-		$profilePage = $profile->getTitle();
-		if ( $profilePage instanceof Title && $profilePage->exists() ) {
-			$wikipage = WikiPage::newFromID( $profilePage->getArticleID() );
-			$status = $wikipage->doDeleteArticleReal( '', $user, true );
+		$status = Status::newGood();
+		if ( !$this->getProfile() || !$this->getProfile()->exists() ) {
+			return $status;
 		}
+		$wikipage = WikiPage::factory( $this->getProfile()->getTitle() );
+		$status->merge(
+			$wikipage->doDeleteArticleReal( '', $this->getMaintenanceUser(), true )
+		);
 
 		if ( $status->isGood() ) {
 			$job = new SearchJob(
-				$profile->getTitle()
+				$this->getProfile()->getTitle()
 			);
 
 			JobQueueGroup::singleton()->push(
@@ -167,5 +167,14 @@ class Handler implements IPrivacyHandler {
 		}
 
 		return $status;
+	}
+
+	/**
+	 *
+	 * @return User
+	 */
+	private function getMaintenanceUser() {
+		return MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' )
+			->getMaintenanceUser()->getUser();
 	}
 }
