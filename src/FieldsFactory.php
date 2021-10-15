@@ -33,7 +33,7 @@ use RequestContext;
 use User;
 
 class FieldsFactory {
-	const KEY_CALLBACK = 'callback';
+	public const KEY_CALLBACK = 'callback';
 
 	/**
 	 * @var array|null
