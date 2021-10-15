@@ -7,7 +7,7 @@ use MediaWiki\MediaWikiServices;
 use User;
 
 class CreateProfile extends Job {
-	const JOBCOMMAND = 'socialprofilecreate';
+	public const JOBCOMMAND = 'socialprofilecreate';
 
 	public function run() {
 		$entityFactory = MediaWikiServices::getInstance()->getService(

@@ -4,8 +4,8 @@ namespace BlueSpice\Social\Profile;
 use MediaWiki\MediaWikiServices;
 
 abstract class CustomField extends Field implements ICustomField {
-	const KEY_DEFAULT = 'default';
-	const KEY_REQUIRED = 'required';
+	public const KEY_DEFAULT = 'default';
+	public const KEY_REQUIRED = 'required';
 
 	/**
 	 *

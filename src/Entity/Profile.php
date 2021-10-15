@@ -49,7 +49,7 @@ use WikiPage;
  * @subpackage BlueSpiceSocialProfile
  */
 class Profile extends Page {
-	const TYPE = 'profile';
+	public const TYPE = 'profile';
 
 	/**
 	 *

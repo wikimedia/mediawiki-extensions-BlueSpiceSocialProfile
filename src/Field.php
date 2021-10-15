@@ -6,14 +6,14 @@ use Message;
 use User;
 
 abstract class Field implements IField {
-	const KEY_I18N = 'i18n';
-	const KEY_HIDDEN = 'hidden';
+	public const KEY_I18N = 'i18n';
+	public const KEY_HIDDEN = 'hidden';
 
-	const DFLT_FILTERABLE = false;
-	const DFLT_SORTABLE = false;
-	const DFLT_STORABLE = true;
-	const DFLT_INDEXABLE = true;
-	const DFLT_TYPE = 'string';
+	public const DFLT_FILTERABLE = false;
+	public const DFLT_SORTABLE = false;
+	public const DFLT_STORABLE = true;
+	public const DFLT_INDEXABLE = true;
+	public const DFLT_TYPE = 'string';
 
 	/**
 	 *
