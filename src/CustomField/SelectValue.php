@@ -8,8 +8,8 @@ use Status;
 use User;
 
 class SelectValue extends StringValue implements IFieldList {
-	const DFLT_TYPE = 'string';
-	const KEY_OPTIONS = 'options';
+	public const DFLT_TYPE = 'string';
+	public const KEY_OPTIONS = 'options';
 
 	/**
 	 *

@@ -8,7 +8,7 @@ use User;
 
 class SetProfileLinksKnown extends HtmlPageLinkRendererBegin {
 
-	const ATTR_PROCCESSED = 'knownProfileProccessed';
+	public const ATTR_PROCCESSED = 'knownProfileProccessed';
 
 	/**
 	 *

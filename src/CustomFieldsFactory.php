@@ -30,7 +30,7 @@ use BlueSpice\IRegistry;
 use Config;
 
 class CustomFieldsFactory extends FieldsFactory {
-	const KEY_TYPE = 'type';
+	public const KEY_TYPE = 'type';
 
 	/**
 	 *

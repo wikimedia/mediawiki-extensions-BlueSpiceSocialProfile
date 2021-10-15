@@ -6,7 +6,7 @@ use Status;
 
 class IntegerValue extends \BlueSpice\Social\Profile\CustomField {
 
-	const DFLT_TYPE = 'int';
+	public const DFLT_TYPE = 'int';
 
 	/** @inheritDoc */
 	protected $default = 0;
