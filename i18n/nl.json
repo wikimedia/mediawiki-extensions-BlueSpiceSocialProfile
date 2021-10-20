@@ -3,6 +3,7 @@
 		"authors": [
 			"Elroy",
 			"Mainframe98",
+			"McDutchie",
 			"Robin van der Linde",
 			"Romaine"
 		]
@@ -26,7 +27,7 @@
 	"bs-socialprofile-switch-modernprofile-label": "Modern profiel",
 	"bs-socialprofile-switch-classicprofile-tooltip": "Naar klassiek profiel overschakelen",
 	"bs-socialprofile-switch-modernprofile-tooltip": "Naar modern profiel overschakelen",
-	"action-social-editothersprofile": "andermans profiel bewerken",
+	"action-social-editothersprofile": "andermans profiel te bewerken",
 	"right-social-editothersprofile": "Andermans profiel bewerken",
 	"action-socialprofile-viewspecialpage": "de speciale pagina \"{{int:socialprofiles}}\" te bekijken",
 	"right-socialprofile-viewspecialpage": "De speciale pagina \"{{int:socialprofiles}}\" bekijken",
