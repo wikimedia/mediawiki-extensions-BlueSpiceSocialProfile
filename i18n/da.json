@@ -19,5 +19,6 @@
 	"bs-socialprofile-switch-classicprofile-label": "Klassisk profil",
 	"bs-socialprofile-switch-modernprofile-label": "Moderne profil",
 	"bs-socialprofile-switch-classicprofile-tooltip": "Skift til klassisk profil",
-	"bs-socialprofile-switch-modernprofile-tooltip": "Skift til moderne profil"
+	"bs-socialprofile-switch-modernprofile-tooltip": "Skift til moderne profil",
+	"bs-social-profile-field-validate-no-integer": "$1 skal være et tal"
 }
