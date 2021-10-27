@@ -36,21 +36,12 @@ use BlueSpice\Social\Profile\Entity\Profile;
 class ProfileFactory extends EntityFactory {
 
 	/**
-	 *
-	 * @var Profile[]
-	 */
-	protected $profileInstances = [];
-
-	/**
 	 * @param \User $user
 	 * @return Profile | null
 	 */
 	public function newFromUser( \User $user ) {
 		if ( $user->isAnon() ) {
 			return null;
-		}
-		if ( isset( $this->profileInstances[$user->getId()] ) ) {
-			return $this->profileInstances[$user->getId()];
 		}
 
 		$context = new \BlueSpice\Context(
@@ -91,7 +82,6 @@ class ProfileFactory extends EntityFactory {
 				Profile::ATTR_TYPE => Profile::TYPE
 			] );
 		}
-		$this->profileInstances[$user->getId()] = $instance;
 		return $instance;
 	}
 
