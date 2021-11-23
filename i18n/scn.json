@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"bs-socialprofile-type": "Prufilu",
+	"bs-socialprofile-entityaction-changeimage": "Mmàggini utenti",
+	"bs-social-profile-field-name": "Nomu",
+	"bs-social-profile-field-email": "Email",
+	"bs-social-profile-field-title": "Tìtulu",
+	"bs-socialprofile-special-profiles-heading": "Prufili",
+	"bs-social-profile-infoshowemail": "Ammustra lu nnirizzu email ntô prufilu",
+	"socialprofiles": "Prufili",
+	"bs-socialprofile-switch-classicprofile-label": "Prufilu clàssicu",
+	"action-social-editothersprofile": "canciari li prufili di l'àutri utenti",
+	"right-social-editothersprofile": "Cancia li prufili di l'àutri utenti",
+	"action-socialprofile-viewspecialpage": "taliari la pàggina spiciali \"{{int:socialprofiles}}\"",
+	"right-socialprofile-viewspecialpage": "Talìa la pàggina spiciali \"{{int:socialprofiles}}\""
+}
