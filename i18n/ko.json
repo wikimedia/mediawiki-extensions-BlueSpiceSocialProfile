@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ykhwong"
+			"Ykhwong",
+			"Yunbj"
 		]
 	},
 	"bs-socialprofile-type": "프로파일",
@@ -10,6 +11,7 @@
 	"bs-social-profile-field-name": "이름",
 	"bs-social-profile-field-email": "이메일",
 	"bs-social-profile-field-title": "제목",
+	"bs-social-profile-field-department": "부서",
 	"bs-social-profile-field-location": "위치",
 	"bs-social-profile-field-phone": "전화",
 	"bs-social-profile-field-validate-no-integer": "$1 값은 숫자여야 합니다",
