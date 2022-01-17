@@ -34,5 +34,15 @@
 	"action-social-editothersprofile": "{{doc-action|social-editothersprofile}}",
 	"right-social-editothersprofile": "{{doc-right|social-editothersprofile}}",
 	"action-socialprofile-viewspecialpage": "{{doc-action|socialprofile-viewspecialpage}}",
-	"right-socialprofile-viewspecialpage": "{{doc-right|socialprofile-viewspecialpage}}"
+	"right-socialprofile-viewspecialpage": "{{doc-right|socialprofile-viewspecialpage}}",
+	"bs-socialprofile-tag-socialentityprofile-desc": "Description of the socialentityprofile tag shown in the VisualEditor tag inspector",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "Title for the socialentityprofile tag VisualEditor inspector",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Label for the parameter \"username\"",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Help message for the parameter \"username\"",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Label for the parameter \"rendertype\"",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Help message for the parameter \"rendertype\"",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Label for the option \"list\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Label for the option \"short\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Label for the option \"default\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Label for the option \"page\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector"
 }
