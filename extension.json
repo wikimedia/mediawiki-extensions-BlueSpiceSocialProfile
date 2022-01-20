@@ -80,6 +80,11 @@
 			"ExtraPropertyRegistry": {
 				"socialprofilefields": "\\BlueSpice\\Social\\Profile\\SocialProfilePropertyValueProvider::factory"
 			}
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"TagDefinitions": [
+				"ext.bluespice.socialprofile.visualEditorTagDefinition"
+			]
 		}
 	},
 	"callback": "\\BlueSpice\\Social\\Profile\\Extension::onRegistration",
@@ -147,6 +152,23 @@
 			],
 			"scripts": [
 				"ui/EntityEditorProfile.js"
+			]
+		},
+		"ext.bluespice.socialprofile.visualEditorTagDefinition": {
+			"scripts": [
+				"bs.socialprofile/util/tag/SocialEntityProfileDefinition.js"
+			],
+			"messages": [
+				"bs-socialprofile-tag-socialentityprofile-desc",
+				"bs-socialprofile-ve-socialentityprofileinspector-title",
+				"bs-socialprofile-ve-socialentityprofile-attr-username-label",
+				"bs-socialprofile-ve-socialentityprofile-attr-username-help",
+				"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label",
+				"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help",
+				"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list",
+				"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short",
+				"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default",
+				"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page"
 			]
 		}
 	},
@@ -225,7 +247,8 @@
 		"BSPageTemplatesModifyTargetUrl": "\\BlueSpice\\Social\\Profile\\Hook\\BSPageTemplatesModifyTargetUrl\\AddClassicProfileLink::callback",
 		"UserLoadAfterLoadFromSession": "\\BlueSpice\\Social\\Profile\\Hook\\UserLoadAfterLoadFromSession\\AddLDAPProfileDataSync::callback",
 		"LocalUserCreated": "\\BlueSpice\\Social\\Profile\\Hook\\LocalUserCreated\\CreateUserProfile::callback",
-		"DeleteAccount": "\\BlueSpice\\Social\\Profile\\Hook\\DeleteAccount\\DeleteUserProfile::callback"
+		"DeleteAccount": "\\BlueSpice\\Social\\Profile\\Hook\\DeleteAccount\\DeleteUserProfile::callback",
+		"BSInsertMagicAjaxGetData": "\\BlueSpice\\Social\\Profile\\Hook\\BSInsertMagicAjaxGetData\\AddSocialEntityProfileTag::callback"
 	},
 	"manifest_version": 2
 }
