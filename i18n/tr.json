@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"Can"
 		]
 	},
 	"bs-socialprofile-desc": "BlueSpiceSocial için profil varlığı",
@@ -28,5 +29,12 @@
 	"action-social-editothersprofile": "diğer kullanıcıların profilini düzenle",
 	"right-social-editothersprofile": "Diğer kullanıcıların profilini düzenle",
 	"action-socialprofile-viewspecialpage": "\"{{int:socialprofiles}}\" özel sayfasını görüntüle",
-	"right-socialprofile-viewspecialpage": "\"{{int:socialprofiles}}\" özel sayfasını görüntüle"
+	"right-socialprofile-viewspecialpage": "\"{{int:socialprofiles}}\" özel sayfasını görüntüle",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Kullanıcı adı",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Kullanıcı adı yardımı",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "İşleme türü",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kısa",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Varsayılan",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Sayfa"
 }
