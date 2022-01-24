@@ -19,5 +19,10 @@
 	"socialprofiles": "Profiller",
 	"bs-socialprofile-switch-classicprofile-label": "Klassesche Profil",
 	"bs-socialprofile-switch-modernprofile-label": "Moderne Profil",
-	"right-social-editothersprofile": "Anere Benotzer hire Profil änneren"
+	"right-social-editothersprofile": "Anere Benotzer hire Profil änneren",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Benotzernumm",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lëscht",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kuerz",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standard",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Säit"
 }

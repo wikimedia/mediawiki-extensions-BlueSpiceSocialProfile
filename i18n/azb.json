@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bir morty"
+		]
+	},
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "ایشلدن آدی",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "ایشلدن آدی کؤمگی",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "لیست",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "قیسا",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "صفحه"
+}

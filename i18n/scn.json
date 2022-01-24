@@ -16,5 +16,8 @@
 	"action-social-editothersprofile": "canciari li prufili di l'àutri utenti",
 	"right-social-editothersprofile": "Cancia li prufili di l'àutri utenti",
 	"action-socialprofile-viewspecialpage": "taliari la pàggina spiciali \"{{int:socialprofiles}}\"",
-	"right-socialprofile-viewspecialpage": "Talìa la pàggina spiciali \"{{int:socialprofiles}}\""
+	"right-socialprofile-viewspecialpage": "Talìa la pàggina spiciali \"{{int:socialprofiles}}\"",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nomu utenti",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Elencu",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pàggina"
 }

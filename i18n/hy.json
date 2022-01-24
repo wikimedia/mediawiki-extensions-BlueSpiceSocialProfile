@@ -4,5 +4,7 @@
 			"Kareyac"
 		]
 	},
-	"bs-social-profile-field-phone": "Հեռախոսահամար"
+	"bs-social-profile-field-phone": "Հեռախոսահամար",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Ցանկ",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Էջ"
 }
