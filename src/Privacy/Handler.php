@@ -7,7 +7,6 @@ use BlueSpice\Privacy\Module\Transparency;
 use BlueSpice\Social\ExtendedSearch\Job\Entity as SearchJob;
 use BlueSpice\Social\Profile\Entity\Profile;
 use Config;
-use JobQueueGroup;
 use MediaWiki\MediaWikiServices;
 use Message;
 use Status;
@@ -59,7 +58,7 @@ class Handler implements IPrivacyHandler {
 			$profile->getTitle()
 		);
 
-		JobQueueGroup::singleton()->push(
+		MediaWikiServices::getInstance()->getJobQueueGroup()->push(
 			$job
 		);
 
@@ -162,7 +161,7 @@ class Handler implements IPrivacyHandler {
 				$this->getProfile()->getTitle()
 			);
 
-			JobQueueGroup::singleton()->push(
+			MediaWikiServices::getInstance()->getJobQueueGroup()->push(
 				$job
 			);
 		}

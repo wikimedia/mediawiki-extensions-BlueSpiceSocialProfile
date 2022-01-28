@@ -3,7 +3,7 @@ namespace BlueSpice\Social\Profile\Hook\LocalUserCreated;
 
 use BlueSpice\Hook\LocalUserCreated;
 use BlueSpice\Social\Profile\Job\CreateProfile;
-use JobQueueGroup;
+use MediaWiki\MediaWikiServices;
 
 class CreateUserProfile extends LocalUserCreated {
 
@@ -13,7 +13,7 @@ class CreateUserProfile extends LocalUserCreated {
 				CreateProfile::JOBCOMMAND,
 				$this->user->getUserPage()
 			);
-			JobQueueGroup::singleton()->push( $job );
+			MediaWikiServices::getInstance()->getJobQueueGroup()->push( $job );
 		} catch ( Exception $e ) {
 		}
 		return true;
