@@ -91,7 +91,7 @@ class Profile extends \WikitextContent {
 	 * @param bool $generateHtml
 	 * @param \ParserOutput &$output
 	 * @param bool $bForceOrigin
-	 * @return \ParserOutput $output
+	 * @return \ParserOutput
 	 */
 	protected function fillParserOutput( \Title $title, $revId, \ParserOptions $options,
 		$generateHtml, \ParserOutput &$output, $bForceOrigin = false ) {
@@ -142,7 +142,7 @@ class Profile extends \WikitextContent {
 		$output->setTitleText( $sTitle );
 		if ( $generateHtml ) {
 			$output->setText( $sText );
-			$output->addModuleStyles( 'mediawiki.content.json' );
+			$output->addModuleStyles( [ 'mediawiki.content.json' ] );
 		} else {
 			$output->setText( $sText );
 		}
