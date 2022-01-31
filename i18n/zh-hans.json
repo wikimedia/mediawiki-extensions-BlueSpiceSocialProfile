@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"A Chinese Wikipedian"
+			"A Chinese Wikipedian",
+			"Willy1018"
 		]
 	},
 	"bs-socialprofile-type": "配置文件",
@@ -12,5 +13,9 @@
 	"bs-social-profile-field-function": "功能",
 	"bs-social-profile-field-location": "地方",
 	"bs-social-profile-field-phone": "电话",
-	"socialprofiles": "配置文件"
+	"socialprofiles": "配置文件",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "用户名",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "列表",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "默认",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "页面"
 }

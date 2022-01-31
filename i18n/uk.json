@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Piramidion"
+			"Piramidion",
+			"Shybetsky"
 		]
 	},
 	"bs-socialprofile-desc": "Сутність профілів для BlueSpiceSocial",
@@ -28,5 +29,6 @@
 	"action-social-editothersprofile": "редагування профілів інших користувачів",
 	"right-social-editothersprofile": "Редагування профілів інших користувачів",
 	"action-socialprofile-viewspecialpage": "перегляд спеціальної сторінки «{{int:socialprofiles}}»",
-	"right-socialprofile-viewspecialpage": "Перегляд спеціальної сторінки «{{int:socialprofiles}}»"
+	"right-socialprofile-viewspecialpage": "Перегляд спеціальної сторінки «{{int:socialprofiles}}»",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Сторінка"
 }

@@ -2,10 +2,16 @@
 	"@metadata": {
 		"authors": [
 			"Omotecho",
-			"Shirayuki"
+			"Shirayuki",
+			"A2y4",
+			"MathXplore"
 		]
 	},
 	"bs-social-profile-field-title": "役職",
 	"action-socialprofile-viewspecialpage": "特別ページ「{{int:socialprofiles}}」の閲覧",
-	"right-socialprofile-viewspecialpage": "特別ページ「{{int:socialprofiles}}」を閲覧"
+	"right-socialprofile-viewspecialpage": "特別ページ「{{int:socialprofiles}}」を閲覧",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "利用者名",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "リスト",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "既定",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "ページ"
 }

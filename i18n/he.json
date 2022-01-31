@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
-			"Steeve815"
+			"Steeve815",
+			"YaronSh"
 		]
 	},
 	"bs-social-profile-field-title-value": "{{GENDER:$1|מר|גברת}}",
@@ -10,5 +11,10 @@
 	"bs-socialprofile-special-profiles-heading": "פרופילים",
 	"bs-social-profile-infoshowemail": "להציג כתובת דוא\"ל בפרופיל",
 	"bs-socialprofile-switch-classicprofile-label": "פרופיל קלאסי",
-	"bs-socialprofile-switch-modernprofile-label": "פרופיל מודרני"
+	"bs-socialprofile-switch-modernprofile-label": "פרופיל מודרני",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "שם משתמש",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "עזרה עם שם המשתמש",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "רשימה",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "ברירת המחדל",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "דף"
 }

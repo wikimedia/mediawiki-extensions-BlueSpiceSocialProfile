@@ -6,7 +6,8 @@
 			"Fitoschido",
 			"MuratTheTurkish",
 			"Patric Wirth",
-			"Umherirrender"
+			"Umherirrender",
+			"Robby"
 		]
 	},
 	"bs-socialprofile-desc": "{{desc|name=BlueSpiceSocialProfile}}",
@@ -37,12 +38,12 @@
 	"right-socialprofile-viewspecialpage": "{{doc-right|socialprofile-viewspecialpage}}",
 	"bs-socialprofile-tag-socialentityprofile-desc": "Description of the socialentityprofile tag shown in the VisualEditor tag inspector",
 	"bs-socialprofile-ve-socialentityprofileinspector-title": "Title for the socialentityprofile tag VisualEditor inspector",
-	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Label for the parameter \"username\"",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Label for the parameter \"username\"\n{{identical|Username}}",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Help message for the parameter \"username\"",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Label for the parameter \"rendertype\"",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Help message for the parameter \"rendertype\"",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Label for the option \"list\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Label for the option \"list\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector\n{{identical|List}}",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Label for the option \"short\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Label for the option \"default\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Label for the option \"page\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Label for the option \"default\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector\n{{identical|Default}}",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Label for the option \"page\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector\n{{identical|Page}}"
 }

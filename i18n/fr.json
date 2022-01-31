@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Thibaut120094",
-			"Verdy p"
+			"Verdy p",
+			"Gomoko",
+			"Wladek92"
 		]
 	},
 	"bs-socialprofile-desc": "Entité de profil pour ''BlueSpiceSocial''",
@@ -29,5 +31,15 @@
 	"action-social-editothersprofile": "modifier le profil d’autres utilisateurs",
 	"right-social-editothersprofile": "modifier le profil d’autres utilisateurs",
 	"action-socialprofile-viewspecialpage": "visualiser la page spéciale « {{int:socialprofiles}} »",
-	"right-socialprofile-viewspecialpage": "visualiser la page spéciale « {{int:socialprofiles}} »"
+	"right-socialprofile-viewspecialpage": "visualiser la page spéciale « {{int:socialprofiles}} »",
+	"bs-socialprofile-tag-socialentityprofile-desc": "Un profil utilisateur peut être inclus dans une page avec la balise",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntityProfile",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nom d’utilisateur",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Aide sur le nom de l’utilisateur",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Type de rendu",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Aide sur le type de rendu",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Court",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Par défaut",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Page"
 }
