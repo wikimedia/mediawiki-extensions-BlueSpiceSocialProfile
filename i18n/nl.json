@@ -5,9 +5,11 @@
 			"Mainframe98",
 			"McDutchie",
 			"Robin van der Linde",
-			"Romaine"
+			"Romaine",
+			"Robin van der Vliet"
 		]
 	},
+	"bs-socialprofile-desc": "Profielentiteit voor BlueSpiceSocial",
 	"bs-socialprofile-type": "Profiel",
 	"bs-socialprofile-entityaction-changeimage": "Gebruikersafbeelding",
 	"bs-social-entityaction-editprofilefields": "Profielgegevens",
@@ -31,5 +33,8 @@
 	"right-social-editothersprofile": "Andermans profiel bewerken",
 	"action-socialprofile-viewspecialpage": "de speciale pagina \"{{int:socialprofiles}}\" te bekijken",
 	"right-socialprofile-viewspecialpage": "De speciale pagina \"{{int:socialprofiles}}\" bekijken",
-	"bs-socialprofile-desc": "Profielentiteit voor BlueSpiceSocial"
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Gebruikersnaam",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lijst",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standaard",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina"
 }
