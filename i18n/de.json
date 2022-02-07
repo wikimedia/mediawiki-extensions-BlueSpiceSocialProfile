@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"ElBe",
 			"Mglaser",
 			"Patric Wirth"
 		]
@@ -29,5 +30,6 @@
 	"action-social-editothersprofile": "die Profile anderer Nutzer zu bearbeiten",
 	"right-social-editothersprofile": "Profile anderer Nutzer bearbeiten",
 	"action-socialprofile-viewspecialpage": "die Spezialseite \"{{int:socialprofiles}}\" anzusehen",
-	"right-socialprofile-viewspecialpage": "Die Spezialseite \"{{int:socialprofiles}}\" ansehen"
+	"right-socialprofile-viewspecialpage": "Die Spezialseite \"{{int:socialprofiles}}\" ansehen",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Seite"
 }
