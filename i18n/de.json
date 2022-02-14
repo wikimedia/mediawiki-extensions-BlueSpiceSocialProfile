@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Mglaser",
-			"Patric Wirth"
+			"Patric Wirth",
+			"ElBe",
+			"ThePiscin"
 		]
 	},
 	"bs-socialprofile-desc": "Profil-Erweiterung für BlueSpiceSocial",
@@ -29,5 +31,8 @@
 	"action-social-editothersprofile": "die Profile anderer Nutzer zu bearbeiten",
 	"right-social-editothersprofile": "Profile anderer Nutzer bearbeiten",
 	"action-socialprofile-viewspecialpage": "die Spezialseite \"{{int:socialprofiles}}\" anzusehen",
-	"right-socialprofile-viewspecialpage": "Die Spezialseite \"{{int:socialprofiles}}\" ansehen"
+	"right-socialprofile-viewspecialpage": "Die Spezialseite \"{{int:socialprofiles}}\" ansehen",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Benutzername",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Seite"
 }
