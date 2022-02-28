@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yupik"
+			"Yupik",
+			"Seipinne"
 		]
 	},
-	"bs-social-profile-field-name": "Nommâ"
+	"bs-social-profile-field-name": "Nommâ",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Sijđo"
 }
