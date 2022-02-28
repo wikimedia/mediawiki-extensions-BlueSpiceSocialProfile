@@ -13,7 +13,7 @@
 	"bs-socialprofile-switch-classicprofile-label": "פרופיל קלאסי",
 	"bs-socialprofile-switch-modernprofile-label": "פרופיל מודרני",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "שם משתמש",
-	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "עזרה עם שם המשתמש",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "שם המשתמש של מי שיוצג עם התג הזה בדף",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "רשימה",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "ברירת המחדל",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "דף"
