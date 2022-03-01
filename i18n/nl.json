@@ -6,7 +6,8 @@
 			"McDutchie",
 			"Robin van der Linde",
 			"Robin van der Vliet",
-			"Romaine"
+			"Romaine",
+			"Rots61"
 		]
 	},
 	"bs-socialprofile-desc": "Profielentiteit voor BlueSpiceSocial",
@@ -34,6 +35,7 @@
 	"action-socialprofile-viewspecialpage": "de speciale pagina \"{{int:socialprofiles}}\" te bekijken",
 	"right-socialprofile-viewspecialpage": "De speciale pagina \"{{int:socialprofiles}}\" bekijken",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Gebruikersnaam",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Weergavetitel",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lijst",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standaard",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina"
