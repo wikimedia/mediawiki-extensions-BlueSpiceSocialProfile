@@ -5,8 +5,9 @@
 			"Mainframe98",
 			"McDutchie",
 			"Robin van der Linde",
+			"Robin van der Vliet",
 			"Romaine",
-			"Robin van der Vliet"
+			"Rots61"
 		]
 	},
 	"bs-socialprofile-desc": "Profielentiteit voor BlueSpiceSocial",
@@ -36,5 +37,6 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Gebruikersnaam",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lijst",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standaard",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Weergavetitel"
 }
