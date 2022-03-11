@@ -29,5 +29,15 @@
 	"action-social-editothersprofile": "edit other users profile",
 	"right-social-editothersprofile": "Edit other users profile",
 	"action-socialprofile-viewspecialpage": "view the special page \"{{int:socialprofiles}}\"",
-	"right-socialprofile-viewspecialpage": "View the special page \"{{int:socialprofiles}}\""
+	"right-socialprofile-viewspecialpage": "View the special page \"{{int:socialprofiles}}\"",
+	"bs-socialprofile-tag-socialentityprofile-desc": "A user profile can be included in a page with the tag",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntityProfile",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Username",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "User name of the user to be displayed with this tag on page",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Display type",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "The type the profile is displayed on the page. Selection option for this from list, default, short and page.",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "List",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Short",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Default",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Page"
 }

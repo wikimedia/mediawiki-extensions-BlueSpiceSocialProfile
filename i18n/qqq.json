@@ -6,7 +6,9 @@
 			"Fitoschido",
 			"MuratTheTurkish",
 			"Patric Wirth",
-			"Umherirrender"
+			"Robby",
+			"Umherirrender",
+			"Verdy p"
 		]
 	},
 	"bs-socialprofile-desc": "{{desc|name=BlueSpiceSocialProfile}}",
@@ -18,7 +20,7 @@
 	"bs-social-profile-field-name": "Label for field \"name\" in the users profile.\n{{Identical|Name}}",
 	"bs-social-profile-field-email": "Label for field \"email\" in the users profile.\n{{Identical|E-Mail}}",
 	"bs-social-profile-field-title": "Label for field \"title\" in the users profile.\n{{Identical|Title}}",
-	"bs-social-profile-field-title-value": "Value for field \"title\" in the users profile.\nUse GENDER\n{{Identical|1={{GENDER:$1|Mr.|Mrs.|}}}}\n* $1 - User name of the owner of this profile",
+	"bs-social-profile-field-title-value": "Value for field \"title\" in the users profile. Uses <code><nowiki>{{</nowiki>GENDER:''User name''|''result for masculine user''|''result for feminine user''|''result for neutral user''<nowiki>}}</nowiki></code>.\n* $1 - User name of the owner of this profile\n{{Identical|1=GENDER:$1}}",
 	"bs-social-profile-field-department": "Label for field \"department\" in the users profile.\n{{Identical|Department}}",
 	"bs-social-profile-field-function": "Label for field \"function\" in the users profile.\n{{Identical|Function}}",
 	"bs-social-profile-field-location": "Label for field \"location\" in the users profile.\n{{Identical|Location}}",
@@ -34,5 +36,15 @@
 	"action-social-editothersprofile": "{{doc-action|social-editothersprofile}}",
 	"right-social-editothersprofile": "{{doc-right|social-editothersprofile}}",
 	"action-socialprofile-viewspecialpage": "{{doc-action|socialprofile-viewspecialpage}}",
-	"right-socialprofile-viewspecialpage": "{{doc-right|socialprofile-viewspecialpage}}"
+	"right-socialprofile-viewspecialpage": "{{doc-right|socialprofile-viewspecialpage}}",
+	"bs-socialprofile-tag-socialentityprofile-desc": "Description of the socialentityprofile tag shown in the VisualEditor tag inspector",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "Title for the socialentityprofile tag VisualEditor inspector",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Label for the parameter \"username\"\n{{identical|Username}}",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Help message for the parameter \"username\"",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Label for the parameter \"rendertype\"",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Help message for the parameter \"rendertype\"",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Label for the option \"list\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector\n{{identical|List}}",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Label for the option \"short\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Label for the option \"default\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector\n{{identical|Default}}",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Label for the option \"page\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector\n{{identical|Page}}"
 }

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Salvemm el lombard"
+		]
+	},
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Non de l'utent",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Jut a proposit del nom de l'utent",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Curt",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "De impostazzion predefinid",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina"
+}

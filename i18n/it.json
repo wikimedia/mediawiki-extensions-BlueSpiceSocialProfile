@@ -26,5 +26,9 @@
 	"action-social-editothersprofile": "modificare i profili di altri utenti",
 	"right-social-editothersprofile": "Modifica i profili di altri utenti",
 	"action-socialprofile-viewspecialpage": "vedere la pagina speciale \"{{int:socialprofiles}}\"",
-	"right-socialprofile-viewspecialpage": "Vedere la pagina speciale \"{{int:socialprofiles}}\""
+	"right-socialprofile-viewspecialpage": "Vedere la pagina speciale \"{{int:socialprofiles}}\"",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nome utente",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Elenco",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Predefinito",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina"
 }

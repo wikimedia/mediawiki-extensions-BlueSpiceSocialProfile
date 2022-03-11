@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Eduardoaddad"
+			"Eduardoaddad",
+			"Juan90264"
 		]
 	},
 	"bs-socialprofile-desc": "Entidade de perfil para BlueSpiceSocial",
@@ -29,5 +30,13 @@
 	"action-social-editothersprofile": "editar o perfil de outros usuários",
 	"right-social-editothersprofile": "Editar perfil de outros usuários",
 	"action-socialprofile-viewspecialpage": "veja a página especial \"{{int:socialprofiles}}\"",
-	"right-socialprofile-viewspecialpage": "Ver a página especial \"{{int:socialprofiles}}\""
+	"right-socialprofile-viewspecialpage": "Ver a página especial \"{{int:socialprofiles}}\"",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nome de usuário",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Nome de usuário do usuário a ser exibido com esta etiqueta na página",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Tipo de exibição",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "O tipo de perfil é exibido na página. Opção de seleção para isso da lista, padrão, curto e página.",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Curto",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Padrão",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página"
 }

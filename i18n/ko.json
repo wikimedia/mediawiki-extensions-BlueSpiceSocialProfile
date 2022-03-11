@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ykhwong"
+			"Ykhwong",
+			"Yunbj"
 		]
 	},
 	"bs-socialprofile-type": "프로파일",
@@ -23,5 +24,7 @@
 	"bs-socialprofile-switch-modernprofile-label": "현대 프로파일",
 	"bs-socialprofile-switch-classicprofile-tooltip": "고전 프로파일로 전환",
 	"bs-socialprofile-switch-modernprofile-tooltip": "현대 프로파일로 전환",
-	"right-social-editothersprofile": "다른 사용자의 프로파일 편집"
+	"right-social-editothersprofile": "다른 사용자의 프로파일 편집",
+	"bs-social-profile-field-department": "부서",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "표시 유형"
 }

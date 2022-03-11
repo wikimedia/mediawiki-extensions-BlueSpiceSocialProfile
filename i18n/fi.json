@@ -1,11 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"MITO",
 			"Silvonen"
 		]
 	},
 	"bs-socialprofile-type": "Profiili",
 	"bs-social-profile-field-name": "Nimi",
 	"bs-social-profile-field-department": "Osasto",
-	"bs-social-profile-field-phone": "Puhelin"
+	"bs-social-profile-field-phone": "Puhelin",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Käyttäjänimi",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Luettelo",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Oletus",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Sivu"
 }
