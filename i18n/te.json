@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Veeven"
+			"Veeven",
+			"Chaduvari"
 		]
 	},
-	"bs-social-profile-field-email": "ఈమెయిలు"
+	"bs-social-profile-field-email": "ఈమెయిలు",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "చూపించాల్సిన విధం"
 }

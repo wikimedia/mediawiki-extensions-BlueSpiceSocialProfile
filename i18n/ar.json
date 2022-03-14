@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"FiberAhmed"
 		]
 	},
 	"bs-socialprofile-desc": "كيان الملف الشخصي لـBlueSpiceSocial",
@@ -31,5 +32,8 @@
 	"action-socialprofile-viewspecialpage": "عرض الصفحة الخاصة \"{{int:socialprofiles}}\"",
 	"right-socialprofile-viewspecialpage": "عرض الصفحة الخاصة \"{{int:socialprofiles}}\"",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "اسم المستخدم",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "قائمة",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "ترتيب",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "افتراضي",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "صفحة"
 }

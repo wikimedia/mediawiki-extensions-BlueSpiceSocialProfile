@@ -34,7 +34,13 @@
 	"action-socialprofile-viewspecialpage": "die Spezialseite \"{{int:socialprofiles}}\" anzusehen",
 	"right-socialprofile-viewspecialpage": "Die Spezialseite \"{{int:socialprofiles}}\" ansehen",
 	"bs-socialprofile-tag-socialentityprofile-desc": "Ein Benutzerprofil kann mit diesem Tag auf einer Seite eingebunden werden",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntity-Profil",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Benutzername",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Benutzername des Nutzers, der auf der Seite mit dem Tag angezeigt werden soll",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Art der Anzeige",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Die Art, wie das Profil auf der Seite angezeigt wird. Auswahlmöglichkeit hierfür aus Liste, Standard, Kurz und Seite.",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kurz",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standard",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Seite"
 }
