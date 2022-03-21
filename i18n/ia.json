@@ -28,5 +28,15 @@
 	"action-social-editothersprofile": "modificar le profilo de altere usatores",
 	"right-social-editothersprofile": "Modificar le profilo de altere usatores",
 	"action-socialprofile-viewspecialpage": "vider le pagina special \"{{int:socialprofiles}}\"",
-	"right-socialprofile-viewspecialpage": "Vider le pagina special \"{{int:socialprofiles}}\""
+	"right-socialprofile-viewspecialpage": "Vider le pagina special \"{{int:socialprofiles}}\"",
+	"bs-socialprofile-tag-socialentityprofile-desc": "Un profilo de usator pote esser includite in un pagina con le etiquetta",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntityProfile",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nomine de usator",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Le nomine del usator a monstrar con iste etiquetta sur le pagina",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Typo de presentation",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Determina como le profilo se presenta sur le pagina. Le optiones seligibile es \"lista\", \"predefinition\", \"curte\" e \"pagina\".",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Curte",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Predefinite",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina"
 }
