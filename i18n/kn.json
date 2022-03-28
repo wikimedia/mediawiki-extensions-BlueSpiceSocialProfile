@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"ಮಲ್ನಾಡಾಚ್ ಕೊಂಕ್ಣೊ"
+		]
+	},
+	"bs-social-profile-field-name": "ಹೆಸರು",
+	"bs-social-profile-field-email": "ಇ-ಅಂಚೆ",
+	"bs-social-profile-field-title": "ಶೀರ್ಷಿಕೆ",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|ಶ್ರೀ|ಶ್ರೀಮತಿ|}}",
+	"bs-social-profile-field-phone": "ದೂರವಾಣಿ",
+	"bs-social-profile-field-validate-no-integer": "$1 ಸಂಖ್ಯೆಯಾಗಿರಬೇಕು",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "ಪಟ್ಟಿ",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "ಸಣ್ಣ",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "ಮೂಲಸ್ಥಿತಿ",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "ಪುಟ"
+}
