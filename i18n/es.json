@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DiegoAmbrocio",
 			"Fitoschido",
 			"MarcoAurelio"
 		]
@@ -22,5 +23,17 @@
 	"bs-socialprofile-switch-modernprofile-label": "Perfil moderno",
 	"action-socialprofile-viewspecialpage": "ver la página especial «{{int:socialprofiles}}»",
 	"right-socialprofile-viewspecialpage": "Ver la página especial «{{int:socialprofiles}}»",
-	"bs-social-profile-field-title-value": "{{GENDER:$1|Señor|Señora|Señor/a}}"
+	"bs-social-profile-field-title-value": "{{GENDER:$1|Señor|Señora|Señor/a}}",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Usuario inválido dado",
+	"bs-social-profile-field-validate-no-integer": "$1 debe ser un número",
+	"bs-socialprofile-switch-classicprofile-tooltip": "Cambiar al perfil clásico",
+	"bs-socialprofile-switch-modernprofile-tooltip": "Cambiar a un perfil moderno",
+	"action-social-editothersprofile": "editar el perfil de otros usuarios",
+	"right-social-editothersprofile": "Editar el perfil de otros usuarios",
+	"bs-socialprofile-tag-socialentityprofile-desc": "Un perfil de usuario puede incluirse en una página con la etiqueta",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nombre de usuario",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Corto",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Predeterminado",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página"
 }
