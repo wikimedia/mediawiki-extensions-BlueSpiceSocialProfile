@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"DiegoAmbrocio"
 		]
 	},
 	"bs-socialprofile-type": "Perfil",
 	"bs-socialprofile-entityaction-changeimage": "Imagen de usuario",
 	"bs-social-entityaction-editprofilefields": "Datos de perfil",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Usuario inválido dado",
 	"bs-social-profile-field-name": "Nombre",
 	"bs-social-profile-field-email": "Dirección de correo electrónico",
 	"bs-social-profile-field-title": "Título",
@@ -16,11 +18,22 @@
 	"bs-social-profile-field-function": "Función",
 	"bs-social-profile-field-location": "Ubicación",
 	"bs-social-profile-field-phone": "Teléfono",
+	"bs-social-profile-field-validate-no-integer": "$1 debe ser un número",
 	"bs-socialprofile-special-profiles-heading": "Perfiles",
 	"bs-social-profile-infoshowemail": "Mostrar dirección de correo electrónico en el perfil",
 	"socialprofiles": "Perfiles",
 	"bs-socialprofile-switch-classicprofile-label": "Perfil clásico",
 	"bs-socialprofile-switch-modernprofile-label": "Perfil moderno",
+	"bs-socialprofile-switch-classicprofile-tooltip": "Cambiar al perfil clásico",
+	"bs-socialprofile-switch-modernprofile-tooltip": "Cambiar a un perfil moderno",
+	"action-social-editothersprofile": "editar el perfil de otros usuarios",
+	"right-social-editothersprofile": "Editar el perfil de otros usuarios",
 	"action-socialprofile-viewspecialpage": "ver la página especial «{{int:socialprofiles}}»",
-	"right-socialprofile-viewspecialpage": "Ver la página especial «{{int:socialprofiles}}»"
+	"right-socialprofile-viewspecialpage": "Ver la página especial «{{int:socialprofiles}}»",
+	"bs-socialprofile-tag-socialentityprofile-desc": "Un perfil de usuario puede incluirse en una página con la etiqueta",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nombre de usuario",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Corto",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Predeterminado",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página"
 }
