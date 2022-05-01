@@ -62,10 +62,10 @@ class CustomFieldsFactory extends FieldsFactory {
 	 * @return array
 	 */
 	public function getFieldDefinitions() {
-		if ( $this->defintions ) {
-			return $this->defintions;
+		if ( $this->definitions ) {
+			return $this->definitions;
 		}
-		$this->defintions = [];
+		$this->definitions = [];
 
 		$cnfgDefs = $this->config->get( 'BSSocialProfileCustomFields' );
 		foreach ( $cnfgDefs as $name => $cnfgDef ) {
@@ -73,9 +73,9 @@ class CustomFieldsFactory extends FieldsFactory {
 			if ( !$definition ) {
 				continue;
 			}
-			$this->defintions[$name] = $definition;
+			$this->definitions[$name] = $definition;
 		}
-		return $this->defintions;
+		return $this->definitions;
 	}
 
 	/**

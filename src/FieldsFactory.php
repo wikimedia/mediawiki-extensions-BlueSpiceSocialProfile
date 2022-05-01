@@ -38,7 +38,7 @@ class FieldsFactory {
 	/**
 	 * @var array|null
 	 */
-	protected $defintions = null;
+	protected $definitions = null;
 	/** @var array|null */
 	protected $fields = null;
 
@@ -104,19 +104,19 @@ class FieldsFactory {
 	 * @return array
 	 */
 	public function getFieldDefinitions() {
-		if ( $this->defintions ) {
-			return $this->defintions;
+		if ( $this->definitions ) {
+			return $this->definitions;
 		}
-		$this->defintions = [];
+		$this->definitions = [];
 		$cnfgDefs = $this->config->get( 'BSSocialProfileFields' );
 		foreach ( $cnfgDefs as $name => $cnfgDef ) {
 			$definition = $this->makeFieldDefinition( $name, $cnfgDef );
 			if ( !$definition ) {
 				continue;
 			}
-			$this->defintions[$name] = $definition;
+			$this->definitions[$name] = $definition;
 		}
-		return $this->defintions;
+		return $this->definitions;
 	}
 
 	/**
@@ -150,7 +150,7 @@ class FieldsFactory {
 			throw new MWException( "Class '$classname' does not exist!" );
 		}
 		$definition = array_merge(
-			$this->getSchemaDefintion( $classname ),
+			$this->getSchemaDefinition( $classname ),
 			$definition
 		);
 		return $definition;
@@ -161,7 +161,7 @@ class FieldsFactory {
 	 * @param string $classname
 	 * @return array
 	 */
-	public function getSchemaDefintion( $classname ) {
+	public function getSchemaDefinition( $classname ) {
 		return [
 			Schema::FILTERABLE => $classname::DFLT_FILTERABLE,
 			Schema::SORTABLE => $classname::DFLT_SORTABLE,
