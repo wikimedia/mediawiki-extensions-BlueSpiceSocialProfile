@@ -30,5 +30,15 @@
 	"action-social-editothersprofile": "editar o perfil dos outros utilizadores",
 	"right-social-editothersprofile": "Editar o perfil de outros utilizadores",
 	"action-socialprofile-viewspecialpage": "ver a página especial \"{{int:socialprofiles}}\"",
-	"right-socialprofile-viewspecialpage": "Ver a página especial \"{{int:socialprofiles}}\""
+	"right-socialprofile-viewspecialpage": "Ver a página especial \"{{int:socialprofiles}}\"",
+	"bs-socialprofile-tag-socialentityprofile-desc": "Um perfil de utilizador pode ser incluído numa página com a etiqueta",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "PerfilDeEntidadeSocial",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nome de utilizador",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Nome do utilizador a ser apresentado com esta etiqueta na página",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Tipo de apresentação",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "O tipo de perfil que é apresentado na página. Selecionar opção para isto de entre: lista, padrão, curto e página.",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Curto",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Padrão",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página"
 }
