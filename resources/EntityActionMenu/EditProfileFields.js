@@ -18,7 +18,7 @@ bs.social.EntityActionMenu.EditProfileFields = function ( entityActionMenu ) {
 	if( me.entityActionMenu.entity.getData().outputtype !== 'Page' ) {
 		return;
 	}
-	me.$element = $( '<li><a class="dropdown-item bs-social-entity-action-editprofilefields">'
+	me.$element = $( '<li class="dropdown-item"><a class="bs-social-entity-action-editprofilefields">'
 		+ '<span>' + mw.message( "bs-social-entityaction-editprofilefields" ).plain() + '</span>'
 		+ '</a></li>'
 	);

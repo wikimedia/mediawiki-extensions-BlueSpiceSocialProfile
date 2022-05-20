@@ -18,7 +18,7 @@ bs.social.EntityActionMenu.EditUserPage = function ( entityActionMenu ) {
 	if( me.entityActionMenu.entity.getData().outputtype !== 'Page' ) {
 		return;
 	}
-	me.$element = $( '<li><a class="dropdown-item bs-social-entity-action-edituserpage">'
+	me.$element = $( '<li class="dropdown-item"><a class="bs-social-entity-action-edituserpage">'
 		+ '<span>' + mw.message( "bs-social-entityaction-edit" ).plain() + '</span>'
 		+ '</a></li>'
 	);
