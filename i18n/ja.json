@@ -8,6 +8,8 @@
 		]
 	},
 	"bs-social-profile-field-title": "役職",
+	"action-social-editothersprofile": "他の利用者のプロフィールの編集",
+	"right-social-editothersprofile": "他の利用者のプロフィールを編集",
 	"action-socialprofile-viewspecialpage": "特別ページ「{{int:socialprofiles}}」の閲覧",
 	"right-socialprofile-viewspecialpage": "特別ページ「{{int:socialprofiles}}」を閲覧",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "利用者名",
