@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mglaser",
-			"Patric Wirth",
 			"ElBe",
-			"ThePiscin",
-			"Mschlindwein"
+			"Mglaser",
+			"Mschlindwein",
+			"Patric Wirth",
+			"ThePiscin"
 		]
 	},
 	"bs-socialprofile-desc": "Profil-Erweiterung für BlueSpiceSocial",
