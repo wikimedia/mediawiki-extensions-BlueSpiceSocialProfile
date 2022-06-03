@@ -13,5 +13,7 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "利用者名",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "リスト",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "既定",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "ページ"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "ページ",
+	"action-social-editothersprofile": "他の利用者のプロフィールの編集",
+	"right-social-editothersprofile": "他の利用者のプロフィールを編集"
 }
