@@ -12,7 +12,6 @@ use Message;
 use Status;
 use User;
 use Wikimedia\Rdbms\IDatabase;
-use WikiPage;
 
 class Handler implements IPrivacyHandler {
 	/**
@@ -151,7 +150,8 @@ class Handler implements IPrivacyHandler {
 		if ( !$this->getProfile() || !$this->getProfile()->exists() ) {
 			return $status;
 		}
-		$wikipage = WikiPage::factory( $this->getProfile()->getTitle() );
+		$wikipage = MediaWikiServices::getInstance()->getWikiPageFactory()
+			->newFromTitle( $this->getProfile()->getTitle() );
 		$status->merge(
 			$wikipage->doDeleteArticleReal( '', $this->getMaintenanceUser(), true )
 		);

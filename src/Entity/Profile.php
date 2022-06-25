@@ -41,7 +41,6 @@ use RequestContext;
 use Status;
 use Title;
 use User;
-use WikiPage;
 
 /**
  * BSSociaEntityProfile class for BSSocial extension
@@ -100,7 +99,7 @@ class Profile extends Page {
 		if ( !$this->getRelatedTitle()->exists() ) {
 			return $this->baseTitleContent;
 		}
-		$wikiPage = WikiPage::factory( $this->getRelatedTitle() );
+		$wikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $this->getRelatedTitle() );
 		try {
 			$output = $wikiPage->getContent()->getParserOutput(
 				$this->getRelatedTitle(),

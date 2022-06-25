@@ -128,7 +128,8 @@ class Profile extends \WikitextContent {
 			}
 		}
 		if ( $entity->getRelatedTitle() && $entity->getRelatedTitle()->exists() ) {
-			$categories = \WikiPage::factory( $entity->getRelatedTitle() )
+			$categories = MediaWikiServices::getInstance()->getWikiPageFactory()
+				->newFromTitle( $entity->getRelatedTitle() )
 				->getContent()->getParserOutput( $entity->getRelatedTitle() )
 				->getCategories();
 
