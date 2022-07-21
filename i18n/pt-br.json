@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Duke of Wikipädia",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Juan90264"
@@ -31,6 +32,8 @@
 	"right-social-editothersprofile": "Editar perfil de outros usuários",
 	"action-socialprofile-viewspecialpage": "veja a página especial \"{{int:socialprofiles}}\"",
 	"right-socialprofile-viewspecialpage": "Ver a página especial \"{{int:socialprofiles}}\"",
+	"bs-socialprofile-tag-socialentityprofile-desc": "Um perfil de usuário pode ser incluído em uma página com a etiqueta",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "PerfilDeEntidadeSocial",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nome de usuário",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Nome de usuário do usuário a ser exibido com esta etiqueta na página",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Tipo de exibição",
