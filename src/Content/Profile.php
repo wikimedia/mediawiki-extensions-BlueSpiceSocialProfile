@@ -58,7 +58,8 @@ class Profile extends \WikitextContent {
 
 		$output = new \ParserOutput();
 
-		if ( MediaWikiServices::getInstance()->getHookContainer()->run( 'ContentGetParserOutput',
+		$services = MediaWikiServices::getInstance();
+		if ( $services->getHookContainer()->run( 'ContentGetParserOutput',
 			[ $this, $title, $revId, $options, $generateHtml, &$output ] ) ) {
 
 			// Save and restore the old value, just in case something is reusing
@@ -73,7 +74,7 @@ class Profile extends \WikitextContent {
 			$options->setRedirectTarget( $oldRedir );
 		}
 
-		MediaWikiServices::getInstance()->getHookContainer()->run(
+		$services->getHookContainer()->run(
 			'ContentAlterParserOutput',
 			[
 				$this,

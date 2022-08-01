@@ -96,11 +96,12 @@ class Profile extends Page {
 		}
 		$wikiPage = $this->services->getWikiPageFactory()->newFromTitle( $this->getRelatedTitle() );
 		try {
-			$output = $wikiPage->getContent()->getParserOutput(
+			$contentRenderer = $this->services->getContentRenderer();
+			$output = $contentRenderer->getParserOutput(
+				$wikiPage->getContent(),
 				$this->getRelatedTitle(),
 				null,
 				ParserOptions::newFromContext( RequestContext::getMain() ),
-				true,
 				true
 			);
 		} catch ( Exception $e ) {
