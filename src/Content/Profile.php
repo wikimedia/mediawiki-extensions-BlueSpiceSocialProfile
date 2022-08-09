@@ -1,7 +1,7 @@
 <?php
 namespace BlueSpice\Social\Profile\Content;
 
-use BlueSpice\Social\Profile\Entity\Profile as SocialProfile;
+use MediaWiki\Content\Renderer\ContentParseParams;
 use MediaWiki\MediaWikiServices;
 
 class Profile extends \WikitextContent {
@@ -56,16 +56,20 @@ class Profile extends \WikitextContent {
 			$options = \ParserOptions::newFromAnon();
 		}
 
-		$po = new \ParserOutput();
+		$output = new \ParserOutput();
 
 		if ( MediaWikiServices::getInstance()->getHookContainer()->run( 'ContentGetParserOutput',
-			[ $this, $title, $revId, $options, $generateHtml, &$po ] ) ) {
+			[ $this, $title, $revId, $options, $generateHtml, &$output ] ) ) {
 
 			// Save and restore the old value, just in case something is reusing
 			// the ParserOptions object in some weird way.
 			$oldRedir = $options->getRedirectTarget();
 			$options->setRedirectTarget( $this->getRedirectTarget() );
-			$this->fillParserOutput( $title, $revId, $options, $generateHtml, $po, $bForceOrigin );
+			$options->setOption( 'ForceOrigin', $bForceOrigin );
+
+			$discussionHandler = new ProfileHandler( $this->getModel );
+			$cpoParams = new ContentParseParams( $title, $revId, $options, $generateHtml );
+			$output  = $discussionHandler->fillParserOutputInternal( $this, $cpoParams, $output );
 			$options->setRedirectTarget( $oldRedir );
 		}
 
@@ -74,79 +78,10 @@ class Profile extends \WikitextContent {
 			[
 				$this,
 				$title,
-				$po
+				$output
 			]
 		);
 
-		return $po;
-	}
-
-	/**
-	 * Set the HTML and add the appropriate styles
-	 *
-	 *
-	 * @param \Title $title
-	 * @param int $revId
-	 * @param \ParserOptions $options
-	 * @param bool $generateHtml
-	 * @param \ParserOutput &$output
-	 * @param bool $bForceOrigin
-	 * @return \ParserOutput
-	 */
-	protected function fillParserOutput( \Title $title, $revId, \ParserOptions $options,
-		$generateHtml, \ParserOutput &$output, $bForceOrigin = false ) {
-		parent::fillParserOutput(
-			$title,
-			$revId,
-			$options,
-			$generateHtml,
-			$output
-		);
-		if ( $bForceOrigin ) {
-			return $output;
-		}
-		$oUser = \User::newFromName( $title->getText() );
-		if ( !$oUser ) {
-			// something is very wrong here!
-			return $output;
-		}
-		$entityFactory = MediaWikiServices::getInstance()->getService(
-			'BSSocialProfileEntityFactory'
-		);
-		$entity = $entityFactory->newFromUser( $oUser );
-
-		if ( !$entity instanceof SocialProfile ) {
-			return $output;
-		}
-		// HACKY!
-		// this got removed.. for now
-		if ( false && !$entity->exists() && PHP_SAPI !== 'cli' ) {
-			$oStatus = $entity->save();
-			if ( !$oStatus->isOK() ) {
-				$output->setText( $oStatus->getHTML() );
-				return $output;
-			}
-		}
-		if ( $entity->getRelatedTitle() && $entity->getRelatedTitle()->exists() ) {
-			$categories = MediaWikiServices::getInstance()->getWikiPageFactory()
-				->newFromTitle( $entity->getRelatedTitle() )
-				->getContent()->getParserOutput( $entity->getRelatedTitle() )
-				->getCategories();
-
-			foreach ( $categories as $category => $key ) {
-				$output->addCategory( $category, $key );
-			}
-		}
-
-		$sText = $entity->getRenderer()->render( 'Page' );
-		$sTitle = strip_tags( $entity->getHeader() );
-		$output->setTitleText( $sTitle );
-		if ( $generateHtml ) {
-			$output->setText( $sText );
-			$output->addModuleStyles( [ 'mediawiki.content.json' ] );
-		} else {
-			$output->setText( $sText );
-		}
 		return $output;
 	}
 }
