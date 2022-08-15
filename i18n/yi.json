@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Pacha Tchernof",
 			"פוילישער"
 		]
 	},
-	"bs-social-profile-field-email": "ע-פאסט"
+	"bs-social-profile-field-email": "ע-פאסט",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "בלאַט"
 }
