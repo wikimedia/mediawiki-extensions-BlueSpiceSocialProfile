@@ -85,6 +85,13 @@
 			"TagDefinitions": [
 				"ext.bluespice.socialprofile.visualEditorTagDefinition"
 			]
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"social-profile": {
+					"class": "\\BlueSpice\\Social\\Profile\\ContentDroplets\\ProfileDroplet"
+				}
+			}
 		}
 	},
 	"callback": "\\BlueSpice\\Social\\Profile\\Extension::onRegistration",
