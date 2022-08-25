@@ -28,5 +28,15 @@
 	"action-social-editothersprofile": "編輯其他人的個人檔案",
 	"right-social-editothersprofile": "編輯其他人的個人檔案",
 	"action-socialprofile-viewspecialpage": "檢視特殊頁面「{{int:socialprofiles}}」",
-	"right-socialprofile-viewspecialpage": "檢視特殊頁面「{{int:socialprofiles}}」"
+	"right-socialprofile-viewspecialpage": "檢視特殊頁面「{{int:socialprofiles}}」",
+	"bs-socialprofile-tag-socialentityprofile-desc": "使用者個人檔案可包含在帶有標籤的頁面中",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntityProfile",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "使用者名稱",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "要在帶有此標籤的頁面上所顯示的使用者名稱",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "顯示類型",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "要顯示在頁面上的個人檔案類型。選項為清單、預設、簡短和頁面。",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "清單",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "簡短",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "預設",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "頁面"
 }
