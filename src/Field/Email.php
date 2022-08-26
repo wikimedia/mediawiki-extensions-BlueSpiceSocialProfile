@@ -3,6 +3,7 @@
 namespace BlueSpice\Social\Profile\Field;
 
 use BlueSpice\Social\Profile\Field;
+use MediaWiki\MediaWikiServices;
 
 class Email extends Field {
 
@@ -19,8 +20,7 @@ class Email extends Field {
 	 * @return bool
 	 */
 	public function isHidden() {
-		return !$this->user->getOption(
-			'bs-social-profile-infoshowemail'
-		);
+		return !MediaWikiServices::getInstance()->getUserOptionsLookup()
+			->getBoolOption( $this->user, 'bs-social-profile-infoshowemail' );
 	}
 }
