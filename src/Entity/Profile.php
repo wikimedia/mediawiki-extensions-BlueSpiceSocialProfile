@@ -34,7 +34,6 @@ use BlueSpice\Social\Entity\Page;
 use BlueSpice\Social\Profile\ICustomField;
 use BlueSpice\Social\Profile\IField;
 use Exception;
-use MediaWiki\MediaWikiServices;
 use Message;
 use ParserOptions;
 use RequestContext;
@@ -65,9 +64,7 @@ class Profile extends Page {
 		$fieldDefinitions = $this->getConfig()->get(
 			'ProfileCustomFieldsDefinitions'
 		);
-		$factory = MediaWikiServices::getInstance()->getService(
-			'BSSocialProfileCustomFieldsFactory'
-		);
+		$factory = $this->services->getService( 'BSSocialProfileCustomFieldsFactory' );
 		foreach ( $fieldDefinitions as $name => $definition ) {
 			if ( isset( $data->{$name} ) ) {
 				$this->set( $name, $data->{$name} );
@@ -76,9 +73,7 @@ class Profile extends Page {
 		$fieldDefinitions = $this->getConfig()->get(
 			'ProfileFieldsDefinitions'
 		);
-		$factory = MediaWikiServices::getInstance()->getService(
-			'BSSocialProfileFieldsFactory'
-		);
+		$factory = $this->services->getService( 'BSSocialProfileFieldsFactory' );
 		foreach ( $fieldDefinitions as $name => $definition ) {
 			if ( isset( $data->{$name} ) ) {
 				$this->set( $name, $data->{$name} );
@@ -144,9 +139,7 @@ class Profile extends Page {
 		$fieldDefinitions = $this->getConfig()->get(
 			'ProfileFieldsDefinitions'
 		);
-		$factory = MediaWikiServices::getInstance()->getService(
-			'BSSocialProfileFieldsFactory'
-		);
+		$factory = $this->services->getService( 'BSSocialProfileFieldsFactory' );
 		foreach ( $fieldDefinitions as $name => $definition ) {
 			$field = $factory->factory( $name, $this->getOwner() );
 			if ( !$field instanceof IField ) {
@@ -157,9 +150,7 @@ class Profile extends Page {
 		$fieldDefinitions = $this->getConfig()->get(
 			'ProfileCustomFieldsDefinitions'
 		);
-		$factory = MediaWikiServices::getInstance()->getService(
-			'BSSocialProfileCustomFieldsFactory'
-		);
+		$factory = $this->services->getService( 'BSSocialProfileCustomFieldsFactory' );
 		foreach ( $fieldDefinitions as $name => $definition ) {
 			$field = $factory->factory( $name, $this->getOwner() );
 			if ( !$field instanceof ICustomField ) {
@@ -206,7 +197,7 @@ class Profile extends Page {
 			$actions['editprofilefields'] = [];
 		}
 		if ( $this->getRelatedTitle() ) {
-			$editUsrPg = MediaWikiServices::getInstance()->getPermissionManager()->userCan(
+			$editUsrPg = $this->services->getPermissionManager()->userCan(
 				'edit',
 				$user,
 				$this->getRelatedTitle()
@@ -249,9 +240,7 @@ class Profile extends Page {
 		$fieldDefinitions = $this->getConfig()->get(
 			'ProfileCustomFieldsDefinitions'
 		);
-		$factory = MediaWikiServices::getInstance()->getService(
-			'BSSocialProfileCustomFieldsFactory'
-		);
+		$factory = $this->services->getService( 'BSSocialProfileCustomFieldsFactory' );
 		foreach ( $fieldDefinitions as $name => $definition ) {
 			$field = $factory->factory( $name, $this->getOwner() );
 			if ( !$field instanceof ICustomField ) {
