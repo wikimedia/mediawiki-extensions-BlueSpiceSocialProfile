@@ -143,7 +143,7 @@ class Profile extends \BlueSpice\Social\Renderer\Entity\Page {
 			$out .= $field->getLabel();
 			$out .= Html::closeElement( 'td' );
 			$out .= Html::openElement( 'td' );
-			$out .= $field->getValue();
+			$out .= htmlspecialchars( $field->getValue() );
 			$out .= Html::closeElement( 'td' );
 			$out .= Html::closeElement( 'tr' );
 		}
@@ -182,7 +182,7 @@ class Profile extends \BlueSpice\Social\Renderer\Entity\Page {
 			$out .= $field->getLabel();
 			$out .= Html::closeElement( 'td' );
 			$out .= Html::openElement( 'td' );
-			$out .= $field->getValue();
+			$out .= htmlspecialchars( $field->getValue() );
 			$out .= Html::closeElement( 'td' );
 			$out .= Html::closeElement( 'tr' );
 		}
