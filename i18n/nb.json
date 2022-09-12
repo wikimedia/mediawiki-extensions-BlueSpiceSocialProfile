@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EdoAug",
 			"Jon Harald Søby",
 			"Vukky"
 		]
@@ -31,5 +32,6 @@
 	"action-socialprofile-viewspecialpage": "vise spesialsiden «{{int:socialprofiles}}»",
 	"right-socialprofile-viewspecialpage": "Vise spesialsiden «{{int:socialprofiles}}»",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Brukernavn",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standard"
 }
