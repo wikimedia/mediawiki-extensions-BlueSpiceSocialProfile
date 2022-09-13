@@ -73,7 +73,7 @@ class Profile extends \BlueSpice\Social\Renderer\Entity\Page {
 			$this->getEntity(),
 			$this->getEntity()->getOwner()
 		);
-		$renderer = $this->getServices()->getService( 'BSRendererFactory' )->get(
+		$renderer = $this->services->getService( 'BSRendererFactory' )->get(
 			'entitylist',
 			new Params( [ 'context' => $context ] )
 		);
@@ -91,7 +91,7 @@ class Profile extends \BlueSpice\Social\Renderer\Entity\Page {
 			return parent::render_userimage( $val );
 		}
 
-		$factory = $this->getServices()->getService( 'BSRendererFactory' );
+		$factory = $this->services->getService( 'BSRendererFactory' );
 		$image = $factory->get( 'userimage', new Params( [
 			UserImage::PARAM_USER => $this->getEntity()->getOwner(),
 			UserImage::PARAM_WIDTH => 200,
@@ -120,9 +120,7 @@ class Profile extends \BlueSpice\Social\Renderer\Entity\Page {
 	 */
 	public function render_profilefields( $val ) {
 		$out = '';
-		$factory = $this->getServices()->getService(
-			'BSSocialProfileFieldsFactory'
-		);
+		$factory = $this->services->getService( 'BSSocialProfileFieldsFactory' );
 		if ( empty( $factory->getFieldDefinitions() ) ) {
 			return $out;
 		}
@@ -159,9 +157,7 @@ class Profile extends \BlueSpice\Social\Renderer\Entity\Page {
 	 */
 	public function render_profilecustomfields( $val, $sType = 'Default' ) {
 		$out = '';
-		$factory = $this->getServices()->getService(
-			'BSSocialProfileCustomFieldsFactory'
-		);
+		$factory = $this->services->getService( 'BSSocialProfileCustomFieldsFactory' );
 		if ( empty( $factory->getFieldDefinitions() ) ) {
 			return $out;
 		}
