@@ -12,6 +12,9 @@ class Profile extends \WikitextContent {
 	 */
 	public $mModelID = CONTENT_MODEL_WIKITEXT;
 
+	/** @var MediaWikiServices */
+	protected $services = null;
+
 	/**
 	 *
 	 * @return string
@@ -27,6 +30,7 @@ class Profile extends \WikitextContent {
 	 */
 	public function __construct( $text, $modelId = CONTENT_MODEL_BSSOCIALPROFILE ) {
 		parent::__construct( $text, CONTENT_MODEL_WIKITEXT );
+		$this->services = MediaWikiServices::getInstance();
 	}
 
 	/**
@@ -58,7 +62,7 @@ class Profile extends \WikitextContent {
 
 		$po = new \ParserOutput();
 
-		if ( MediaWikiServices::getInstance()->getHookContainer()->run( 'ContentGetParserOutput',
+		if ( $this->services->getHookContainer()->run( 'ContentGetParserOutput',
 			[ $this, $title, $revId, $options, $generateHtml, &$po ] ) ) {
 
 			// Save and restore the old value, just in case something is reusing
@@ -69,7 +73,7 @@ class Profile extends \WikitextContent {
 			$options->setRedirectTarget( $oldRedir );
 		}
 
-		MediaWikiServices::getInstance()->getHookContainer()->run(
+		$this->services->getHookContainer()->run(
 			'ContentAlterParserOutput',
 			[
 				$this,
@@ -105,14 +109,12 @@ class Profile extends \WikitextContent {
 		if ( $bForceOrigin ) {
 			return $output;
 		}
-		$oUser = \User::newFromName( $title->getText() );
+		$oUser = $this->services->getUserFactory()->newFromName( $title->getText() );
 		if ( !$oUser ) {
 			// something is very wrong here!
 			return $output;
 		}
-		$entityFactory = MediaWikiServices::getInstance()->getService(
-			'BSSocialProfileEntityFactory'
-		);
+		$entityFactory = $this->services->getService( 'BSSocialProfileEntityFactory' );
 		$entity = $entityFactory->newFromUser( $oUser );
 
 		if ( !$entity instanceof SocialProfile ) {

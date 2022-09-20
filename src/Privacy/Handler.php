@@ -21,11 +21,15 @@ class Handler implements IPrivacyHandler {
 	 */
 	protected $user;
 
+	/** @var MediaWikiServices */
+	protected $services = null;
+
 	/**
 	 *
 	 * @param \IDatabase $db
 	 */
 	public function __construct( \IDatabase $db ) {
+		$this->services = MediaWikiServices::getInstance();
 	}
 
 	/**
@@ -35,7 +39,7 @@ class Handler implements IPrivacyHandler {
 	 * @return Status
 	 */
 	public function anonymize( $oldUsername, $newUsername ) {
-		$this->user = User::newFromName( $newUsername );
+		$this->user = $this->services->getUserFactory()->newFromName( $newUsername );
 
 		$profile = $this->getProfile();
 		if ( !$profile ) {
@@ -122,9 +126,7 @@ class Handler implements IPrivacyHandler {
 	 * @return Profile|null
 	 */
 	protected function getProfile() {
-		$entityFactory = MediaWikiServices::getInstance()->getService(
-			'BSSocialProfileEntityFactory'
-		);
+		$entityFactory = $this->services->getService( 'BSSocialProfileEntityFactory' );
 		return $entityFactory->newFromUser( $this->user );
 	}
 
@@ -174,7 +176,7 @@ class Handler implements IPrivacyHandler {
 	 * @return User
 	 */
 	private function getMaintenanceUser() {
-		return MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' )
+		return $this->services->getService( 'BSUtilityFactory' )
 			->getMaintenanceUser()->getUser();
 	}
 }

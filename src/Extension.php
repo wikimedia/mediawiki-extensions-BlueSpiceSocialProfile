@@ -84,14 +84,13 @@ class Extension extends \BlueSpice\Extension {
 			return true;
 		}
 		$useParserCache = false;
-		$oUser = \User::newFromName( $oTitle->getText() );
+		$services = MediaWikiServices::getInstance();
+		$oUser = $services->getUserFactory()->newFromName( $oTitle->getText() );
 		if ( !$oUser ) {
 			return true;
 		}
 
-		$entityFactory = MediaWikiServices::getInstance()->getService(
-			'BSSocialProfileEntityFactory'
-		);
+		$entityFactory = $services->getService( 'BSSocialProfileEntityFactory' );
 		$entity = $entityFactory->newFromUser( $oUser );
 		if ( !$entity ) {
 			return true;
