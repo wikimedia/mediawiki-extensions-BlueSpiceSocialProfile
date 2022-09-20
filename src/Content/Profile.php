@@ -12,6 +12,9 @@ class Profile extends \WikitextContent {
 	 */
 	public $mModelID = CONTENT_MODEL_WIKITEXT;
 
+	/** @var MediaWikiServices */
+	protected $services = null;
+
 	/**
 	 *
 	 * @return string
@@ -27,6 +30,7 @@ class Profile extends \WikitextContent {
 	 */
 	public function __construct( $text, $modelId = CONTENT_MODEL_BSSOCIALPROFILE ) {
 		parent::__construct( $text, CONTENT_MODEL_WIKITEXT );
+		$this->services = MediaWikiServices::getInstance();
 	}
 
 	/**
@@ -58,7 +62,7 @@ class Profile extends \WikitextContent {
 
 		$output = new \ParserOutput();
 
-		if ( MediaWikiServices::getInstance()->getHookContainer()->run( 'ContentGetParserOutput',
+		if ( $this->services->getHookContainer()->run( 'ContentGetParserOutput',
 			[ $this, $title, $revId, $options, $generateHtml, &$output ] ) ) {
 
 			// Save and restore the old value, just in case something is reusing
@@ -73,7 +77,7 @@ class Profile extends \WikitextContent {
 			$options->setRedirectTarget( $oldRedir );
 		}
 
-		MediaWikiServices::getInstance()->getHookContainer()->run(
+		$this->services->getHookContainer()->run(
 			'ContentAlterParserOutput',
 			[
 				$this,

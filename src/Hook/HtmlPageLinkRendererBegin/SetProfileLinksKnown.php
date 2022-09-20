@@ -4,7 +4,6 @@ namespace BlueSpice\Social\Profile\Hook\HtmlPageLinkRendererBegin;
 
 use BlueSpice\Hook\HtmlPageLinkRendererBegin;
 use Title;
-use User;
 
 class SetProfileLinksKnown extends HtmlPageLinkRendererBegin {
 
@@ -32,7 +31,7 @@ class SetProfileLinksKnown extends HtmlPageLinkRendererBegin {
 		if ( $title->exists() || $title->isSubpage() ) {
 			return true;
 		}
-		$user = User::newFromName( $title->getText() );
+		$user = $this->getServices()->getUserFactory()->newFromName( $title->getText() );
 		if ( !$user ) {
 			return true;
 		}

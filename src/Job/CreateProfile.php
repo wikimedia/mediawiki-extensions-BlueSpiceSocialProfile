@@ -4,16 +4,14 @@ namespace BlueSpice\Social\Profile\Job;
 use BlueSpice\Social\Profile\Entity\Profile as Profile;
 use Job;
 use MediaWiki\MediaWikiServices;
-use User;
 
 class CreateProfile extends Job {
 	public const JOBCOMMAND = 'socialprofilecreate';
 
 	public function run() {
-		$entityFactory = MediaWikiServices::getInstance()->getService(
-			'BSSocialProfileEntityFactory'
-		);
-		$user = User::newFromName( $this->title->getText() );
+		$services = MediaWikiServices::getInstance();
+		$entityFactory = $services->getService( 'BSSocialProfileEntityFactory' );
+		$user = $services->getUserFactory()->newFromName( $this->title->getText() );
 		if ( !$user || $user->isAnon() ) {
 			return true;
 		}

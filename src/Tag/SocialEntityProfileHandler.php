@@ -9,7 +9,6 @@ use MediaWiki\MediaWikiServices;
 use MWException;
 use Parser;
 use PPFrame;
-use User;
 
 class SocialEntityProfileHandler extends Handler {
 	/**
@@ -28,10 +27,9 @@ class SocialEntityProfileHandler extends Handler {
 	public function __construct( $processedInput, array $processedArgs, Parser $parser,
 		PPFrame $frame ) {
 		parent::__construct( $processedInput, $processedArgs, $parser, $frame );
-		$factory = MediaWikiServices::getInstance()->getService(
-			'BSSocialProfileEntityFactory'
-		);
-		$user = User::newFromName( $processedArgs['username'] );
+		$services = MediaWikiServices::getInstance();
+		$factory = $services->getService( 'BSSocialProfileEntityFactory' );
+		$user = $services->getUserFactory()->newFromName( $processedArgs['username'] );
 		if ( !$user ) {
 			new MWException(
 				"Invalid user for with username '{$processedArgs['username']}'"
