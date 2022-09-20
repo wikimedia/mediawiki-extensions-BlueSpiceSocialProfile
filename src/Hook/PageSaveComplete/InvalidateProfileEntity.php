@@ -20,11 +20,10 @@ class InvalidateProfileEntity extends PageSaveComplete {
 	}
 
 	protected function doProcess() {
-		$entityFactory = $this->getServices()->getService(
-			'BSSocialProfileEntityFactory'
-		);
+		$services = $this->getServices();
+		$entityFactory = $services->getService( 'BSSocialProfileEntityFactory' );
 		$entity = $entityFactory->newFromUser(
-			\User::newFromName( $this->wikiPage->getTitle()->getText() )
+			$services->getUserFactory()->newFromName( $this->wikiPage->getTitle()->getText() )
 		);
 		if ( !$entity instanceof Profile ) {
 			// do not fatal - here is something wrong very bad!

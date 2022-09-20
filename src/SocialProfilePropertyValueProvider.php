@@ -114,7 +114,8 @@ class SocialProfilePropertyValueProvider extends PropertyValueProvider {
 			return false;
 		}
 
-		$this->user = User::newFromName( $title->getText() );
+		$this->user = MediaWikiServices::getInstance()->getUserFactory()
+			->newFromName( $title->getText() );
 		if ( !$this->user ) {
 			return false;
 		}
