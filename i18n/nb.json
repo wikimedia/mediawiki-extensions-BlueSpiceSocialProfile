@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Jon Harald Søby",
-			"Vukky"
+			"Vukky",
+			"EdoAug"
 		]
 	},
 	"bs-socialprofile-desc": "Profilentitet for BlueSpiceSocial",
@@ -31,5 +32,8 @@
 	"action-socialprofile-viewspecialpage": "vise spesialsiden «{{int:socialprofiles}}»",
 	"right-socialprofile-viewspecialpage": "Vise spesialsiden «{{int:socialprofiles}}»",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Brukernavn",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kort",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standard",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Side"
 }
