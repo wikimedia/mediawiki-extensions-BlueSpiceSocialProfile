@@ -61,9 +61,7 @@ class Handler implements IPrivacyHandler {
 			$profile->getTitle()
 		);
 
-		MediaWikiServices::getInstance()->getJobQueueGroup()->push(
-			$job
-		);
+		$this->services->getJobQueueGroup()->push( $job );
 
 		return Status::newGood();
 	}
@@ -152,20 +150,18 @@ class Handler implements IPrivacyHandler {
 		if ( !$this->getProfile() || !$this->getProfile()->exists() ) {
 			return $status;
 		}
-		$wikipage = MediaWikiServices::getInstance()->getWikiPageFactory()
+		$wikipage = $this->services->getWikiPageFactory()
 			->newFromTitle( $this->getProfile()->getTitle() );
-		$status->merge(
-			$wikipage->doDeleteArticleReal( '', $this->getMaintenanceUser(), true )
-		);
+		$deletePage = $this->services->getDeletePageFactory()
+			->newDeletePage( $wikipage, $this->getMaintenanceUser() );
+		$status->merge( $deletePage->deleteIfAllowed( '' ) );
 
 		if ( $status->isGood() ) {
 			$job = new SearchJob(
 				$this->getProfile()->getTitle()
 			);
 
-			MediaWikiServices::getInstance()->getJobQueueGroup()->push(
-				$job
-			);
+			$this->services->getJobQueueGroup()->push( $job );
 		}
 
 		return $status;
