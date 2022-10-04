@@ -38,5 +38,11 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Weergavetitel",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lijst",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standaard",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Ongeldige 'User' (gebruiker) opgegeven",
+	"bs-socialprofile-tag-socialentityprofile-desc": "Een gebruikersprofiel kan in een pagina worden opgenomen met de tag",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntityProfile",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Gebruikersnaam van de gebruiker die met deze tag op de pagina moet worden weergegeven",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Het type profiel dat op de pagina wordt weergegeven. Keuze uit lijst, standaard, kort en pagina.",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kort"
 }
