@@ -14,6 +14,7 @@
 	"bs-socialprofile-type": "Profiel",
 	"bs-socialprofile-entityaction-changeimage": "Gebruikersafbeelding",
 	"bs-social-entityaction-editprofilefields": "Profielgegevens",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Ongeldige 'User' (gebruiker) opgegeven",
 	"bs-social-profile-field-name": "Naam",
 	"bs-social-profile-field-email": "E-mail",
 	"bs-social-profile-field-title": "Naam",
@@ -34,9 +35,14 @@
 	"right-social-editothersprofile": "Andermans profiel bewerken",
 	"action-socialprofile-viewspecialpage": "de speciale pagina \"{{int:socialprofiles}}\" te bekijken",
 	"right-socialprofile-viewspecialpage": "De speciale pagina \"{{int:socialprofiles}}\" bekijken",
+	"bs-socialprofile-tag-socialentityprofile-desc": "Een gebruikersprofiel kan in een pagina worden opgenomen met de tag",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntityProfile",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Gebruikersnaam",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Gebruikersnaam van de gebruiker die met deze tag op de pagina moet worden weergegeven",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Weergavetitel",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Het type profiel dat op de pagina wordt weergegeven. Keuze uit lijst, standaard, kort en pagina.",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lijst",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kort",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standaard",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina"
 }
