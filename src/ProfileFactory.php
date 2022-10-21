@@ -26,12 +26,12 @@
  */
 namespace BlueSpice\Social\Profile;
 
-use BlueSpice\Data\Filter\Numeric;
-use BlueSpice\Data\ReaderParams;
 use BlueSpice\EntityFactory;
 use BlueSpice\Social\Profile\Entity\Profile;
 use BlueSpice\Social\Profile\EntityListContext\SpecialProfiles;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\DataStore\Filter\Numeric;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 
 class ProfileFactory extends EntityFactory {
 
