@@ -2,10 +2,10 @@
 
 namespace BlueSpice\Social\Profile\EntityListContext;
 
-use BlueSpice\Data\FieldType;
-use BlueSpice\Data\Filter\ListValue;
 use BlueSpice\Social\EntityListContext;
 use BlueSpice\Social\Profile\Entity\Profile;
+use MWStake\MediaWiki\Component\DataStore\FieldType;
+use MWStake\MediaWiki\Component\DataStore\Filter\ListValue;
 
 class SpecialProfiles extends EntityListContext {
 
