@@ -20,5 +20,10 @@
 	"bs-socialprofile-switch-modernprofile-label": "Moderne profil",
 	"bs-socialprofile-switch-classicprofile-tooltip": "Skift til klassisk profil",
 	"bs-socialprofile-switch-modernprofile-tooltip": "Skift til moderne profil",
-	"bs-social-profile-field-validate-no-integer": "$1 skal være et tal"
+	"bs-social-profile-field-validate-no-integer": "$1 skal være et tal",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Brugernavn",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kort",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standard",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Side"
 }
