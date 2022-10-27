@@ -4,7 +4,8 @@
 			"Piramidion",
 			"Samflint",
 			"Shybetsky",
-			"Ата"
+			"Ата",
+			"Пан Хаунд"
 		]
 	},
 	"bs-socialprofile-desc": "Сутність профілів для BlueSpiceSocial",
@@ -35,7 +36,7 @@
 	"bs-socialprofile-tag-socialentityprofile-desc": "Профіль користувача може бути включеним до сторінки з тегом",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Ім'я користувача",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Ім'я користувача, яке буде відображатися з цим тегом на сторінці",
-	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Тип візуалізації",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Тип дисплея",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Довідка про тип візуалізації",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Список",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Коротко",
