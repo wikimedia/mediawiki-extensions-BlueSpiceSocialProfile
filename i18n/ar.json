@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"FiberAhmed",
+			"Meno25",
 			"أَحمد",
 			"ديفيد",
 			"محمد أحمد عبد الفتاح"
@@ -36,5 +37,10 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "قائمة",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "ترتيب",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "افتراضي",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "صفحة"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "صفحة",
+	"bs-socialprofile-tag-socialentityprofile-desc": "يمكن تضمين ملف تعريف المستخدم في صفحة بها العلامة",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntityProfile",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "يتم عرض اسم المستخدم الخاص بالمستخدم مع هذه العلامة على الصفحة",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "نوع العرض",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "يتم عرض نوع ملف التعريف على الصفحة. خيار التحديد لهذا من القائمة ، الافتراضي ، القصير والصفحة."
 }
