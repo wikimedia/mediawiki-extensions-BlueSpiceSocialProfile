@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"GpieroMW"
 		]
 	},
 	"bs-socialprofile-type": "Profilo",
@@ -30,5 +31,6 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nome utente",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Elenco",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Predefinito",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "'Utente' fornito non valido"
 }
