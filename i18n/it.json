@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"GpieroMW"
 		]
 	},
 	"bs-socialprofile-type": "Profilo",
 	"bs-socialprofile-entityaction-changeimage": "Immagine utente",
 	"bs-social-entityaction-editprofilefields": "Dati del profilo",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "'Utente' fornito non valido",
 	"bs-social-profile-field-name": "Nome",
 	"bs-social-profile-field-email": "Email",
 	"bs-social-profile-field-title": "Titolo",
