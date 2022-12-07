@@ -6,6 +6,7 @@
 			"YaronSh"
 		]
 	},
+	"bs-social-profile-field-title": "כותרת",
 	"bs-social-profile-field-title-value": "{{GENDER:$1|מר|גברת}}",
 	"bs-social-profile-field-validate-no-integer": "$1 חייב להיות מספר",
 	"bs-socialprofile-special-profiles-heading": "פרופילים",
