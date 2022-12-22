@@ -2,11 +2,11 @@
 
 namespace BlueSpice\Social\Profile\EntityListContext;
 
-use BlueSpice\Data\Filter\Numeric;
 use BlueSpice\Social\EntityListContext;
 use BlueSpice\Social\Profile\Entity\Profile;
 use Config;
 use IContextSource;
+use MWStake\MediaWiki\Component\DataStore\Filter\Numeric;
 use User;
 
 class UserProfile extends EntityListContext {
