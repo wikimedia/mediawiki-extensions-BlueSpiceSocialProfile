@@ -17,5 +17,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "רשימה",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "ברירת המחדל",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "דף",
-	"bs-social-profile-field-title": "כותרת"
+	"bs-social-profile-field-title": "כותרת",
+	"bs-social-profile-field-name": "שם"
 }
