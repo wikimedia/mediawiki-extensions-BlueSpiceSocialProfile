@@ -165,6 +165,7 @@
 			"scripts": [
 				"bs.socialprofile/util/tag/SocialEntityProfileDefinition.js"
 			],
+			"styles": "bluespice.socialprofile.droplet.css",
 			"messages": [
 				"bs-socialprofile-tag-socialentityprofile-desc",
 				"bs-socialprofile-ve-socialentityprofileinspector-title",
