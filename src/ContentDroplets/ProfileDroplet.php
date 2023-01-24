@@ -3,7 +3,6 @@ namespace BlueSpice\Social\Profile\ContentDroplets;
 
 use MediaWiki\Extension\ContentDroplets\Droplet\TagDroplet;
 use Message;
-use RawMessage;
 
 class ProfileDroplet extends TagDroplet {
 
@@ -11,21 +10,21 @@ class ProfileDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getName(): Message {
-		return new RawMessage( 'Profile' );
+		return Message::newFromKey( 'bs-socialprofile-droplet-name' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getDescription(): Message {
-		return new RawMessage( "Profile description" );
+		return Message::newFromKey( 'bs-socialprofile-droplet-description' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		return 'userAvatar';
+		return 'droplet-profile';
 	}
 
 	/**
