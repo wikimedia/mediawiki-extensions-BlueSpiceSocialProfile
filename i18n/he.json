@@ -18,5 +18,15 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "ברירת המחדל",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "דף",
 	"bs-social-profile-field-title": "כותרת",
-	"bs-social-profile-field-name": "שם"
+	"bs-social-profile-field-name": "שם",
+	"bs-socialprofile-type": "פרופיל",
+	"bs-socialprofile-entityaction-changeimage": "תמונת משתמש",
+	"bs-social-entityaction-editprofilefields": "נתוני פרופיל",
+	"bs-social-profile-field-email": "דוא״ל",
+	"bs-social-profile-field-department": "מחלקה",
+	"bs-social-profile-field-function": "תפקיד",
+	"bs-social-profile-field-location": "מיקום",
+	"bs-social-profile-field-phone": "טלפון",
+	"socialprofiles": "פרופילים",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "קצר"
 }
