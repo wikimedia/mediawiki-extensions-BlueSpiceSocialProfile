@@ -42,5 +42,7 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kurz",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standard",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Seite"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Seite",
+	"bs-socialprofile-droplet-name": "Benutzerprofil",
+	"bs-socialprofile-droplet-description": "Ein Benutzerprofil wird auf dieser Seite eingebunden"
 }
