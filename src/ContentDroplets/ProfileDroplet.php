@@ -30,8 +30,8 @@ class ProfileDroplet extends TagDroplet {
 	/**
 	 * @inheritDoc
 	 */
-	public function getRLModule(): string {
-		return 'ext.bluespice.socialprofile.visualEditorTagDefinition';
+	public function getRLModules(): array {
+		return [ 'ext.bluespice.socialprofile.visualEditorTagDefinition' ];
 	}
 
 	/**
