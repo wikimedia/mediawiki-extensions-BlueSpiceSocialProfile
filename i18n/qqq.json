@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"Amire80",
 			"BaRaN6161 TURK",
 			"Fitoschido",
 			"MuratTheTurkish",
@@ -42,7 +43,7 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Label for the parameter \"username\"\n{{identical|Username}}",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Help message for the parameter \"username\"",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Label for the parameter \"rendertype\"",
-	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Help message for the parameter \"rendertype\"",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Help message for the parameter \"rendertype\". Describes \"Display\" in the message {{mw-msg|Bs-socialprofile-ve-socialentityprofile-attr-rendertype-label}}.\n\nThe options are:\n* {{msg-mw|bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list}}\n* {{msg-mw|bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short}}\n* {{msg-mw|bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default}}\n* {{msg-mw|bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page}}",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Label for the option \"list\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector\n{{identical|List}}",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Label for the option \"short\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Label for the option \"default\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector\n{{identical|Default}}",
