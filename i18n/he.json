@@ -28,5 +28,14 @@
 	"bs-social-profile-field-location": "מיקום",
 	"bs-social-profile-field-phone": "טלפון",
 	"socialprofiles": "פרופילים",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "קצר"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "קצרה",
+	"bs-socialprofile-desc": "ישות פרופיל עבור BlueSpiceSocial",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "ניתן עצם 'User' לא חוקי",
+	"bs-socialprofile-switch-classicprofile-tooltip": "מעבר לפרופיל הקלאסי",
+	"bs-socialprofile-switch-modernprofile-tooltip": "מעבר לפרופיל המודרני",
+	"action-socialprofile-viewspecialpage": "לצפות בדף המיוחד \"{{int:socialprofiles}}\"",
+	"right-socialprofile-viewspecialpage": "צפייה בדף המיוחד \"{{int:socialprofiles}}\"",
+	"bs-socialprofile-tag-socialentityprofile-desc": "ניתן לכלול פרופיל משתמש בדף עם התג",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "פרופיל ישות חברתית",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "סוג התצוגה"
 }
