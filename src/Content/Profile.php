@@ -61,6 +61,7 @@ class Profile extends \WikitextContent {
 		}
 
 		$output = new \ParserOutput();
+		$output->setExtensionData( 'ForceOrigin', $bForceOrigin );
 
 		if ( $this->services->getHookContainer()->run( 'ContentGetParserOutput',
 			[ $this, $title, $revId, $options, $generateHtml, &$output ] ) ) {
@@ -69,9 +70,8 @@ class Profile extends \WikitextContent {
 			// the ParserOptions object in some weird way.
 			$oldRedir = $options->getRedirectTarget();
 			$options->setRedirectTarget( $this->getRedirectTarget() );
-			$options->setOption( 'ForceOrigin', $bForceOrigin );
 
-			$discussionHandler = new ProfileHandler( $this->getModel );
+			$discussionHandler = new ProfileHandler( $this->getModel() );
 			$cpoParams = new ContentParseParams( $title, $revId, $options, $generateHtml );
 			$output  = $discussionHandler->fillParserOutputInternal( $this, $cpoParams, $output );
 			$options->setRedirectTarget( $oldRedir );
