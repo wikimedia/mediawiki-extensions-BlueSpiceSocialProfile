@@ -42,7 +42,7 @@ class ProfileHandler extends \WikiTextContentHandler {
 		$dbKey = $cpoParams->getPage()->getDBkey();
 		$title = Title::newFromDBkey( $dbKey );
 
-		if ( $cpoParams->getParserOptions()->getOption( 'ForceOrigin' ) ) {
+		if ( $output->getExtensionData( 'ForceOrigin' ) ) {
 			return $output;
 		}
 		$oUser = MediaWikiServices::getInstance()->getUserFactory()->newFromName( $title->getText() );
