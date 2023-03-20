@@ -44,5 +44,7 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lijst",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kort",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standaard",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina",
+	"bs-socialprofile-droplet-name": "Gebruikersprofiel",
+	"bs-socialprofile-droplet-description": "Op deze pagina zal een gebruikersprofiel worden opgenomen"
 }

@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Chaduvari",
+			"V Bhavya",
 			"Veeven"
 		]
 	},
 	"bs-social-profile-field-email": "ఈమెయిలు",
-	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "చూపించాల్సిన విధం"
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "చూపించాల్సిన విధం",
+	"bs-socialprofile-droplet-description": "ఈ పేజీలో వినియోగదారు ప్రొఫైల్ చేర్చబడుతుంది"
 }

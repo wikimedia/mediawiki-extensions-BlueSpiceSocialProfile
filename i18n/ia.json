@@ -38,5 +38,7 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Curte",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Predefinite",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina",
+	"bs-socialprofile-droplet-name": "Profilo del usator",
+	"bs-socialprofile-droplet-description": "Un profilo del usator essera includite sur iste pagina"
 }
