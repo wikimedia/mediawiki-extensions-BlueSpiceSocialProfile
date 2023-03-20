@@ -41,5 +41,7 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Court",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Par défaut",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Page"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Page",
+	"bs-socialprofile-droplet-name": "Profil de l’utilisateur",
+	"bs-socialprofile-droplet-description": "Un profil d’utilisateur sera inclus sur cette page"
 }
