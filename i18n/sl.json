@@ -38,5 +38,7 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Vrsta prikaza",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Vrsta profila, ki bo prikazan na strani. Možnosti izbire so »list«, »default«, »short« in »page«.",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kratek",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Privzeti"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Privzeti",
+	"bs-socialprofile-droplet-name": "Uporabniški profil",
+	"bs-socialprofile-droplet-description": "Na tej strani bo vključen uporabniški profil"
 }

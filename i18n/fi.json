@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"MITO",
+			"Pyscowicz",
 			"Silvonen"
 		]
 	},
@@ -12,5 +13,6 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Käyttäjänimi",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Luettelo",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Oletus",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Sivu"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Sivu",
+	"bs-socialprofile-droplet-name": "Käyttäjäprofiili"
 }
