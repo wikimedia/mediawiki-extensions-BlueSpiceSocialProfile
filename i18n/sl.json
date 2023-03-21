@@ -38,5 +38,7 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Seznam",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kratek",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Privzeti",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Stran"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Stran",
+	"bs-socialprofile-droplet-name": "Uporabniški profil",
+	"bs-socialprofile-droplet-description": "Na tej strani bo vključen uporabniški profil"
 }
