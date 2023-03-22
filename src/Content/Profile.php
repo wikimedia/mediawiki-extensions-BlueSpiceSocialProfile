@@ -73,7 +73,7 @@ class Profile extends \WikitextContent {
 
 			$discussionHandler = new ProfileHandler( $this->getModel() );
 			$cpoParams = new ContentParseParams( $title, $revId, $options, $generateHtml );
-			$output  = $discussionHandler->fillParserOutputInternal( $this, $cpoParams, $output );
+			$discussionHandler->fillParserOutputInternal( $this, $cpoParams, $output );
 			$options->setRedirectTarget( $oldRedir );
 		}
 
