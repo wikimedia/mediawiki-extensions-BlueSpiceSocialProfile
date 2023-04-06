@@ -12,7 +12,7 @@
 	"bs-social-entityaction-editprofilefields": "Profildata",
 	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Ugyldig «bruker» gitt",
 	"bs-social-profile-field-name": "Navn",
-	"bs-social-profile-field-email": "Epost",
+	"bs-social-profile-field-email": "E-post",
 	"bs-social-profile-field-title": "Tittel",
 	"bs-social-profile-field-title-value": "{{GENDER:$1|}}",
 	"bs-social-profile-field-department": "Avdeling",
