@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A Chinese Wikipedian",
+			"Kishinsagi",
 			"Willy1018"
 		]
 	},
@@ -15,7 +16,9 @@
 	"bs-social-profile-field-phone": "电话",
 	"socialprofiles": "配置文件",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "用户名",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "显示类型",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "列表",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "默认",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "页面"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "页面",
+	"bs-socialprofile-droplet-name": "用户资料"
 }
