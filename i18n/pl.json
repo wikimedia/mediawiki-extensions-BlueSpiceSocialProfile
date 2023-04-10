@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Rail"
+			"Rail",
+			"WaldiSt"
 		]
 	},
 	"bs-socialprofile-type": "Profil",
@@ -25,5 +26,6 @@
 	"action-social-editothersprofile": "edytowania profili innych użytkowników",
 	"right-social-editothersprofile": "Edycja profili innych użytkowników",
 	"action-socialprofile-viewspecialpage": "podglądu strony „{{int:socialprofiles}}”",
-	"right-socialprofile-viewspecialpage": "Podgląd strony „{{int:socialprofiles}}”"
+	"right-socialprofile-viewspecialpage": "Podgląd strony „{{int:socialprofiles}}”",
+	"bs-socialprofile-droplet-name": "Profil użytkownika"
 }

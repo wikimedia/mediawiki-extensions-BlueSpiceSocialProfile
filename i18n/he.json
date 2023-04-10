@@ -37,5 +37,9 @@
 	"right-socialprofile-viewspecialpage": "צפייה בדף המיוחד \"{{int:socialprofiles}}\"",
 	"bs-socialprofile-tag-socialentityprofile-desc": "ניתן לכלול פרופיל משתמש בדף עם התג",
 	"bs-socialprofile-ve-socialentityprofileinspector-title": "פרופיל ישות חברתית",
-	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "סוג התצוגה"
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "סוג התצוגה",
+	"action-social-editothersprofile": "לערוך פרופילים של משתמשים אחרים",
+	"right-social-editothersprofile": "עריכת פרופילים של משתמשים אחרים",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "איך הפרופיל מוצג בדף. באפשרותך לבחור מתוך רשימה, קצרה, ברירת מחדל, או דף.",
+	"bs-socialprofile-droplet-name": "פרופיל משתמש"
 }
