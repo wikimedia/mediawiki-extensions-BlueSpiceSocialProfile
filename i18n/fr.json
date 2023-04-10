@@ -37,7 +37,7 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nom d’utilisateur",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Nom de l’utilisateur à afficher avec cette balise sur la page",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Type de rendu",
-	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Type d’affichage du profil sur la page. Sélectionner l’option pour cela parmi : « list », « default », « short » et « page ».",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Comment est affiché le profil sur la page. Vous pouvez choisir entre liste, condensé, par défaut, ou page.",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Court",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Par défaut",
