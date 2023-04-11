@@ -37,5 +37,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "רשימה",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "קצרה",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "ברירת המחדל",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "דף"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "דף",
+	"bs-socialprofile-droplet-name": "פרופיל משתמש"
 }

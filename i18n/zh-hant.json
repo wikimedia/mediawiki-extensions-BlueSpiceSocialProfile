@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kly"
+			"Kly",
+			"Winston Sung"
 		]
 	},
 	"bs-socialprofile-desc": "用於 BlueSpiceSocial 的個人檔案單元",
@@ -38,5 +39,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "清單",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "簡短",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "預設",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "頁面"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "頁面",
+	"bs-socialprofile-droplet-name": "使用者檔案"
 }
