@@ -41,5 +41,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "קצרה",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "ברירת המחדל",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "דף",
-	"bs-socialprofile-droplet-name": "פרופיל משתמש"
+	"bs-socialprofile-droplet-name": "פרופיל משתמש",
+	"bs-socialprofile-droplet-description": "פרופיל משתמש ייכלל בדף הזה"
 }
