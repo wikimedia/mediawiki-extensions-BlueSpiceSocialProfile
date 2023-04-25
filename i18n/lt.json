@@ -1,8 +1,38 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eitvys200"
+			"Eitvys200",
+			"Nokeoo"
 		]
 	},
-	"bs-social-profile-field-email": "El. paštas"
+	"bs-socialprofile-desc": "BlueSpiceSocial profilio subjektas",
+	"bs-socialprofile-type": "Profilis",
+	"bs-socialprofile-entityaction-changeimage": "Naudotojo paveikslėlis",
+	"bs-social-entityaction-editprofilefields": "Profilio duomenys",
+	"bs-social-profile-field-name": "Vardas",
+	"bs-social-profile-field-email": "El. paštas",
+	"bs-social-profile-field-title": "Kreipinys",
+	"bs-social-profile-field-department": "Departamentas",
+	"bs-social-profile-field-function": "Funkcija",
+	"bs-social-profile-field-location": "Vieta",
+	"bs-social-profile-field-phone": "Telefonas",
+	"bs-social-profile-field-validate-no-integer": "$1 turi būti skaičius",
+	"bs-socialprofile-special-profiles-heading": "Profiliai",
+	"bs-social-profile-infoshowemail": "Rodyti el. pašto adresą profilyje",
+	"socialprofiles": "Profiliai",
+	"bs-socialprofile-switch-classicprofile-label": "Klasikinis profilis",
+	"bs-socialprofile-switch-modernprofile-label": "Modernus profilis",
+	"bs-socialprofile-switch-classicprofile-tooltip": "Perjungti į klasikinį profilį",
+	"bs-socialprofile-switch-modernprofile-tooltip": "Perjungti į modernų profilį",
+	"action-socialprofile-viewspecialpage": "peržiūrėti specialų puslapį „{{int:socialprofiles}}“",
+	"right-socialprofile-viewspecialpage": "Peržiūrėti specialų puslapį „{{int:socialprofiles}}“",
+	"bs-socialprofile-tag-socialentityprofile-desc": "Naudotojo profilis gali būti įtrauktas į puslapį su žyme",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Naudotojo vardas",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Naudotojo vardas rodomas kartu su žyme puslapyje",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Rodomas pavadinimas",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Sąrašas",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Trumpas",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Numatytasis",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Puslapis",
+	"bs-socialprofile-droplet-name": "Naudotojo profilis"
 }
