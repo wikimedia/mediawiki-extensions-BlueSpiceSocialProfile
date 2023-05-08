@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"FiberAhmed",
 			"Meno25",
 			"أَحمد",
@@ -42,5 +43,7 @@
 	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntityProfile",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "يتم عرض اسم المستخدم الخاص بالمستخدم مع هذه العلامة على الصفحة",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "نوع العرض",
-	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "يتم عرض نوع ملف التعريف على الصفحة. خيار التحديد لهذا من القائمة ، الافتراضي ، القصير والصفحة."
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "يتم عرض نوع ملف التعريف على الصفحة. خيار التحديد لهذا من القائمة ، الافتراضي ، القصير والصفحة.",
+	"bs-socialprofile-droplet-name": "ملف المستخدم",
+	"bs-socialprofile-droplet-description": "سيتم تضمين ملف تعريف المستخدم في هذه الصفحة"
 }
