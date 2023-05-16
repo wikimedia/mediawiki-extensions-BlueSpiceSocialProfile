@@ -40,5 +40,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Curto",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Padrão",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página",
+	"bs-socialprofile-droplet-name": "Perfil do utilizador"
 }
