@@ -6,6 +6,17 @@ use BlueSpice\Social\Profile\Entity\Profile;
 
 class CreateAndInvalidateUserProfile extends UserSaveSettings {
 	/**
+	 * @return bool
+	 */
+	protected function skipProcessing() {
+		// PluggableAuthProvider does not correctly recognize system users and
+		// `userCanAuthenticate()` returns true, so cannot use `isSystemUser()`
+		return !$this->user->isRegistered() ||
+			$this->user->isSystemUser() ||
+			$this->user->getName() === 'BSMaintenance';
+	}
+
+	/**
 	 *
 	 * @return bool
 	 */
