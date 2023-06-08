@@ -4,6 +4,7 @@
 			"Joao Xavier"
 		]
 	},
+	"bs-social-profile-field-title-value": "{{GENDER:$1|Sioro|Siorino|}}",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Uzeronomo",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Listar"
 }
