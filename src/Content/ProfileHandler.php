@@ -80,8 +80,9 @@ class ProfileHandler extends \WikiTextContentHandler {
 			foreach ( $categories as $category => $key ) {
 				$output->addCategory( $category, $key );
 			}
-			return $output;
 		}
+
+		return $output;
 	}
 
 	/**
