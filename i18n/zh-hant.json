@@ -35,10 +35,11 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "使用者名稱",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "要在帶有此標籤的頁面上所顯示的使用者名稱",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "顯示類型",
-	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "要顯示在頁面上的個人檔案類型。選項為清單、預設、簡短和頁面。",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "個人檔案在頁面上的顯示方式。您可以從清單裡選擇簡短、預設、頁面等樣式。",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "清單",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "簡短",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "預設",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "頁面",
-	"bs-socialprofile-droplet-name": "使用者檔案"
+	"bs-socialprofile-droplet-name": "使用者檔案",
+	"bs-socialprofile-droplet-description": "此頁面將包含使用者個人檔案"
 }
