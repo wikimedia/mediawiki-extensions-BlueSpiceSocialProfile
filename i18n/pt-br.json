@@ -5,7 +5,8 @@
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Juan90264",
-			"Stephanyb76"
+			"Stephanyb76",
+			"VasbXBR"
 		]
 	},
 	"bs-socialprofile-desc": "Entidade de perfil para BlueSpiceSocial",
@@ -42,5 +43,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Padrão",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página",
 	"bs-socialprofile-tag-socialentityprofile-desc": "Um perfil de usuário pode ser incluído em uma página com a etiqueta",
-	"bs-socialprofile-ve-socialentityprofileinspector-title": "PerfilDeEntidadeSocial"
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "PerfilDeEntidadeSocial",
+	"bs-socialprofile-droplet-name": "Perfil de usuário"
 }
