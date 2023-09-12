@@ -4,7 +4,9 @@
 			"Duke of Wikipädia",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Juan90264"
+			"Juan90264",
+			"Stephanyb76",
+			"VasbXBR"
 		]
 	},
 	"bs-socialprofile-desc": "Entidade de perfil para BlueSpiceSocial",
@@ -41,5 +43,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Curto",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Padrão",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página",
+	"bs-socialprofile-droplet-name": "Perfil de usuário"
 }
