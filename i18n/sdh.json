@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"TerranBoy"
+		]
+	},
+	"bs-socialprofile-type": "پرۆفایل",
+	"bs-socialprofile-entityaction-changeimage": "وێنەێ وەکاربەر",
+	"bs-social-entityaction-editprofilefields": "داتاێ پرۆفایل",
+	"bs-social-profile-field-name": "ناو",
+	"bs-social-profile-field-email": "ئیمەیل",
+	"bs-social-profile-field-title": "سەرناو",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|جەناب|}}",
+	"bs-social-profile-field-department": "دێپارتمان",
+	"bs-social-profile-field-location": "شوون",
+	"bs-social-profile-field-phone": "تلفۆن",
+	"bs-socialprofile-special-profiles-heading": "پرۆفایلەیل",
+	"socialprofiles": "پرۆفایلەل",
+	"bs-socialprofile-switch-classicprofile-label": "پرۆفایل کلاسیک",
+	"bs-socialprofile-switch-modernprofile-label": "پرۆفایل مۆدێرن",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "ناو وەکاربەر",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "پێرست",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "کووتا",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "بنچینەیی",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "پەڕە"
+}
