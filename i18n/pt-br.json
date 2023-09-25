@@ -4,6 +4,7 @@
 			"Duke of Wikipädia",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
+			"Felipe L. Ewald",
 			"Juan90264",
 			"Stephanyb76",
 			"VasbXBR"
@@ -44,5 +45,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página",
 	"bs-socialprofile-tag-socialentityprofile-desc": "Um perfil de usuário pode ser incluído em uma página com a etiqueta",
 	"bs-socialprofile-ve-socialentityprofileinspector-title": "PerfilDeEntidadeSocial",
-	"bs-socialprofile-droplet-name": "Perfil de usuário"
+	"bs-socialprofile-droplet-name": "Perfil de usuário",
+	"bs-socialprofile-droplet-description": "Um perfil de usuário será incluído nessa página"
 }
