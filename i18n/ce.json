@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"bs-social-profile-field-name": "ЦӀе",
+	"bs-social-profile-field-email": "Электронан пошт",
+	"bs-social-profile-field-title": "Корта",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|С|З|}}",
+	"bs-social-profile-field-department": "Дакъа",
+	"bs-social-profile-field-function": "Функци",
+	"bs-social-profile-field-location": "Лаьтта меттиг",
+	"bs-social-profile-field-phone": "Телефон",
+	"bs-social-profile-field-validate-no-integer": "$1 терахь хила деза",
+	"bs-socialprofile-special-profiles-heading": "Префиксаш",
+	"bs-social-profile-infoshowemail": "Электронан поштан адрес профиль тӀехь гайта",
+	"socialprofiles": "Префиксаш",
+	"bs-socialprofile-switch-classicprofile-label": "Классикин профиль",
+	"bs-socialprofile-switch-modernprofile-label": "Хенара профиль",
+	"bs-socialprofile-switch-classicprofile-tooltip": "Классикин профиль тӀейаккха",
+	"bs-socialprofile-switch-modernprofile-tooltip": "Хенара профиль тӀейаккха",
+	"action-socialprofile-viewspecialpage": "хьажа леррина агӀонга \"{{int:socialprofiles}}\"",
+	"right-socialprofile-viewspecialpage": "Хьажа леррина агӀонга \"{{int:socialprofiles}}\"",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Декъашхочун цӀе",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "МогӀам",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Ӏадйитаран кеп",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "АгӀо"
+}
