@@ -1,8 +1,34 @@
 {
 	"@metadata": {
 		"authors": [
-			"BadDog"
+			"BadDog",
+			"Kizule",
+			"Milicevic01"
 		]
 	},
-	"bs-social-profile-field-email": "Е-пошта"
+	"bs-socialprofile-type": "Профил",
+	"bs-socialprofile-entityaction-changeimage": "Слика корисника",
+	"bs-social-entityaction-editprofilefields": "Подаци профила",
+	"bs-social-profile-field-name": "Име",
+	"bs-social-profile-field-email": "Е-пошта",
+	"bs-social-profile-field-title": "Наслов",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|Гдин.|Гђа.|}}",
+	"bs-social-profile-field-department": "Департмент",
+	"bs-social-profile-field-function": "Функција",
+	"bs-social-profile-field-location": "Локација",
+	"bs-social-profile-field-phone": "Телефон",
+	"bs-social-profile-field-validate-no-integer": "$1 мора да буде број",
+	"bs-socialprofile-special-profiles-heading": "Профили",
+	"bs-social-profile-infoshowemail": "Прикажи имејл адресу на профилу",
+	"socialprofiles": "Профили",
+	"bs-socialprofile-switch-classicprofile-label": "Класичан профил",
+	"bs-socialprofile-switch-modernprofile-label": "Модеран профил",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Корисничко име",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Тип приказа",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Списак",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Кратко",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Подразумевано",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Страница",
+	"bs-socialprofile-droplet-name": "Профил корисника",
+	"bs-socialprofile-droplet-description": "Профил корисника ће бити укључен на овој страници"
 }
