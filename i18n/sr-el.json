@@ -2,5 +2,29 @@
 	"@metadata": {
 		"authors": []
 	},
-	"bs-social-profile-field-email": "E-pošta"
+	"bs-socialprofile-type": "Profil",
+	"bs-socialprofile-entityaction-changeimage": "Slika korisnika",
+	"bs-social-entityaction-editprofilefields": "Podaci profila",
+	"bs-social-profile-field-name": "Ime",
+	"bs-social-profile-field-email": "E-pošta",
+	"bs-social-profile-field-title": "Naslov",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|Gdin.|Gđa.|}}",
+	"bs-social-profile-field-department": "Department",
+	"bs-social-profile-field-function": "Funkcija",
+	"bs-social-profile-field-location": "Lokacija",
+	"bs-social-profile-field-phone": "Telefon",
+	"bs-social-profile-field-validate-no-integer": "$1 mora da bude broj",
+	"bs-socialprofile-special-profiles-heading": "Profili",
+	"bs-social-profile-infoshowemail": "Prikaži imejl adresu na profilu",
+	"socialprofiles": "Profili",
+	"bs-socialprofile-switch-classicprofile-label": "Klasičan profil",
+	"bs-socialprofile-switch-modernprofile-label": "Moderan profil",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Korisničko ime",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Tip prikaza",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Spisak",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kratko",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Podrazumevano",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Stranica",
+	"bs-socialprofile-droplet-name": "Profil korisnika",
+	"bs-socialprofile-droplet-description": "Profil korisnika će biti uključen na ovoj stranici"
 }
