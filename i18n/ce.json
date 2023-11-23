@@ -25,5 +25,7 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Декъашхочун цӀе",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "МогӀам",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Ӏадйитаран кеп",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "АгӀо"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "АгӀо",
+	"action-social-editothersprofile": "кхечу декъашхойн профиль тайе",
+	"right-social-editothersprofile": "Кхечу декъашхойн профиль тайе"
 }

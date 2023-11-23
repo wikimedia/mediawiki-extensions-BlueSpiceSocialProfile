@@ -4,6 +4,7 @@
 			"Duke of Wikipädia",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
+			"Felipe L. Ewald",
 			"Juan90264",
 			"Stephanyb76",
 			"VasbXBR"
@@ -39,10 +40,11 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nome de usuário",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Nome de usuário do usuário a ser exibido com esta etiqueta na página",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Tipo de exibição",
-	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "O tipo de perfil é exibido na página. Opção de seleção para isso da lista, padrão, curto e página.",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Como o perfil é exibido na página. Você pode escolher entre lista, padrão, curto e página.",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Curto",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Padrão",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página",
-	"bs-socialprofile-droplet-name": "Perfil de usuário"
+	"bs-socialprofile-droplet-name": "Perfil de usuário",
+	"bs-socialprofile-droplet-description": "Um perfil de usuário será incluído nessa página"
 }

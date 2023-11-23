@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jeeputer",
 			"Mohammad ebz"
 		]
 	},
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "فهرست"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "فهرست",
+	"action-social-editothersprofile": "ویرایش نمایهٔ کاربران دیگر",
+	"right-social-editothersprofile": "ویرایش نمایهٔ کاربران دیگر"
 }

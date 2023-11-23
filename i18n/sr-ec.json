@@ -29,5 +29,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Кратко",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Подразумевано",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Страница",
-	"bs-socialprofile-droplet-name": "Профил корисника"
+	"bs-socialprofile-droplet-name": "Профил корисника",
+	"bs-socialprofile-droplet-description": "Профил корисника ће бити укључен на овој страници"
 }
