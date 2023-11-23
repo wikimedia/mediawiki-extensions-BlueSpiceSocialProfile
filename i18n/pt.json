@@ -36,9 +36,11 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nome de utilizador",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Nome do utilizador a ser apresentado com esta etiqueta na página",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Tipo de apresentação",
-	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "O tipo de perfil que é apresentado na página. Selecionar opção para isto de entre: lista, padrão, curto e página.",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Como o perfil é apresentado na página. Pode escolher entre: lista, curto, padrão e página.",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Curto",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Padrão",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Página",
+	"bs-socialprofile-droplet-name": "Perfil do utilizador",
+	"bs-socialprofile-droplet-description": "Será incluído um perfil de utilizador nesta página"
 }

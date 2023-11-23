@@ -34,5 +34,9 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Trumpas",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Numatytasis",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Puslapis",
-	"bs-socialprofile-droplet-name": "Naudotojo profilis"
+	"bs-socialprofile-droplet-name": "Naudotojo profilis",
+	"action-social-editothersprofile": "keisti kitų naudotojų profilius",
+	"right-social-editothersprofile": "Keisti kitų naudotojų profilius",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Kaip profilis rodomas puslapyje. Galite pasirinkti iš sąrašo, trumpo, numatytojo ir puslapio.",
+	"bs-socialprofile-droplet-description": "Naudotojo profilis bus įtrauktas į šį puslapį"
 }
