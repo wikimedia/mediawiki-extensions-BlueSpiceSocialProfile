@@ -37,7 +37,7 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Ім'я користувача",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Ім'я користувача, яке буде відображатися з цим тегом на сторінці",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Тип дисплея",
-	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Довідка про тип візуалізації",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Як профіль відображається на сторінці. Ви можете вибрати список, короткий, за замовчуванням або сторінку.",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Список",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Коротко",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "За замовчуванням",
