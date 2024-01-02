@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"SMP"
 		]
 	},
 	"bs-socialprofile-type": "Perfil",
@@ -19,6 +20,6 @@
 	"socialprofiles": "Perfils",
 	"bs-socialprofile-switch-classicprofile-label": "Perfil clàssic",
 	"bs-socialprofile-switch-modernprofile-label": "Perfil modern",
-	"action-socialprofile-viewspecialpage": "mostra la pàgina especial «{{int:socialprofiles}}»",
-	"right-socialprofile-viewspecialpage": "Mostra la pàgina especial «{{int:socialprofiles}}»"
+	"action-socialprofile-viewspecialpage": "veure la pàgina especial «{{int:socialprofiles}}»",
+	"right-socialprofile-viewspecialpage": "Veure la pàgina especial «{{int:socialprofiles}}»"
 }
