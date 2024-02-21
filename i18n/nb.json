@@ -35,5 +35,12 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kort",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standard",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Side"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Side",
+	"bs-socialprofile-tag-socialentityprofile-desc": "En brukerprofil kan inkluderes på siden med taggen",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntityProfile",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Brukernavnet til brukeren som skal vises med denne taggen på siden",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Visningstype",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Hvordan profilen vises på siden. Du kan velge mellom liste, kort, standard og side.",
+	"bs-socialprofile-droplet-name": "Brukerprofil",
+	"bs-socialprofile-droplet-description": "En brukerprofil blir inkludert på denne siden"
 }
