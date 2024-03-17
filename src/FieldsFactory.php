@@ -142,7 +142,7 @@ class FieldsFactory {
 				"Missing " . static::KEY_CALLBACK . " for $name"
 			);
 		}
-		list( $classname, $callback ) = explode(
+		[ $classname, $callback ] = explode(
 			'::',
 			$definition[static::KEY_CALLBACK]
 		);

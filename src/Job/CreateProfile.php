@@ -1,7 +1,7 @@
 <?php
 namespace BlueSpice\Social\Profile\Job;
 
-use BlueSpice\Social\Profile\Entity\Profile as Profile;
+use BlueSpice\Social\Profile\Entity\Profile;
 use Job;
 use MediaWiki\MediaWikiServices;
 
