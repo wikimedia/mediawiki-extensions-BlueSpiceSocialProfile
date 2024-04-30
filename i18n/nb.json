@@ -2,7 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"EdoAug",
-			"Jon Harald S\u00f8by",
+			"Jon Harald Søby",
 			"Vukky"
 		]
 	},
@@ -10,7 +10,7 @@
 	"bs-socialprofile-type": "Profil",
 	"bs-socialprofile-entityaction-changeimage": "Brukerbilde",
 	"bs-social-entityaction-editprofilefields": "Profildata",
-	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Ugyldig \u00abbruker\u00bb gitt",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Ugyldig «bruker» gitt",
 	"bs-social-profile-field-name": "Navn",
 	"bs-social-profile-field-email": "E-post",
 	"bs-social-profile-field-title": "Tittel",
@@ -19,7 +19,7 @@
 	"bs-social-profile-field-function": "Funksjon",
 	"bs-social-profile-field-location": "Sted",
 	"bs-social-profile-field-phone": "Telefon",
-	"bs-social-profile-field-validate-no-integer": "$1 m\u00e5 v\u00e6re et tall",
+	"bs-social-profile-field-validate-no-integer": "$1 må være et tall",
 	"bs-socialprofile-special-profiles-heading": "Profiler",
 	"bs-social-profile-infoshowemail": "Vis epostadresser i profil",
 	"socialprofiles": "Profiler",
@@ -29,18 +29,18 @@
 	"bs-socialprofile-switch-modernprofile-tooltip": "Bytt til moderne profil",
 	"action-social-editothersprofile": "redigere andres profiler",
 	"right-social-editothersprofile": "Redigere andres profiler",
-	"action-socialprofile-viewspecialpage": "vise spesialsiden \u00ab{{int:socialprofiles}}\u00bb",
-	"right-socialprofile-viewspecialpage": "Vise spesialsiden \u00ab{{int:socialprofiles}}\u00bb",
+	"action-socialprofile-viewspecialpage": "vise spesialsiden «{{int:socialprofiles}}»",
+	"right-socialprofile-viewspecialpage": "Vise spesialsiden «{{int:socialprofiles}}»",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Brukernavn",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Liste",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kort",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standard",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Side",
-	"bs-socialprofile-tag-socialentityprofile-desc": "En brukerprofil kan inkluderes p\u00e5 siden med taggen",
+	"bs-socialprofile-tag-socialentityprofile-desc": "En brukerprofil kan inkluderes på siden med taggen",
 	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntityProfile",
-	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Brukernavnet til brukeren som skal vises med denne taggen p\u00e5 siden",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "Brukernavnet til brukeren som skal vises med denne taggen på siden",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Visningstype",
-	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Hvordan profilen vises p\u00e5 siden. Du kan velge mellom liste, kort, standard og side.",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Hvordan profilen vises på siden. Du kan velge mellom liste, kort, standard og side.",
 	"bs-socialprofile-droplet-name": "Brukerprofil",
-	"bs-socialprofile-droplet-description": "En brukerprofil blir inkludert p\u00e5 denne siden"
+	"bs-socialprofile-droplet-description": "En brukerprofil blir inkludert på denne siden"
 }
