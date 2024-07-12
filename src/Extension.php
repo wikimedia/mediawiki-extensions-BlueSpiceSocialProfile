@@ -29,7 +29,6 @@ namespace BlueSpice\Social\Profile;
 
 use BlueSpice\Social\Profile\Content\Profile as ProfileContent;
 use MediaWiki\MediaWikiServices;
-use MWStake\MediaWiki\Component\CommonUserInterface\LessVars;
 
 class Extension extends \BlueSpice\Extension {
 
@@ -44,9 +43,6 @@ class Extension extends \BlueSpice\Extension {
 			$wgContentHandlers[CONTENT_MODEL_BSSOCIALPROFILE]
 				= "\\BlueSpice\\Social\\Profile\\Content\\ProfileHandler";
 		}
-
-		$lessVars = LessVars::getInstance();
-		$lessVars->setVar( 'bs-color-lighten-information', '#BABABA' );
 	}
 
 	/**
