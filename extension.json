@@ -244,6 +244,11 @@
 			}
 		}
 	},
+	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\Social\\Profile\\HookHandler\\CommonUserInterface"
+		}
+	},
 	"Hooks": {
 		"PageSaveComplete": "\\BlueSpice\\Social\\Profile\\Hook\\PageSaveComplete\\InvalidateProfileEntity::callback",
 		"ArticleViewHeader": "\\BlueSpice\\Social\\Profile\\Extension::onArticleViewHeader",
@@ -256,7 +261,8 @@
 		"UserLoadAfterLoadFromSession": "\\BlueSpice\\Social\\Profile\\Hook\\UserLoadAfterLoadFromSession\\AddLDAPProfileDataSync::callback",
 		"LocalUserCreated": "\\BlueSpice\\Social\\Profile\\Hook\\LocalUserCreated\\CreateUserProfile::callback",
 		"DeleteAccount": "\\BlueSpice\\Social\\Profile\\Hook\\DeleteAccount\\DeleteUserProfile::callback",
-		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\Social\\Profile\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfCustomSocialProfiles::callback"
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\Social\\Profile\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfCustomSocialProfiles::callback",
+		"MWStakeCommonUILessVarsInit": "common-user-interface"
 	},
 	"manifest_version": 2
 }
