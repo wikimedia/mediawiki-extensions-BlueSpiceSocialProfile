@@ -18,7 +18,7 @@ bs.social.EntityActionMenu.ChangeImage = function ( entityActionMenu ) {
 	if( me.entityActionMenu.entity.getData().outputtype !== 'Page' ) {
 		return;
 	}
-	me.$element = $( '<li><a class="dropdown-item bs-social-entity-action-changeimage">'
+	me.$element = $( '<li><a class="dropdown-item bs-social-entity-action-changeimage" tabindes="0" role="button">'
 		+ '<span>' + mw.message( "bs-socialprofile-entityaction-changeimage" ).plain() + '</span>'
 		+ '</a></li>'
 	);
