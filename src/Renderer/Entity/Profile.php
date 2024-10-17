@@ -11,9 +11,9 @@
  */
 namespace BlueSpice\Social\Profile\Renderer\Entity;
 
+use BlueSpice\Avatars\Generator;
 use BlueSpice\Context;
 use BlueSpice\Renderer\Params;
-use BlueSpice\Renderer\UserImage;
 use BlueSpice\Social\Profile\EntityListContext\UserProfile;
 use BlueSpice\Social\Profile\IField;
 use BlueSpice\Utility\CacheHelper;
@@ -21,6 +21,7 @@ use Config;
 use Html;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
+use Message;
 
 class Profile extends \BlueSpice\Social\Renderer\Entity\Page {
 
@@ -91,13 +92,17 @@ class Profile extends \BlueSpice\Social\Renderer\Entity\Page {
 			return parent::render_userimage( $val );
 		}
 
-		$factory = $this->services->getService( 'BSRendererFactory' );
-		$image = $factory->get( 'userimage', new Params( [
-			UserImage::PARAM_USER => $this->getEntity()->getOwner(),
-			UserImage::PARAM_WIDTH => 200,
-			UserImage::PARAM_HEIGHT => 200,
-		] ) );
-		return $image->render();
+		$avatarGenerator = new Generator( $this->config );
+		$file = $avatarGenerator->getAvatarFile( $this->getEntity()->getOwner() );
+		$userDisplay = $this->services->getService( 'BSUtilityFactory' )
+			->getUserHelper( $this->getEntity()->getOwner() )->getDisplayName();
+		$imgAlt = Message::newFromKey( 'bs-socialprofile-userimage-alt', $userDisplay )->text();
+		return Html::element( 'img', [
+			'src' => $file ? $file->getUrl() : '',
+			'alt' => $imgAlt,
+			'height' => 200,
+			'width' => 200
+		] );
 	}
 
 	/**

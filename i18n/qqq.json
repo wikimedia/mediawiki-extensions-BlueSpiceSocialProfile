@@ -49,5 +49,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Label for the option \"default\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector\n{{identical|Default}}",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Label for the option \"page\" of the \"rendertype\" attribute input field in the VisualEditor tag inspector\n{{identical|Page}}",
 	"bs-socialprofile-droplet-name": "Title of droplet for tag SocialProfile",
-	"bs-socialprofile-droplet-description": "Description of droplet for tag SocialProfile"
+	"bs-socialprofile-droplet-description": "Description of droplet for tag SocialProfile",
+	"bs-socialprofile-userimage-alt": "Alt label for the user image.\n$1 - user real name or username"
 }
