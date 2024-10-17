@@ -200,8 +200,13 @@ class Profile extends Page {
 			// replace with editprofilefields and edituserpage
 			unset( $actions['edit'] );
 		}
-		$status = $this->userCan( 'editothers', $user );
-		if ( $this->userIsOwner( $user ) || $status->isOK() ) {
+		$permissionManager = $this->services->getPermissionManager();
+		$canEdit = $permissionManager->userCan( 'edit', $user, $this->getOwner()->getUserPage() );
+		$userCanEditOthers = $this->userCan( 'editothers', $user )->isOK();
+		if (
+			 $canEdit &&
+			 ( $this->userIsOwner( $user ) || $userCanEditOthers )
+		) {
 			$actions['changeimage'] = [];
 			$actions['editprofilefields'] = [];
 		}
@@ -215,7 +220,7 @@ class Profile extends Page {
 				$actions['edituserpage'] = [];
 			}
 		}
-		if ( $status->isOK() ) {
+		if ( $userCanEditOthers ) {
 			$actions['edithiddenfields'] = [];
 		}
 		return $actions;
