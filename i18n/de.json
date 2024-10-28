@@ -45,5 +45,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standard",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Seite",
 	"bs-socialprofile-droplet-name": "Benutzerprofil",
-	"bs-socialprofile-droplet-description": "Ein Benutzerprofil wird auf dieser Seite eingebunden"
+	"bs-socialprofile-droplet-description": "Ein Benutzerprofil wird auf dieser Seite eingebunden",
+	"bs-socialprofile-userimage-alt": "Benutzerprofilbild für Benutzer $1"
 }
