@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"Mahabarata",
 			"Thibaut120094",
 			"Verdy p",
 			"Wladek92"
@@ -43,5 +44,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Par défaut",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Page",
 	"bs-socialprofile-droplet-name": "Profil de l’utilisateur",
-	"bs-socialprofile-droplet-description": "Un profil d’utilisateur sera inclus sur cette page"
+	"bs-socialprofile-droplet-description": "Un profil d’utilisateur sera inclus sur cette page",
+	"bs-socialprofile-userimage-alt": "Image du profil utilisateur pour l'utilisateur $1"
 }
