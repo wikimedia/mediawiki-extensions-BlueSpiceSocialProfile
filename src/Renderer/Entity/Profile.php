@@ -11,9 +11,9 @@
  */
 namespace BlueSpice\Social\Profile\Renderer\Entity;
 
-use BlueSpice\Avatars\Generator;
 use BlueSpice\Context;
 use BlueSpice\Renderer\Params;
+use BlueSpice\Renderer\UserImage;
 use BlueSpice\Social\Profile\EntityListContext\UserProfile;
 use BlueSpice\Social\Profile\IField;
 use BlueSpice\Utility\CacheHelper;
@@ -92,17 +92,48 @@ class Profile extends \BlueSpice\Social\Renderer\Entity\Page {
 			return parent::render_userimage( $val );
 		}
 
-		$avatarGenerator = new Generator( $this->config );
-		$file = $avatarGenerator->getAvatarFile( $this->getEntity()->getOwner() );
 		$userDisplay = $this->services->getService( 'BSUtilityFactory' )
 			->getUserHelper( $this->getEntity()->getOwner() )->getDisplayName();
 		$imgAlt = Message::newFromKey( 'bs-socialprofile-userimage-alt', $userDisplay )->text();
-		return Html::element( 'img', [
-			'src' => $file ? $file->getUrl() : '',
-			'alt' => $imgAlt,
-			'height' => 200,
-			'width' => 200
-		] );
+
+		$factory = $this->services->getService( 'BSRendererFactory' );
+		$image = $factory->get( 'userimage', new Params( [
+			UserImage::PARAM_USER => $this->getEntity()->getOwner(),
+			UserImage::PARAM_WIDTH => 200,
+			UserImage::PARAM_HEIGHT => 200,
+			UserImage::PARAM_IMAGE_ALT => $imgAlt,
+		] ) );
+		$html = $image->render();
+		$html = $this->replaceAnchor( $html );
+		return $html;
+	}
+
+	/**
+	 *
+	 * @param string $html
+	 * @return string
+	 */
+	private function replaceAnchor( $html ) {
+		$doc = new \DOMDocument();
+		// phpcs:ignore Generic.PHP.NoSilencedErrors.Discouraged
+		@$doc->loadHTML( $html );
+
+		$anchor = $doc->getElementsByTagName( 'a' )->item( 0 );
+		if ( $anchor ) {
+			$img = $anchor->getElementsByTagName( 'img' )->item( 0 );
+			if ( $img ) {
+				$div = $doc->createElement( 'div' );
+				$class = $anchor->hasAttribute( 'class' ) ? $anchor->getAttribute( 'class' ) . ' ' : '';
+				$class .= 'bs-social-entity-profileimage-wrapper';
+				$div->setAttribute( 'class', $class );
+				$dataAttr = $anchor->hasAttribute( 'bs-data-username' ) ?
+					$anchor->getAttribute( 'bs-data-username' ) : '';
+				$div->setAttribute( 'bs-data-username', $dataAttr );
+				$div->appendChild( $img->cloneNode( true ) );
+				$anchor->parentNode->replaceChild( $div, $anchor );
+			}
+		}
+		return $doc->saveHTML();
 	}
 
 	/**
