@@ -27,6 +27,8 @@
 	"bs-socialprofile-switch-modernprofile-label": "פרופיל מודרני",
 	"bs-socialprofile-switch-classicprofile-tooltip": "מעבר לפרופיל הקלאסי",
 	"bs-socialprofile-switch-modernprofile-tooltip": "מעבר לפרופיל המודרני",
+	"action-social-editothersprofile": "לערוך פרופילים של משתמשים אחרים",
+	"right-social-editothersprofile": "עריכת פרופילים של משתמשים אחרים",
 	"action-socialprofile-viewspecialpage": "לצפות בדף המיוחד \"{{int:socialprofiles}}\"",
 	"right-socialprofile-viewspecialpage": "צפייה בדף המיוחד \"{{int:socialprofiles}}\"",
 	"bs-socialprofile-tag-socialentityprofile-desc": "ניתן לכלול פרופיל משתמש בדף עם התג",
@@ -34,13 +36,11 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "שם משתמש",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "שם המשתמש של מי שיוצג עם התג הזה בדף",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "סוג התצוגה",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "איך הפרופיל מוצג בדף. באפשרותך לבחור מתוך רשימה, קצרה, ברירת מחדל, או דף.",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "רשימה",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "קצרה",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "ברירת המחדל",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "דף",
 	"bs-socialprofile-droplet-name": "פרופיל משתמש",
-	"action-social-editothersprofile": "לערוך פרופילים של משתמשים אחרים",
-	"right-social-editothersprofile": "עריכת פרופילים של משתמשים אחרים",
-	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "איך הפרופיל מוצג בדף. באפשרותך לבחור מתוך רשימה, קצרה, ברירת מחדל, או דף.",
 	"bs-socialprofile-droplet-description": "פרופיל משתמש ייכלל בדף הזה"
 }
