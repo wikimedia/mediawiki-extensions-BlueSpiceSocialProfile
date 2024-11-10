@@ -42,5 +42,6 @@
 	"action-social-editothersprofile": "לערוך פרופילים של משתמשים אחרים",
 	"right-social-editothersprofile": "עריכת פרופילים של משתמשים אחרים",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "איך הפרופיל מוצג בדף. באפשרותך לבחור מתוך רשימה, קצרה, ברירת מחדל, או דף.",
-	"bs-socialprofile-droplet-description": "פרופיל משתמש ייכלל בדף הזה"
+	"bs-socialprofile-droplet-description": "פרופיל משתמש ייכלל בדף הזה",
+	"bs-socialprofile-userimage-alt": "תמונת פרופיל משתמש עבור משתמש $1"
 }
