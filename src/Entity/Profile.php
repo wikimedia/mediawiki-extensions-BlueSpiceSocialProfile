@@ -100,10 +100,14 @@ class Profile extends Page {
 			return $this->baseTitleContent;
 		}
 		$wikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $this->getRelatedTitle() );
+		$content = $wikiPage->getContent();
+		if ( $content === null ) {
+			return $this->baseTitleContent;
+		}
 		try {
 			$contentRenderer = $this->services->getContentRenderer();
 			$output = $contentRenderer->getParserOutput(
-				$wikiPage->getContent(),
+				$content,
 				$this->getRelatedTitle(),
 				null,
 				ParserOptions::newFromContext( RequestContext::getMain() ),

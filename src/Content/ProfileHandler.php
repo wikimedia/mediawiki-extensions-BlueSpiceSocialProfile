@@ -74,7 +74,11 @@ class ProfileHandler extends \WikiTextContentHandler {
 				->newFromTitle( $entity->getRelatedTitle() );
 
 			$cpoParams = new ContentParseParams( $entity->getRelatedTitle() );
-			$contentHandler = $wikiPage->getContent()->getContentHandler();
+			$content = $wikiPage->getContent();
+			if ( $content === null ) {
+				return $output;
+			}
+			$contentHandler = $content->getContentHandler();
 			$categories = $contentHandler->getParserOutput( $wikiPage->getContent(), $cpoParams )->getCategories();
 
 			foreach ( $categories as $category => $key ) {
