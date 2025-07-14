@@ -4,6 +4,11 @@
 			"Умар"
 		]
 	},
+	"bs-socialprofile-desc": "Коьрта профилан хаамаш BlueSpiceSocial",
+	"bs-socialprofile-type": "Профиль",
+	"bs-socialprofile-entityaction-changeimage": "Профилан сурт",
+	"bs-social-entityaction-editprofilefields": "Профилан хаамаш",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Нийса воцу 'User' билгалваьккхина",
 	"bs-social-profile-field-name": "ЦӀе",
 	"bs-social-profile-field-email": "Электронан пошт",
 	"bs-social-profile-field-title": "Корта",
@@ -25,7 +30,10 @@
 	"action-socialprofile-viewspecialpage": "хьажа леррина агӀонга \"{{int:socialprofiles}}\"",
 	"right-socialprofile-viewspecialpage": "Хьажа леррина агӀонга \"{{int:socialprofiles}}\"",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Декъашхочун цӀе",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Дисплейн тайпа",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "МогӀам",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Доца",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Ӏадйитаран кеп",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "АгӀо"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "АгӀо",
+	"bs-socialprofile-droplet-name": "Декъашхочун профиль"
 }
