@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"SMP"
+			"SMP",
+			"Yupik"
 		]
 	},
 	"bs-socialprofile-type": "Perfil",
@@ -21,5 +22,6 @@
 	"bs-socialprofile-switch-classicprofile-label": "Perfil clàssic",
 	"bs-socialprofile-switch-modernprofile-label": "Perfil modern",
 	"action-socialprofile-viewspecialpage": "veure la pàgina especial «{{int:socialprofiles}}»",
-	"right-socialprofile-viewspecialpage": "Veure la pàgina especial «{{int:socialprofiles}}»"
+	"right-socialprofile-viewspecialpage": "Veure la pàgina especial «{{int:socialprofiles}}»",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nom d'usuari"
 }
