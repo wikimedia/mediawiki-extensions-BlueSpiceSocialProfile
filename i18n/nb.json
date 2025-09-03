@@ -42,5 +42,6 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Visningstype",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "Hvordan profilen vises på siden. Du kan velge mellom liste, kort, standard og side.",
 	"bs-socialprofile-droplet-name": "Brukerprofil",
-	"bs-socialprofile-droplet-description": "En brukerprofil blir inkludert på denne siden"
+	"bs-socialprofile-droplet-description": "En brukerprofil blir inkludert på denne siden",
+	"bs-socialprofile-userimage-alt": "Brukerprofilbilde for $1"
 }
