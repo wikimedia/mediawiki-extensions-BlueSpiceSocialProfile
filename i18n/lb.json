@@ -26,5 +26,13 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Kuerz",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standard",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Säit",
-	"bs-socialprofile-droplet-name": "Benotzerprofil"
+	"bs-socialprofile-droplet-name": "Benotzerprofil",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|Här|Madamm|}}",
+	"bs-social-profile-infoshowemail": "E-Mail-Adress am Profil weisen",
+	"bs-socialprofile-switch-classicprofile-tooltip": "Op de klassesche Profil wiesselen",
+	"bs-socialprofile-switch-modernprofile-tooltip": "Op de moderne Profil wiesselen",
+	"action-social-editothersprofile": "anere Benotzer hire Profil z'änneren",
+	"action-socialprofile-viewspecialpage": "d'Spezialsäit „{{int:socialprofiles}}“ ze gesinn",
+	"right-socialprofile-viewspecialpage": "D'Spezialsäit „{{int:socialprofiles}}“ gesinn",
+	"bs-socialprofile-userimage-alt": "Benotzerprofilbild fir de Benotzer $1"
 }
