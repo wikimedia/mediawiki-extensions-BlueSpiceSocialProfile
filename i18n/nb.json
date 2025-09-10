@@ -42,5 +42,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Standard",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Side",
 	"bs-socialprofile-droplet-name": "Brukerprofil",
-	"bs-socialprofile-droplet-description": "En brukerprofil blir inkludert på denne siden"
+	"bs-socialprofile-droplet-description": "En brukerprofil blir inkludert på denne siden",
+	"bs-socialprofile-userimage-alt": "Brukerprofilbilde for $1"
 }
