@@ -3,6 +3,7 @@
 		"authors": [
 			"A Chinese Wikipedian",
 			"Kishinsagi",
+			"Peterxy12",
 			"Willy1018"
 		]
 	},
@@ -20,5 +21,28 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "列表",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "默认",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "页面",
-	"bs-socialprofile-droplet-name": "用户资料"
+	"bs-socialprofile-droplet-name": "用户资料",
+	"bs-socialprofile-desc": "用于BlueSpiceSocial的个人文件单元",
+	"bs-socialprofile-entityaction-changeimage": "用户图片",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "指定的“User”无效",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|Mr.|Mrs.|}}",
+	"bs-social-profile-field-department": "部门",
+	"bs-social-profile-field-validate-no-integer": "$1必须是数字",
+	"bs-socialprofile-special-profiles-heading": "个人资料",
+	"bs-social-profile-infoshowemail": "在个人资料显示电子邮件地址",
+	"bs-socialprofile-switch-classicprofile-label": "典型个人资料",
+	"bs-socialprofile-switch-modernprofile-label": "新型个人资料",
+	"bs-socialprofile-switch-classicprofile-tooltip": "切换到典型个人资料",
+	"bs-socialprofile-switch-modernprofile-tooltip": "切换成新型个人资料",
+	"action-social-editothersprofile": "编辑其他用户的个人资料",
+	"right-social-editothersprofile": "编辑其他用户的个人资料",
+	"action-socialprofile-viewspecialpage": "查看特殊页面“{{int:socialprofiles}}”",
+	"right-socialprofile-viewspecialpage": "查看特殊页面“{{int:socialprofiles}}”",
+	"bs-socialprofile-tag-socialentityprofile-desc": "用户个人文件可包含在带有标签的页面中",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntityProfile",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-help": "要在带有此标签的页面上所显示的用户名称",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "个人文件在页面上的显示方式。您可以从列表里选择简短、默认、页面等样式。",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "简短",
+	"bs-socialprofile-droplet-description": "此页面将包含用户个人资料。",
+	"bs-socialprofile-userimage-alt": "$1的用户头像"
 }
