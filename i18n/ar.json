@@ -45,5 +45,6 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "نوع العرض",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "يتم عرض نوع ملف التعريف على الصفحة. خيار التحديد لهذا من القائمة ، الافتراضي ، القصير والصفحة.",
 	"bs-socialprofile-droplet-name": "ملف المستخدم",
-	"bs-socialprofile-droplet-description": "سيتم تضمين ملف تعريف المستخدم في هذه الصفحة"
+	"bs-socialprofile-droplet-description": "سيتم تضمين ملف تعريف المستخدم في هذه الصفحة",
+	"bs-socialprofile-userimage-alt": "صورة الملف الشخصي للمستخدم $1"
 }

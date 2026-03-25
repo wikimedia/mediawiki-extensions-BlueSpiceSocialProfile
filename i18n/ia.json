@@ -40,5 +40,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Predefinite",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pagina",
 	"bs-socialprofile-droplet-name": "Profilo del usator",
-	"bs-socialprofile-droplet-description": "Un profilo del usator essera includite sur iste pagina"
+	"bs-socialprofile-droplet-description": "Un profilo del usator essera includite sur iste pagina",
+	"bs-socialprofile-userimage-alt": "Imagine de profilo del usator $1"
 }

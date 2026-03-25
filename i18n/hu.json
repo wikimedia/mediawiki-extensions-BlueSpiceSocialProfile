@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-socialprofile-type": "Profil",
+	"bs-socialprofile-entityaction-changeimage": "Felhasználói kép",
+	"bs-social-entityaction-editprofilefields": "Profil adatai",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Érvénytelen \"Felhasználó\"",
+	"bs-social-profile-field-name": "Név",
+	"bs-social-profile-field-email": "E-mail",
+	"bs-social-profile-field-title": "Titulus",
+	"bs-social-profile-field-department": "Részleg",
+	"bs-social-profile-field-location": "Helyszín",
+	"bs-social-profile-field-phone": "Telefonszám",
+	"bs-social-profile-field-validate-no-integer": "$1 számnak kell lennie",
+	"bs-socialprofile-special-profiles-heading": "Profilok",
+	"bs-social-profile-infoshowemail": "E-mail cím megjelenítése a profilban",
+	"socialprofiles": "Profilok",
+	"bs-socialprofile-switch-classicprofile-label": "Klasszikus profil",
+	"bs-socialprofile-switch-modernprofile-label": "Modern profil",
+	"bs-socialprofile-switch-classicprofile-tooltip": "Váltás klasszikus profilra",
+	"bs-socialprofile-switch-modernprofile-tooltip": "Váltás modern profilra",
+	"action-social-editothersprofile": "más felhasználók profiljának szerkesztése",
+	"right-social-editothersprofile": "Más felhasználók profiljának szerkesztése",
+	"action-socialprofile-viewspecialpage": "\"{{int:socialprofiles}}\" speciális lap megtekintése",
+	"right-socialprofile-viewspecialpage": "Speciális lap megtekintése \"{{int:socialprofiles}}\"",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Felhasználónév",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Megjelenítés típusa",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Alapértelmezett",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Lap",
+	"bs-socialprofile-droplet-name": "Felhasználói profil"
+}

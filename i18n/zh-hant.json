@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kly",
-			"Winston Sung"
+			"Winston Sung",
+			"列维劳德"
 		]
 	},
 	"bs-socialprofile-desc": "用於 BlueSpiceSocial 的個人檔案單元",
@@ -41,5 +42,6 @@
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "預設",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "頁面",
 	"bs-socialprofile-droplet-name": "使用者檔案",
-	"bs-socialprofile-droplet-description": "此頁面將包含使用者個人檔案"
+	"bs-socialprofile-droplet-description": "此頁面將包含使用者個人檔案",
+	"bs-socialprofile-userimage-alt": "$1使用者頭像"
 }

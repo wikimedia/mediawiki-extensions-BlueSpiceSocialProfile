@@ -27,5 +27,13 @@
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Декъашхочун цӀе",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "МогӀам",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "Ӏадйитаран кеп",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "АгӀо"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "АгӀо",
+	"bs-socialprofile-desc": "Коьрта профилан хаамаш BlueSpiceSocial",
+	"bs-socialprofile-type": "Профиль",
+	"bs-socialprofile-entityaction-changeimage": "Профилан сурт",
+	"bs-social-entityaction-editprofilefields": "Профилан хаамаш",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Нийса воцу 'User' билгалваьккхина",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "Дисплейн тайпа",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "Доца",
+	"bs-socialprofile-droplet-name": "Декъашхочун профиль"
 }

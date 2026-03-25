@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajeje Brazorf"
+			"Ajeje Brazorf",
+			"GianAntonucci"
 		]
 	},
 	"bs-socialprofile-type": "Prufilu",
@@ -18,6 +19,6 @@
 	"action-socialprofile-viewspecialpage": "taliari la pàggina spiciali \"{{int:socialprofiles}}\"",
 	"right-socialprofile-viewspecialpage": "Talìa la pàggina spiciali \"{{int:socialprofiles}}\"",
 	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "Nomu utenti",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Elencu",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "Lista",
 	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "Pàggina"
 }
