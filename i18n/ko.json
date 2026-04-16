@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong",
 			"Yunbj"
 		]
@@ -27,5 +28,6 @@
 	"action-socialprofile-viewspecialpage": "특수 문서 \"{{int:socialprofiles}}\"을 볼",
 	"right-socialprofile-viewspecialpage": "특수 문서 \"{{int:socialprofiles}}\" 보기",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "표시 유형",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "문서",
 	"bs-socialprofile-userimage-alt": "$1 사용자의 사용자 프로필 이미지"
 }
