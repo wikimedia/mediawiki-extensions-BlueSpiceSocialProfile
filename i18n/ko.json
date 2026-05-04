@@ -29,5 +29,17 @@
 	"right-socialprofile-viewspecialpage": "특수 문서 \"{{int:socialprofiles}}\" 보기",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "표시 유형",
 	"bs-socialprofile-userimage-alt": "$1 사용자의 사용자 프로필 이미지",
-	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "문서"
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-page": "페이지형",
+	"bs-socialprofile-desc": "BlueSpiceSocial의 프로필 개체",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "잘못된 'User'가 제공되었습니다",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|}}",
+	"bs-social-profile-field-function": "직함",
+	"bs-socialprofile-ve-socialentityprofileinspector-title": "SocialEntityProfile",
+	"bs-socialprofile-ve-socialentityprofile-attr-username-label": "사용자 이름",
+	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-help": "프로필이 문서에 표시되는 방식입니다. 목록형, 간략형, 기본형, 페이지형 중에서 선택할 수 있습니다.",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-list": "목록형",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-short": "간략형",
+	"bs-socialprofile-tag-socialentityprofile-attr-rendertype-option-default": "기본형",
+	"bs-socialprofile-droplet-name": "사용자 프로필",
+	"bs-socialprofile-droplet-description": "이 문서에 사용자 프로필이 포함됩니다"
 }
