@@ -25,7 +25,7 @@
 	"bs-socialprofile-switch-modernprofile-tooltip": "현대 프로파일로 전환",
 	"action-social-editothersprofile": "다른 사용자의 프로파일 편집",
 	"right-social-editothersprofile": "다른 사용자의 프로파일 편집",
-	"action-socialprofile-viewspecialpage": "특수 문서 \"{{int:socialprofiles}}\"을 볼",
+	"action-socialprofile-viewspecialpage": "특수 문서 \"{{int:socialprofiles}}\" 보기",
 	"right-socialprofile-viewspecialpage": "특수 문서 \"{{int:socialprofiles}}\" 보기",
 	"bs-socialprofile-ve-socialentityprofile-attr-rendertype-label": "표시 유형",
 	"bs-socialprofile-userimage-alt": "$1 사용자의 사용자 프로필 이미지",
