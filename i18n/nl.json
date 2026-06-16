@@ -8,14 +8,15 @@
 			"Robin van der Linde",
 			"Robin van der Vliet",
 			"Romaine",
-			"Rots61"
+			"Rots61",
+			"Siebrand"
 		]
 	},
 	"bs-socialprofile-desc": "Profielentiteit voor BlueSpiceSocial",
 	"bs-socialprofile-type": "Profiel",
 	"bs-socialprofile-entityaction-changeimage": "Gebruikersafbeelding",
 	"bs-social-entityaction-editprofilefields": "Profielgegevens",
-	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Ongeldige 'User' (gebruiker) opgegeven",
+	"bs-socialprofile-entity-fatalstatus-save-invaliduser": "Incorrecte 'User' (gebruiker) opgegeven",
 	"bs-social-profile-field-name": "Naam",
 	"bs-social-profile-field-email": "E-mail",
 	"bs-social-profile-field-title": "Naam",
