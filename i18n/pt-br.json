@@ -6,6 +6,7 @@
 			"Eduardoaddad",
 			"Felipe L. Ewald",
 			"Juan90264",
+			"NenhumaFênix",
 			"Stephanyb76",
 			"VasbXBR"
 		]
@@ -18,7 +19,7 @@
 	"bs-social-profile-field-name": "Nome",
 	"bs-social-profile-field-email": "E-mail",
 	"bs-social-profile-field-title": "Título",
-	"bs-social-profile-field-title-value": "{{GENDER:$1|Sr.|Sra.|}}",
+	"bs-social-profile-field-title-value": "{{GENDER:$1|Sr.|Sra.|Sr(a).}}",
 	"bs-social-profile-field-department": "Departamento",
 	"bs-social-profile-field-function": "Função",
 	"bs-social-profile-field-location": "Localização",
